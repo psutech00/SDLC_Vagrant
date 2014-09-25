@@ -19,6 +19,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :chef_solo do |chef|
         chef.add_recipe "java"
+	chef.add_recipe "git::source"
+	chef.add_recipe "maven"
 	chef.add_recipe "jenkins::master"
 	chef.add_recipe "nexus::app"
         chef.json = {
