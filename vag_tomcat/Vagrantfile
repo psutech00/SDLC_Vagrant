@@ -14,10 +14,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.omnibus.chef_version = :latest
 
-  config.vm.network "forwarded_port", host: 48080, guest: 8080
+  config.vm.network :forwarded_port, host: 48080, guest: 8080
+  config.vm.network :forwarded_port, host: 50023, guest: 22
 
   config.vm.provision :chef_solo do |chef|
-        chef.add_recipe "java"
+        chef.add_recipe "custom-ssh"
+	chef.add_recipe "java"
 	chef.add_recipe "tomcat-all"
         chef.json = {
                 "java" => {
@@ -36,7 +38,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                         }
                 },
 		"tomcat-all" => {
-			"version" => "7.0.55"	
+			"version" => "7.0.55",
+			"oracle" => {
+				"enabled" => false
+			},
+			"mysql" => {
+				"enabled" => true
+			}
 		}
         }
   end
