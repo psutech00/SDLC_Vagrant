@@ -1,0 +1,1396 @@
+I, [2014-06-03T11:04:10.458162 #32092]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-06-03T11:04:11.386356 #32092]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-06-03T11:04:11.657053 #32092]  INFO -- default-ubuntu-1204: ==> default: Importing base box 'opscode-ubuntu-12.04'...
+[KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 70%[KProgress: 80%[KProgress: 90%[KI, [2014-06-03T11:04:36.181346 #32092]  INFO -- default-ubuntu-1204: ==> default: Matching MAC address for NAT networking...
+I, [2014-06-03T11:04:36.718443 #32092]  INFO -- default-ubuntu-1204: ==> default: Setting the name of the VM: default-ubuntu-1204_default_1401804276696_64506
+I, [2014-06-03T11:04:36.884323 #32092]  INFO -- default-ubuntu-1204: ==> default: Clearing any previously set network interfaces...
+I, [2014-06-03T11:04:37.026212 #32092]  INFO -- default-ubuntu-1204: ==> default: Preparing network interfaces based on configuration...
+I, [2014-06-03T11:04:37.026577 #32092]  INFO -- default-ubuntu-1204:     default: Adapter 1: nat
+I, [2014-06-03T11:04:37.026909 #32092]  INFO -- default-ubuntu-1204:     default: Adapter 2: hostonly
+I, [2014-06-03T11:04:37.056966 #32092]  INFO -- default-ubuntu-1204: ==> default: Forwarding ports...
+I, [2014-06-03T11:04:37.105852 #32092]  INFO -- default-ubuntu-1204:     default: 22 => 2222 (adapter 1)
+I, [2014-06-03T11:04:39.290072 #32092]  INFO -- default-ubuntu-1204: ==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...I, [2014-06-03T11:04:40.011303 #32092]  INFO -- default-ubuntu-1204:     default: SSH address: 127.0.0.1:2222
+I, [2014-06-03T11:04:40.011463 #32092]  INFO -- default-ubuntu-1204:     default: SSH username: vagrant
+I, [2014-06-03T11:04:40.011636 #32092]  INFO -- default-ubuntu-1204:     default: SSH auth method: private key
+I, [2014-06-03T11:04:55.126017 #32092]  INFO -- default-ubuntu-1204:     default: Warning: Connection timeout. Retrying...
+I, [2014-06-03T11:04:55.626059 #32092]  INFO -- default-ubuntu-1204: ==> default: Machine booted and ready!
+I, [2014-06-03T11:04:55.626427 #32092]  INFO -- default-ubuntu-1204: ==> default: Checking for guest additions in VM...
+I, [2014-06-03T11:04:55.650406 #32092]  INFO -- default-ubuntu-1204: ==> default: Setting hostname...
+I, [2014-06-03T11:04:58.319468 #32092]  INFO -- default-ubuntu-1204: ==> default: Configuring and enabling network interfaces...
+I, [2014-06-03T11:04:58.550424 #32092]  INFO -- default-ubuntu-1204: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-06-03T11:05:00.082302 #32092]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-06-03T11:05:00.084155 #32092]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m49.62s).
+I, [2014-06-03T11:05:00.084312 #32092]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-06-03T11:05:00.085051 #32092]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-06-03T11:05:00.085411 #32092]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf 3.1.2...
+I, [2014-06-03T11:05:14.686374 #32092]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-06-03T11:05:14.785085 #32092]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2014-06-03T11:05:14.785148 #32092]  INFO -- default-ubuntu-1204: downloading https://www.getchef.com/chef/install.sh
+I, [2014-06-03T11:05:14.785177 #32092]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-06-03T11:05:14.785208 #32092]  INFO -- default-ubuntu-1204: trying wget...
+Downloading Chef  for ubuntu...I, [2014-06-03T11:05:16.255339 #32092]  INFO -- default-ubuntu-1204: 
+downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-06-03T11:05:16.256574 #32092]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1263/metadata.txtI, [2014-06-03T11:05:16.256822 #32092]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-06-03T11:05:16.257179 #32092]  INFO -- default-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.12.4-1_amd64.debI, [2014-06-03T11:05:17.113964 #32092]  INFO -- default-ubuntu-1204: 
+md5	c45e1d4f7842af1048f788c4452d6cc0I, [2014-06-03T11:05:17.114524 #32092]  INFO -- default-ubuntu-1204: 
+sha256	595cd1e884efd21f8f5e34bdbe878421a9d5c1c24abd3c669a84e8ed261317a3I, [2014-06-03T11:05:17.115047 #32092]  INFO -- default-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-06-03T11:05:17.117428 #32092]  INFO -- default-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.12.4-1_amd64.debI, [2014-06-03T11:05:17.122963 #32092]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1263/chef_11.12.4-1_amd64.debI, [2014-06-03T11:05:17.123241 #32092]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-06-03T11:05:17.123477 #32092]  INFO -- default-ubuntu-1204: 
+Comparing checksum with sha256sum...I, [2014-06-03T11:07:43.429838 #32092]  INFO -- default-ubuntu-1204: 
+Installing Chef I, [2014-06-03T11:07:43.570092 #32092]  INFO -- default-ubuntu-1204: 
+installing with dpkg...I, [2014-06-03T11:07:43.570327 #32092]  INFO -- default-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-06-03T11:07:43.612971 #32092]  INFO -- default-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56035 files and directories currently installed.)I, [2014-06-03T11:07:43.724782 #32092]  INFO -- default-ubuntu-1204: 
+Unpacking chef (from .../chef_11.12.4-1_amd64.deb) ...I, [2014-06-03T11:07:43.726667 #32092]  INFO -- default-ubuntu-1204: 
+Setting up chef (11.12.4-1) ...I, [2014-06-03T11:07:47.905329 #32092]  INFO -- default-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-06-03T11:07:47.920111 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:07:47.945618 #32092]  INFO -- default-ubuntu-1204: Transferring files to <default-ubuntu-1204>
+[2014-06-03T14:07:45+00:00] INFO: Forking chef instance to converge...I, [2014-06-03T11:07:48.857454 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:45+00:00] WARN: I, [2014-06-03T11:07:48.862394 #32092]  INFO -- default-ubuntu-1204: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * I, [2014-06-03T11:07:48.862678 #32092]  INFO -- default-ubuntu-1204: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-06-03T11:07:48.862891 #32092]  INFO -- default-ubuntu-1204: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-06-03T11:07:48.863135 #32092]  INFO -- default-ubuntu-1204: 
+attacks.I, [2014-06-03T11:07:48.863325 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:07:48.863442 #32092]  INFO -- default-ubuntu-1204: 
+To fix this issue add an entry like this to your configuration file:I, [2014-06-03T11:07:48.863680 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:07:48.863800 #32092]  INFO -- default-ubuntu-1204: 
+```I, [2014-06-03T11:07:48.863968 #32092]  INFO -- default-ubuntu-1204: 
+  # Verify all HTTPS connections (recommended)I, [2014-06-03T11:07:48.864210 #32092]  INFO -- default-ubuntu-1204: 
+  ssl_verify_mode :verify_peerI, [2014-06-03T11:07:48.864399 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:07:48.864514 #32092]  INFO -- default-ubuntu-1204: 
+  # OR, Verify only connections to chef-serverI, [2014-06-03T11:07:48.864732 #32092]  INFO -- default-ubuntu-1204: 
+  verify_api_cert trueI, [2014-06-03T11:07:48.865106 #32092]  INFO -- default-ubuntu-1204: 
+```I, [2014-06-03T11:07:48.865341 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:07:48.865461 #32092]  INFO -- default-ubuntu-1204: 
+To check your SSL configuration, or troubleshoot errors, you can use theI, [2014-06-03T11:07:48.865663 #32092]  INFO -- default-ubuntu-1204: 
+`knife ssl check` command like so:I, [2014-06-03T11:07:48.865900 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:07:48.866017 #32092]  INFO -- default-ubuntu-1204: 
+```I, [2014-06-03T11:07:48.866217 #32092]  INFO -- default-ubuntu-1204: 
+  knife ssl check -c /tmp/kitchen/solo.rbI, [2014-06-03T11:07:48.866421 #32092]  INFO -- default-ubuntu-1204: 
+```I, [2014-06-03T11:07:48.866588 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:07:48.866705 #32092]  INFO -- default-ubuntu-1204: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * I, [2014-06-03T11:07:48.866908 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:07:48.867007 #32092]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.12.4[0mI, [2014-06-03T11:07:48.892050 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:45+00:00] INFO: *** Chef 11.12.4 ***I, [2014-06-03T11:07:48.892599 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:45+00:00] INFO: Chef-client pid: 1345I, [2014-06-03T11:07:48.892915 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:46+00:00] INFO: Setting the run_list to ["recipe[apt]", "recipe[java]", "recipe[tomcat-all::default]"] from CLI optionsI, [2014-06-03T11:07:50.710305 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:46+00:00] INFO: Run List is [recipe[apt], recipe[java], recipe[tomcat-all::default]]I, [2014-06-03T11:07:50.714195 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:46+00:00] INFO: Run List expands to [apt, java, tomcat-all::default]I, [2014-06-03T11:07:50.714561 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:46+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-06-03T11:07:50.714825 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:46+00:00] INFO: Running start handlersI, [2014-06-03T11:07:50.715231 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:46+00:00] INFO: Start handlers complete.I, [2014-06-03T11:07:50.715532 #32092]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-06-03T11:07:50.720027 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:46+00:00] WARN: Cloning resource attributes for execute[apt-get-update] from prior resource (CHEF-3694)I, [2014-06-03T11:07:50.738989 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:46+00:00] WARN: Previous execute[apt-get-update]: /tmp/kitchen/cookbooks/apt/recipes/default.rb:29:in `from_file'I, [2014-06-03T11:07:50.739227 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:07:46+00:00] WARN: Current  execute[apt-get-update]: /tmp/kitchen/cookbooks/apt/recipes/default.rb:38:in `from_file'I, [2014-06-03T11:07:50.739469 #32092]  INFO -- default-ubuntu-1204: 
+Converging 24 resources[0mI, [2014-06-03T11:07:50.760396 #32092]  INFO -- default-ubuntu-1204: 
+Recipe: apt::default[0mI, [2014-06-03T11:07:50.761380 #32092]  INFO -- default-ubuntu-1204: 
+  * execute[apt-get-update] action nothing[0m[2014-06-03T14:07:46+00:00] INFO: Processing execute[apt-get-update] action nothing (apt::default line 29)I, [2014-06-03T11:07:50.762000 #32092]  INFO -- default-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-06-03T11:07:50.762338 #32092]  INFO -- default-ubuntu-1204: 
+  * execute[apt-get-update] action run[0m[2014-06-03T14:07:46+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 38)I, [2014-06-03T11:07:50.762845 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:08:12.237592 #32092]  INFO -- default-ubuntu-1204: [2014-06-03T14:08:07+00:00] INFO: execute[apt-get-update] ran successfully
+I, [2014-06-03T11:08:12.237653 #32092]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:08:12.237696 #32092]  INFO -- default-ubuntu-1204:     - execute apt-get update[0m
+I, [2014-06-03T11:08:12.237718 #32092]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:08:12.237738 #32092]  INFO -- default-ubuntu-1204:   * execute[apt-get update] action nothing[0m[2014-06-03T14:08:07+00:00] INFO: Processing execute[apt-get update] action nothing (apt::default line 46)
+I, [2014-06-03T11:08:12.237758 #32092]  INFO -- default-ubuntu-1204:  (skipped due to action :nothing)[0m
+I, [2014-06-03T11:08:12.237778 #32092]  INFO -- default-ubuntu-1204:   * execute[apt-get autoremove] action nothing[0m[2014-06-03T14:08:07+00:00] INFO: Processing execute[apt-get autoremove] action nothing (apt::default line 54)
+I, [2014-06-03T11:08:12.237798 #32092]  INFO -- default-ubuntu-1204:  (skipped due to action :nothing)[0m
+I, [2014-06-03T11:08:12.237818 #32092]  INFO -- default-ubuntu-1204:   * execute[apt-get autoclean] action nothing[0m[2014-06-03T14:08:07+00:00] INFO: Processing execute[apt-get autoclean] action nothing (apt::default line 61)
+I, [2014-06-03T11:08:12.237838 #32092]  INFO -- default-ubuntu-1204:  (skipped due to action :nothing)[0m
+I, [2014-06-03T11:08:12.237858 #32092]  INFO -- default-ubuntu-1204:   * package[update-notifier-common] action install[0m[2014-06-03T14:08:07+00:00] INFO: Processing package[update-notifier-common] action install (apt::default line 68)
+I, [2014-06-03T11:08:16.145206 #32092]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:08:16.145269 #32092]  INFO -- default-ubuntu-1204:     - install version 0.119ubuntu8.6 of package update-notifier-common[0m
+I, [2014-06-03T11:08:16.145292 #32092]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:08:16.145313 #32092]  INFO -- default-ubuntu-1204: [2014-06-03T14:08:11+00:00] INFO: package[update-notifier-common] sending run action to execute[apt-get-update] (immediate)
+I, [2014-06-03T11:08:16.145334 #32092]  INFO -- default-ubuntu-1204:   * execute[apt-get-update] action run[0m[2014-06-03T14:08:11+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 38)
+I, [2014-06-03T11:08:20.664164 #32092]  INFO -- default-ubuntu-1204: [2014-06-03T14:08:16+00:00] INFO: execute[apt-get-update] ran successfully
+I, [2014-06-03T11:08:20.664221 #32092]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:08:20.664244 #32092]  INFO -- default-ubuntu-1204:     - execute apt-get update[0m
+I, [2014-06-03T11:08:20.664297 #32092]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:08:20.664319 #32092]  INFO -- default-ubuntu-1204:   * execute[apt-get-update-periodic] action run[0m[2014-06-03T14:08:16+00:00] INFO: Processing execute[apt-get-update-periodic] action run (apt::default line 73)
+I, [2014-06-03T11:08:20.664339 #32092]  INFO -- default-ubuntu-1204:  (skipped due to only_if)[0m
+I, [2014-06-03T11:08:20.664359 #32092]  INFO -- default-ubuntu-1204:   * directory[/var/cache/local] action create[0m[2014-06-03T14:08:16+00:00] INFO: Processing directory[/var/cache/local] action create (apt::default line 84)
+[2014-06-03T14:08:16+00:00] INFO: directory[/var/cache/local] created directory /var/cache/localI, [2014-06-03T11:08:20.664662 #32092]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:08:20.665545 #32092]  INFO -- default-ubuntu-1204: 
+    - create new directory /var/cache/local[0m[2014-06-03T14:08:16+00:00] INFO: directory[/var/cache/local] owner changed to 0I, [2014-06-03T11:08:20.666267 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:08:16+00:00] INFO: directory[/var/cache/local] group changed to 0I, [2014-06-03T11:08:20.666712 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:08:16+00:00] INFO: directory[/var/cache/local] mode changed to 755I, [2014-06-03T11:08:20.667015 #32092]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:08:20.667320 #32092]  INFO -- default-ubuntu-1204: 
+    - change mode from '' to '0755'[0m[32mI, [2014-06-03T11:08:20.667647 #32092]  INFO -- default-ubuntu-1204: 
+    - change owner from '' to 'root'[0m[32mI, [2014-06-03T11:08:20.667973 #32092]  INFO -- default-ubuntu-1204: 
+    - change group from '' to 'root'[0mI, [2014-06-03T11:08:20.668664 #32092]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-06-03T11:08:20.668912 #32092]  INFO -- default-ubuntu-1204: 
+  * directory[/var/cache/local/preseeding] action create[0m[2014-06-03T14:08:16+00:00] INFO: Processing directory[/var/cache/local/preseeding] action create (apt::default line 84)I, [2014-06-03T11:08:20.669393 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:08:16+00:00] INFO: directory[/var/cache/local/preseeding] created directory /var/cache/local/preseedingI, [2014-06-03T11:08:20.670577 #32092]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:08:20.670925 #32092]  INFO -- default-ubuntu-1204: 
+    - create new directory /var/cache/local/preseeding[0m[2014-06-03T14:08:16+00:00] INFO: directory[/var/cache/local/preseeding] owner changed to 0I, [2014-06-03T11:08:20.671751 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:08:16+00:00] INFO: directory[/var/cache/local/preseeding] group changed to 0I, [2014-06-03T11:08:20.672109 #32092]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:08:16+00:00] INFO: directory[/var/cache/local/preseeding] mode changed to 755I, [2014-06-03T11:08:20.672479 #32092]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:08:20.672690 #32092]  INFO -- default-ubuntu-1204: 
+    - change mode from '' to '0755'[0m[32mI, [2014-06-03T11:08:20.673066 #32092]  INFO -- default-ubuntu-1204: 
+    - change owner from '' to 'root'[0m[32mI, [2014-06-03T11:08:20.673534 #32092]  INFO -- default-ubuntu-1204: 
+    - change group from '' to 'root'[0mI, [2014-06-03T11:08:20.674088 #32092]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-06-03T11:08:20.674314 #32092]  INFO -- default-ubuntu-1204: 
+Recipe: java::openjdk[0mI, [2014-06-03T11:08:20.674687 #32092]  INFO -- default-ubuntu-1204: 
+  * package[openjdk-7-jdk] action install[0m[2014-06-03T14:08:16+00:00] INFO: Processing package[openjdk-7-jdk] action install (java::openjdk line 46)I, [2014-06-03T11:08:20.675241 #32092]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-06-03T11:19:15.773172 #32092]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-06-03T11:19:15.773415 #32092]  INFO -- default-ubuntu-1204: 
+[31mError executing action `install` on resource 'package[openjdk-7-jdk]'[0mI, [2014-06-03T11:19:15.773661 #32092]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-06-03T11:19:15.773867 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.773985 #32092]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-06-03T11:19:15.774218 #32092]  INFO -- default-ubuntu-1204: 
+Mixlib::ShellOut::CommandTimeout[0mI, [2014-06-03T11:19:15.774452 #32092]  INFO -- default-ubuntu-1204: 
+--------------------------------[0mI, [2014-06-03T11:19:15.774866 #32092]  INFO -- default-ubuntu-1204: 
+Command timed out after 600s:I, [2014-06-03T11:19:15.775096 #32092]  INFO -- default-ubuntu-1204: 
+Command execeded allowed execution time, process terminatedI, [2014-06-03T11:19:15.775305 #32092]  INFO -- default-ubuntu-1204: 
+---- Begin output of apt-get -q -y install openjdk-7-jdk=7u55-2.4.7-1ubuntu1~0.12.04.2 ----I, [2014-06-03T11:19:15.775544 #32092]  INFO -- default-ubuntu-1204: 
+STDOUT: Reading package lists...I, [2014-06-03T11:19:15.775742 #32092]  INFO -- default-ubuntu-1204: 
+Building dependency tree...I, [2014-06-03T11:19:15.775975 #32092]  INFO -- default-ubuntu-1204: 
+Reading state information...I, [2014-06-03T11:19:15.776175 #32092]  INFO -- default-ubuntu-1204: 
+The following extra packages will be installed:I, [2014-06-03T11:19:15.776377 #32092]  INFO -- default-ubuntu-1204: 
+  ca-certificates-java consolekit dbus-x11 dconf-gsettings-backendI, [2014-06-03T11:19:15.776615 #32092]  INFO -- default-ubuntu-1204: 
+  dconf-service fontconfig fontconfig-config gconf-serviceI, [2014-06-03T11:19:15.776820 #32092]  INFO -- default-ubuntu-1204: 
+  gconf-service-backend gconf2 gconf2-common gvfs gvfs-common gvfs-daemonsI, [2014-06-03T11:19:15.777057 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.777233 #32092]  INFO -- default-ubuntu-1204:   gvfs-libs hicolor-icon-theme icedtea-7-jre-jamvm java-common libasound2
+I, [2014-06-03T11:19:15.777261 #32092]  INFO -- default-ubuntu-1204:   libasyncns0 libatasmart4 libatk-wrapper-java libatk-wrapper-java-jni
+I, [2014-06-03T11:19:15.777284 #32092]  INFO -- default-ubuntu-1204:   libatk1.0-0 libatk1.0-data libavahi-client3 libavahi-common-data
+I, [2014-06-03T11:19:15.777306 #32092]  INFO -- default-ubuntu-1204:   libavahi-common3 libavahi-glib1 libbonobo2-0 libbonobo2-common
+I, [2014-06-03T11:19:15.777328 #32092]  INFO -- default-ubuntu-1204:   libcairo-gobject2 libcairo2 libcanberra0 libck-connector0 libcups2
+I, [2014-06-03T11:19:15.777349 #32092]  INFO -- default-ubuntu-1204:   libdatrie1 libdconf0 libflac8 libfontconfig1 libfontenc1 libgconf-2-4
+I, [2014-06-03T11:19:15.777371 #32092]  INFO -- default-ubuntu-1204:   libgconf2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgdu0 libgif4
+I, [2014-06-03T11:19:15.777392 #32092]  INFO -- default-ubuntu-1204:   libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgnome-keyring-common
+I, [2014-06-03T11:19:15.777414 #32092]  INFO -- default-ubuntu-1204:   libgnome-keyring0 libgnome2-0 libgnome2-bin libgnome2-common libgnomevfs2-0
+I, [2014-06-03T11:19:15.777435 #32092]  INFO -- default-ubuntu-1204:   libgnomevfs2-common libgtk-3-0 libgtk-3-bin libgtk-3-common libgtk2.0-0
+I, [2014-06-03T11:19:15.777457 #32092]  INFO -- default-ubuntu-1204:   libgtk2.0-bin libgtk2.0-common libgudev-1.0-0 libice-dev libice6
+I, [2014-06-03T11:19:15.777479 #32092]  INFO -- default-ubuntu-1204:   libidl-common libidl0 libjasper1 libjpeg-turbo8 libjpeg8 libjson0 liblcms2-2
+I, [2014-06-03T11:19:15.777534 #32092]  INFO -- default-ubuntu-1204:   libllvm3.0 libltdl7 liblvm2app2.2 libnspr4 libnss3 libnss3-1d libogg0
+I, [2014-06-03T11:19:15.777556 #32092]  INFO -- default-ubuntu-1204:   liborbit2 libpam-ck-connector libpango1.0-0 libpcsclite1 libpixman-1-0
+I, [2014-06-03T11:19:15.777578 #32092]  INFO -- default-ubuntu-1204:   libpolkit-agent-1-0 libpolkit-backend-1-0 libpthread-stubs0
+I, [2014-06-03T11:19:15.777600 #32092]  INFO -- default-ubuntu-1204:   libpthread-stubs0-dev libpulse0 libsgutils2-2 libsm-dev libsm6 libsndfile1
+I, [2014-06-03T11:19:15.777621 #32092]  INFO -- default-ubuntu-1204:   libtdb1 libthai-data libthai0 libtiff4 libvorbis0a libvorbisenc2
+I, [2014-06-03T11:19:15.777643 #32092]  INFO -- default-ubuntu-1204:   libvorbisfile3 libx11-dev libx11-doc libx11-xcb1 libxau-dev libxaw7
+I, [2014-06-03T11:19:15.777664 #32092]  INFO -- default-ubuntu-1204:   libxcb-glx0 libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb1-dev
+I, [2014-06-03T11:19:15.777686 #32092]  INFO -- default-ubuntu-1204:   libxcomposite1 libxcursor1 libxdamage1 libxdmcp-dev libxfixes3 libxft2
+I, [2014-06-03T11:19:15.777707 #32092]  INFO -- default-ubuntu-1204:   libxi6 libxinerama1 libxmu6 libxpm4 libxrandr2 libxrender1 libxt-dev libxt6
+I, [2014-06-03T11:19:15.777729 #32092]  INFO -- default-ubuntu-1204:   libxtst6 libxv1 libxxf86dga1 libxxf86vm1 mtools openjdk-7-jre
+I, [2014-06-03T11:19:15.777751 #32092]  INFO -- default-ubuntu-1204:   openjdk-7-jre-headless policykit-1 policykit-1-gnome shared-mime-info
+I, [2014-06-03T11:19:15.777772 #32092]  INFO -- default-ubuntu-1204:   sound-theme-freedesktop ttf-dejavu-core ttf-dejavu-extra tzdata tzdata-java
+I, [2014-06-03T11:19:15.777794 #32092]  INFO -- default-ubuntu-1204:   udisks x11-common x11-utils x11proto-core-dev x11proto-input-dev
+I, [2014-06-03T11:19:15.777816 #32092]  INFO -- default-ubuntu-1204:   x11proto-kb-dev xorg-sgml-doctools xtrans-dev
+I, [2014-06-03T11:19:15.777837 #32092]  INFO -- default-ubuntu-1204: Suggested packages:
+I, [2014-06-03T11:19:15.777858 #32092]  INFO -- default-ubuntu-1204:   gconf-defaults-service gvfs-backends default-jre equivs libasound2-plugins
+I, [2014-06-03T11:19:15.777880 #32092]  INFO -- default-ubuntu-1204:   libasound2-python libbonobo2-bin libcanberra-gtk0 libcanberra-pulse
+I, [2014-06-03T11:19:15.777910 #32092]  INFO -- default-ubuntu-1204:   cups-common libglide3 gnome-keyring desktop-base libgnomevfs2-bin
+I, [2014-06-03T11:19:15.777934 #32092]  INFO -- default-ubuntu-1204:   libgnomevfs2-extra gamin fam gnome-mime-data librsvg2-common
+I, [2014-06-03T11:19:15.777955 #32092]  INFO -- default-ubuntu-1204:   libjasper-runtime liblcms2-utils ttf-baekmuk ttf-arphic-gbsn00lp
+I, [2014-06-03T11:19:15.777977 #32092]  INFO -- default-ubuntu-1204:   ttf-arphic-bsmi00lp ttf-arphic-gkai00mp ttf-arphic-bkai00mp pcscd pulseaudio
+I, [2014-06-03T11:19:15.777998 #32092]  INFO -- default-ubuntu-1204:   sg3-utils libxcb-doc floppyd openjdk-7-demo openjdk-7-source visualvm
+I, [2014-06-03T11:19:15.778020 #32092]  INFO -- default-ubuntu-1204:   icedtea-7-plugin libnss-mdns sun-java6-fonts fonts-ipafont-gothic
+I, [2014-06-03T11:19:15.778637 #32092]  INFO -- default-ubuntu-1204:   fonts-ipafont-mincho ttf-wqy-microhei ttf-wqy-zenhei ttf-indic-fonts-core
+I, [2014-06-03T11:19:15.778665 #32092]  INFO -- default-ubuntu-1204:   ttf-telugu-fonts ttf-oriya-fonts ttf-kannada-fonts ttf-bengali-fonts
+I, [2014-06-03T11:19:15.778688 #32092]  INFO -- default-ubuntu-1204:   xfsprogs reiserfsprogs mdadm mesa-utils
+I, [2014-06-03T11:19:15.778709 #32092]  INFO -- default-ubuntu-1204: The following NEW packages will be installed:
+I, [2014-06-03T11:19:15.778731 #32092]  INFO -- default-ubuntu-1204:   ca-certificates-java consolekit dbus-x11 dconf-gsettings-backend
+I, [2014-06-03T11:19:15.778752 #32092]  INFO -- default-ubuntu-1204:   dconf-service fontconfig fontconfig-config gconf-service
+I, [2014-06-03T11:19:15.778774 #32092]  INFO -- default-ubuntu-1204:   gconf-service-backend gconf2 gconf2-common gvfs gvfs-common gvfs-daemons
+I, [2014-06-03T11:19:15.778796 #32092]  INFO -- default-ubuntu-1204:   gvfs-libs hicolor-icon-theme icedtea-7-jre-jamvm java-common libasound2
+I, [2014-06-03T11:19:15.778818 #32092]  INFO -- default-ubuntu-1204:   libasyncns0 libatasmart4 libatk-wrapper-java libatk-wrapper-java-jni
+I, [2014-06-03T11:19:15.778839 #32092]  INFO -- default-ubuntu-1204:   libatk1.0-0 libatk1.0-data libavahi-client3 libavahi-common-data
+I, [2014-06-03T11:19:15.778861 #32092]  INFO -- default-ubuntu-1204:   libavahi-common3 libavahi-glib1 libbonobo2-0 libbonobo2-common
+I, [2014-06-03T11:19:15.778882 #32092]  INFO -- default-ubuntu-1204:   libcairo-gobject2 libcairo2 libcanberra0 libck-connector0 libcups2
+I, [2014-06-03T11:19:15.778904 #32092]  INFO -- default-ubuntu-1204:   libdatrie1 libdconf0 libflac8 libfontconfig1 libfontenc1 libgconf-2-4
+I, [2014-06-03T11:19:15.778960 #32092]  INFO -- default-ubuntu-1204:   libgconf2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgdu0 libgif4
+I, [2014-06-03T11:19:15.778982 #32092]  INFO -- default-ubuntu-1204:   libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgnome-keyring-common
+I, [2014-06-03T11:19:15.779004 #32092]  INFO -- default-ubuntu-1204:   libgnome-keyring0 libgnome2-0 libgnome2-bin libgnome2-common libgnomevfs2-0
+I, [2014-06-03T11:19:15.779025 #32092]  INFO -- default-ubuntu-1204:   libgnomevfs2-common libgtk-3-0 libgtk-3-bin libgtk-3-common libgtk2.0-0
+I, [2014-06-03T11:19:15.779047 #32092]  INFO -- default-ubuntu-1204:   libgtk2.0-bin libgtk2.0-common libgudev-1.0-0 libice-dev libice6
+I, [2014-06-03T11:19:15.779068 #32092]  INFO -- default-ubuntu-1204:   libidl-common libidl0 libjasper1 libjpeg-turbo8 libjpeg8 libjson0 liblcms2-2
+I, [2014-06-03T11:19:15.779089 #32092]  INFO -- default-ubuntu-1204:   libllvm3.0 libltdl7 liblvm2app2.2 libnspr4 libnss3 libnss3-1d libogg0
+I, [2014-06-03T11:19:15.779119 #32092]  INFO -- default-ubuntu-1204:   liborbit2 libpam-ck-connector libpango1.0-0 libpcsclite1 libpixman-1-0
+I, [2014-06-03T11:19:15.779140 #32092]  INFO -- default-ubuntu-1204:   libpolkit-agent-1-0 libpolkit-backend-1-0 libpthread-stubs0
+I, [2014-06-03T11:19:15.779169 #32092]  INFO -- default-ubuntu-1204:   libpthread-stubs0-dev libpulse0 libsgutils2-2 libsm-dev libsm6 libsndfile1
+I, [2014-06-03T11:19:15.779189 #32092]  INFO -- default-ubuntu-1204:   libtdb1 libthai-data libthai0 libtiff4 libvorbis0a libvorbisenc2
+I, [2014-06-03T11:19:15.779217 #32092]  INFO -- default-ubuntu-1204:   libvorbisfile3 libx11-dev libx11-doc libx11-xcb1 libxau-dev libxaw7
+I, [2014-06-03T11:19:15.779238 #32092]  INFO -- default-ubuntu-1204:   libxcb-glx0 libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb1-dev
+I, [2014-06-03T11:19:15.779258 #32092]  INFO -- default-ubuntu-1204:   libxcomposite1 libxcursor1 libxdamage1 libxdmcp-dev libxfixes3 libxft2
+I, [2014-06-03T11:19:15.779278 #32092]  INFO -- default-ubuntu-1204:   libxi6 libxinerama1 libxmu6 libxpm4 libxrandr2 libxrender1 libxt-dev libxt6
+I, [2014-06-03T11:19:15.779298 #32092]  INFO -- default-ubuntu-1204:   libxtst6 libxv1 libxxf86dga1 libxxf86vm1 mtools openjdk-7-jdk openjdk-7-jre
+I, [2014-06-03T11:19:15.779318 #32092]  INFO -- default-ubuntu-1204:   openjdk-7-jre-headless policykit-1 policykit-1-gnome shared-mime-info
+I, [2014-06-03T11:19:15.779337 #32092]  INFO -- default-ubuntu-1204:   sound-theme-freedesktop ttf-dejavu-core ttf-dejavu-extra tzdata-java udisks
+I, [2014-06-03T11:19:15.779357 #32092]  INFO -- default-ubuntu-1204:   x11-common x11-utils x11proto-core-dev x11proto-input-dev x11proto-kb-dev
+I, [2014-06-03T11:19:15.779377 #32092]  INFO -- default-ubuntu-1204:   xorg-sgml-doctools xtrans-dev
+I, [2014-06-03T11:19:15.779396 #32092]  INFO -- default-ubuntu-1204: The following packages will be upgraded:
+I, [2014-06-03T11:19:15.779416 #32092]  INFO -- default-ubuntu-1204:   tzdata
+I, [2014-06-03T11:19:15.779476 #32092]  INFO -- default-ubuntu-1204: 1 upgraded, 148 newly installed, 0 to remove and 29 not upgraded.
+I, [2014-06-03T11:19:15.779508 #32092]  INFO -- default-ubuntu-1204: Need to get 95.7 MB of archives.
+I, [2014-06-03T11:19:15.779529 #32092]  INFO -- default-ubuntu-1204: After this operation, 207 MB of additional disk space will be used.
+I, [2014-06-03T11:19:15.779551 #32092]  INFO -- default-ubuntu-1204: Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libasound2 amd64 1.0.25-1ubuntu10.2 [428 kB]
+I, [2014-06-03T11:19:15.779573 #32092]  INFO -- default-ubuntu-1204: Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main libasyncns0 amd64 0.8-4 [13.2 kB]
+I, [2014-06-03T11:19:15.779594 #32092]  INFO -- default-ubuntu-1204: Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/main libatasmart4 amd64 0.18-3 [26.9 kB]
+I, [2014-06-03T11:19:15.779616 #32092]  INFO -- default-ubuntu-1204: Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/main libatk1.0-data all 2.4.0-0ubuntu1 [12.7 kB]
+I, [2014-06-03T11:19:15.779645 #32092]  INFO -- default-ubuntu-1204: Get:5 http://us.archive.ubuntu.com/ubuntu/ precise/main libatk1.0-0 amd64 2.4.0-0ubuntu1 [60.1 kB]
+I, [2014-06-03T11:19:15.779665 #32092]  INFO -- default-ubuntu-1204: Get:6 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk2.0-common all 2.24.10-0ubuntu6.1 [118 kB]
+I, [2014-06-03T11:19:15.779685 #32092]  INFO -- default-ubuntu-1204: Get:7 http://us.archive.ubuntu.com/ubuntu/ precise/main ttf-dejavu-core all 2.33-2ubuntu1 [1552 kB]
+I, [2014-06-03T11:19:15.779714 #32092]  INFO -- default-ubuntu-1204: Get:8 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main fontconfig-config all 2.8.0-3ubuntu9.1 [44.4 kB]
+I, [2014-06-03T11:19:15.779735 #32092]  INFO -- default-ubuntu-1204: Get:9 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libfontconfig1 amd64 2.8.0-3ubuntu9.1 [125 kB]
+I, [2014-06-03T11:19:15.779765 #32092]  INFO -- default-ubuntu-1204: Get:10 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpixman-1-0 amd64 0.30.2-1ubuntu0.0.0.0.1 [256 kB]
+I, [2014-06-03T11:19:15.779786 #32092]  INFO -- default-ubuntu-1204: Get:11 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcb-render0 amd64 1.8.1-1ubuntu0.2 [13.3 kB]
+I, [2014-06-03T11:19:15.779808 #32092]  INFO -- default-ubuntu-1204: Get:12 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcb-shm0 amd64 1.8.1-1ubuntu0.2 [5516 B]
+I, [2014-06-03T11:19:15.779830 #32092]  INFO -- default-ubuntu-1204: Get:13 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxrender1 amd64 1:0.9.6-2ubuntu0.1 [20.6 kB]
+I, [2014-06-03T11:19:15.779869 #32092]  INFO -- default-ubuntu-1204: Get:14 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libcairo2 amd64 1.10.2-6.1ubuntu3 [467 kB]
+I, [2014-06-03T11:19:15.779898 #32092]  INFO -- default-ubuntu-1204: Get:15 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main li
+I, [2014-06-03T11:19:15.780777 #32092]  INFO -- default-ubuntu-1204: bcairo2 amd64 1.10.2-6.1ubuntu3 [467 kB]
+I, [2014-06-03T11:19:15.780807 #32092]  INFO -- default-ubuntu-1204: Get:16 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libavahi-common-data amd64 0.6.30-5ubuntu2.1 [21.4 kB]
+I, [2014-06-03T11:19:15.780830 #32092]  INFO -- default-ubuntu-1204: Get:17 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libavahi-common3 amd64 0.6.30-5ubuntu2.1 [25.5 kB]
+I, [2014-06-03T11:19:15.780851 #32092]  INFO -- default-ubuntu-1204: Get:18 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libavahi-client3 amd64 0.6.30-5ubuntu2.1 [30.3 kB]
+I, [2014-06-03T11:19:15.780873 #32092]  INFO -- default-ubuntu-1204: Get:19 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libcups2 amd64 1.5.3-0ubuntu8.3 [171 kB]
+I, [2014-06-03T11:19:15.780895 #32092]  INFO -- default-ubuntu-1204: Get:20 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libjpeg-turbo8 amd64 1.1.90+svn733-0ubuntu4.3 [111 kB]
+I, [2014-06-03T11:19:15.780917 #32092]  INFO -- default-ubuntu-1204: Get:21 http://us.archive.ubuntu.com/ubuntu/ precise/main libjpeg8 amd64 8c-2ubuntu7 [2112 B]
+I, [2014-06-03T11:19:15.780972 #32092]  INFO -- default-ubuntu-1204: Get:22 http://us.archive.ubuntu.com/ubuntu/ precise/main libjasper1 amd64 1.900.1-13 [154 kB]
+I, [2014-06-03T11:19:15.780995 #32092]  INFO -- default-ubuntu-1204: Get:23 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libtiff4 amd64 3.9.5-2ubuntu1.6 [144 kB]
+I, [2014-06-03T11:19:15.781017 #32092]  INFO -- default-ubuntu-1204: Get:24 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgdk-pixbuf2.0-common all 2.26.1-1ubuntu1.1 [7846 B]
+I, [2014-06-03T11:19:15.781039 #32092]  INFO -- default-ubuntu-1204: Get:25 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgdk-pixbuf2.0-0 amd64 2.26.1-1ubuntu1.1 [200 kB]
+I, [2014-06-03T11:19:15.781061 #32092]  INFO -- default-ubuntu-1204: Get:26 http://us.archive.ubuntu.com/ubuntu/ precise/main libthai-data all 0.1.16-3 [179 kB]
+I, [2014-06-03T11:19:15.781082 #32092]  INFO -- default-ubuntu-1204: Get:27 http://us.archive.ubuntu.com/ubuntu/ precise/main libdatrie1 amd64 0.2.5-3 [16.4 kB]
+I, [2014-06-03T11:19:15.781104 #32092]  INFO -- default-ubuntu-1204: Get:28 http://us.archive.ubuntu.com/ubuntu/ precise/main libthai0 amd64 0.1.16-3 [19.7 kB]
+I, [2014-06-03T11:19:15.781125 #32092]  INFO -- default-ubuntu-1204: Get:29 http://us.archive.ubuntu.com/ubuntu/ precise/main libxft2 amd64 2.2.0-3ubuntu2 [42.3 kB]
+I, [2014-06-03T11:19:15.781147 #32092]  INFO -- default-ubuntu-1204: Get:30 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main fontconfig amd64 2.8.0-3ubuntu9.1 [156 kB]
+I, [2014-06-03T11:19:15.781169 #32092]  INFO -- default-ubuntu-1204: Get:31 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpango1.0-0 amd64 1.30.0-0ubuntu3.1 [363 kB]
+I, [2014-06-03T11:19:15.781191 #32092]  INFO -- default-ubuntu-1204: Get:32 http://us.archive.ubuntu.com/ubuntu/ precise/main libxcomposite1 amd64 1:0.4.3-2build1 [7708 B]
+I, [2014-06-03T11:19:15.781212 #32092]  INFO -- default-ubuntu-1204: Get:33 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxfixes3 amd64 1:5.0-4ubuntu4.2 [12.5 kB]
+I, [2014-06-03T11:19:15.781234 #32092]  INFO -- default-ubuntu-1204: Get:34 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcursor1 amd64 1:1.1.12-1ubuntu0.1 [22.7 kB]
+I, [2014-06-03T11:19:15.781256 #32092]  INFO -- default-ubuntu-1204: Get:35 http://us.archive.ubuntu.com/ubuntu/ precise/main libxdamage1 amd64 1:1.1.3-2build1 [7560 B]
+I, [2014-06-03T11:19:15.781278 #32092]  INFO -- default-ubuntu-1204: Get:36 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxi6 amd64 2:1.7.1.901-1ubuntu1~precise1 [31.6 kB]
+I, [2014-06-03T11:19:15.781308 #32092]  INFO -- default-ubuntu-1204: Get:37 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxinerama1 amd64 2:1.1.1-3ubuntu0.1 [8072 B]
+I, [2014-06-03T11:19:15.781332 #32092]  INFO -- default-ubuntu-1204: Get:38 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxrandr2 amd64 2:1.3.2-2ubuntu0.2 [17.5 kB]
+I, [2014-06-03T11:19:15.781354 #32092]  INFO -- default-ubuntu-1204: Get:39 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main shared-mime-info amd64 1.0-0ubuntu4.1 [496 kB]
+I, [2014-06-03T11:19:15.781375 #32092]  INFO -- default-ubuntu-1204: Get:40 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk2.0-0 amd64 2.24.10-0ubuntu6.1 [2674 kB]
+I, [2014-06-03T11:19:15.781397 #32092]  INFO -- default-ubuntu-1204: Get:41 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libnspr4 amd64 4.9.5-0ubuntu0.12.04.2 [141 kB]
+I, [2014-06-03T11:19:15.781419 #32092]  INFO -- default-ubuntu-1204: Get:42 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libnss3 amd64 3.15.4-0ubuntu0.12.04.2 [1229 kB]
+I, [2014-06-03T11:19:15.781441 #32092]  INFO -- default-ubuntu-1204: Get:43 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libnss3-1d amd64 3.15.4-0ubuntu0.12.04.2 [13.4 kB]
+I, [2014-06-03T11:19:15.781462 #32092]  INFO -- default-ubuntu-1204: Get:44 http://us.archive.ubuntu.com/ubuntu/ precise/main ca-certificates-java all 20110912ubuntu6 [8186 B]
+I, [2014-06-03T11:19:15.781519 #32092]  INFO -- default-ubuntu-1204: Get:45 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main tzdata all 2014c-0ubuntu0.12.04 [478 kB]
+I, [2014-06-03T11:19:15.781542 #32092]  INFO -- default-ubuntu-1204: Get:46 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main tzdata-java all 2014c-0ubuntu0.12.04 [130 kB]
+I, [2014-06-03T11:19:15.781564 #32092]  INFO -- default-ubuntu-1204: Get:47 http://us.archive.ubuntu.com/ubuntu/ precise/main java-common all 0.43ubuntu2 [61.7 kB]
+I, [2014-06-03T11:19:15.781586 #32092]  INFO -- default-ubuntu-1204: Get:48 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main liblcms2-2 amd64 2.2+git20110628-2ubuntu3.1 [143 kB]
+I, [2014-06-03T11:19:15.781617 #32092]  INFO -- default-ubuntu-1204: Get:49 http://us.archive.ubuntu.com/ubuntu/ precise/main libpcsclite1 amd64 1.7.4-2ubuntu2 [23.5 kB]
+I, [2014-06-03T11:19:15.781638 #32092]  INFO -- default-ubuntu-1204: Get:50 http://us.archive.ubuntu.com/ubuntu/ precise-updates/universe openjdk-7-jre-headless amd64 7u55-2.4.7-1ubuntu1~0.12.04.2 [41.4 MB]
+I, [2014-06-03T11:19:15.781659 #32092]  INFO -- default-ubuntu-1204: Get:51 http://us.archive.ubuntu.com/ubuntu/ precise/main libgif4 amd64 4.1.6-9ubuntu1 [31.0 kB]
+I, [2014-06-03T11:19:15.781680 #32092]  INFO -- default-ubuntu-1204: Get:52 http://us.archive.ubuntu.com/ubuntu/ precise/main libjson0 amd64 0.9-1ubuntu1 [16.3 kB]
+I, [2014-06-03T11:19:15.781701 #32092]  INFO -- default-ubuntu-1204: Get:53 http://us.ar
+I, [2014-06-03T11:19:15.782406 #32092]  INFO -- default-ubuntu-1204: chive.ubuntu.com/ubuntu/ precise/main libogg0 amd64 1.2.2~dfsg-1ubuntu1 [17.2 kB]
+I, [2014-06-03T11:19:15.782436 #32092]  INFO -- default-ubuntu-1204: Get:54 http://us.archive.ubuntu.com/ubuntu/ precise/main libflac8 amd64 1.2.1-6 [144 kB]
+I, [2014-06-03T11:19:15.782459 #32092]  INFO -- default-ubuntu-1204: Get:55 http://us.archive.ubuntu.com/ubuntu/ precise/main libvorbis0a amd64 1.3.2-1ubuntu3 [103 kB]
+I, [2014-06-03T11:19:15.782481 #32092]  INFO -- default-ubuntu-1204: Get:56 http://us.archive.ubuntu.com/ubuntu/ precise/main libvorbisenc2 amd64 1.3.2-1ubuntu3 [136 kB]
+I, [2014-06-03T11:19:15.782534 #32092]  INFO -- default-ubuntu-1204: Get:57 http://us.archive.ubuntu.com/ubuntu/ precise/main libsndfile1 amd64 1.0.25-4 [163 kB]
+I, [2014-06-03T11:19:15.782557 #32092]  INFO -- default-ubuntu-1204: Get:58 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpulse0 amd64 1:1.1-0ubuntu15.4 [289 kB]
+I, [2014-06-03T11:19:15.782591 #32092]  INFO -- default-ubuntu-1204: Get:59 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main x11-common all 1:7.6+12ubuntu2 [52.0 kB]
+I, [2014-06-03T11:19:15.782615 #32092]  INFO -- default-ubuntu-1204: Get:60 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxtst6 amd64 2:1.2.0-4ubuntu0.1 [13.9 kB]
+I, [2014-06-03T11:19:15.782637 #32092]  INFO -- default-ubuntu-1204: Get:61 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libglapi-mesa amd64 8.0.4-0ubuntu0.7 [21.3 kB]
+I, [2014-06-03T11:19:15.782659 #32092]  INFO -- default-ubuntu-1204: Get:62 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libx11-xcb1 amd64 2:1.4.99.1-0ubuntu2.2 [10.5 kB]
+I, [2014-06-03T11:19:15.782681 #32092]  INFO -- default-ubuntu-1204: Get:63 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcb-glx0 amd64 1.8.1-1ubuntu0.2 [26.4 kB]
+I, [2014-06-03T11:19:15.782702 #32092]  INFO -- default-ubuntu-1204: Get:64 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxxf86vm1 amd64 1:1.1.1-2ubuntu0.1 [11.9 kB]
+I, [2014-06-03T11:19:15.782724 #32092]  INFO -- default-ubuntu-1204: Get:65 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgl1-mesa-glx amd64 8.0.4-0ubuntu0.7 [104 kB]
+I, [2014-06-03T11:19:15.782746 #32092]  INFO -- default-ubuntu-1204: Get:66 http://us.archive.ubuntu.com/ubuntu/ precise-updates/universe openjdk-7-jre amd64 7u55-2.4.7-1ubuntu1~0.12.04.2 [226 kB]
+I, [2014-06-03T11:19:15.782768 #32092]  INFO -- default-ubuntu-1204: Get:67 http://us.archive.ubuntu.com/ubuntu/ precise/main libatk-wrapper-java all 0.30.4-0ubuntu2 [30.9 kB]
+I, [2014-06-03T11:19:15.782790 #32092]  INFO -- default-ubuntu-1204: Get:68 http://us.archive.ubuntu.com/ubuntu/ precise/main libatk-wrapper-java-jni amd64 0.30.4-0ubuntu2 [30.5 kB]
+I, [2014-06-03T11:19:15.782812 #32092]  INFO -- default-ubuntu-1204: Get:69 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libavahi-glib1 amd64 0.6.30-5ubuntu2.1 [8838 B]
+I, [2014-06-03T11:19:15.782834 #32092]  INFO -- default-ubuntu-1204: Get:70 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libbonobo2-common all 2.32.1-0ubuntu1.1 [37.4 kB]
+I, [2014-06-03T11:19:15.782856 #32092]  INFO -- default-ubuntu-1204: Get:71 http://us.archive.ubuntu.com/ubuntu/ precise/main libidl-common all 0.8.14-0.2ubuntu2 [8572 B]
+I, [2014-06-03T11:19:15.782877 #32092]  INFO -- default-ubuntu-1204: Get:72 http://us.archive.ubuntu.com/ubuntu/ precise/main libidl0 amd64 0.8.14-0.2ubuntu2 [81.6 kB]
+I, [2014-06-03T11:19:15.782899 #32092]  INFO -- default-ubuntu-1204: Get:73 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main liborbit2 amd64 1:2.14.19-0.1ubuntu1 [186 kB]
+I, [2014-06-03T11:19:15.782921 #32092]  INFO -- default-ubuntu-1204: Get:74 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libbonobo2-0 amd64 2.32.1-0ubuntu1.1 [285 kB]
+I, [2014-06-03T11:19:15.782943 #32092]  INFO -- default-ubuntu-1204: Get:75 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libcairo-gobject2 amd64 1.10.2-6.1ubuntu3 [20.5 kB]
+I, [2014-06-03T11:19:15.782965 #32092]  INFO -- default-ubuntu-1204: Get:76 http://us.archive.ubuntu.com/ubuntu/ precise/main libltdl7 amd64 2.4.2-1ubuntu1 [37.6 kB]
+I, [2014-06-03T11:19:15.783466 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.783494 #32092]  INFO -- default-ubuntu-1204: Get:77 http://us.archive.ubuntu.com/ubuntu/ precise/main libtdb1 amd64 1.2.9-4 [35.3 kB]
+I, [2014-06-03T11:19:15.783545 #32092]  INFO -- default-ubuntu-1204: Get:78 http://us.archive.ubuntu.com/ubuntu/ precise/main libvorbisfile3 amd64 1.3.2-1ubuntu3 [17.7 kB]
+I, [2014-06-03T11:19:15.783568 #32092]  INFO -- default-ubuntu-1204: Get:79 http://us.archive.ubuntu.com/ubuntu/ precise/main sound-theme-freedesktop all 0.7.pristine-2 [412 kB]
+I, [2014-06-03T11:19:15.783589 #32092]  INFO -- default-ubuntu-1204: Get:80 http://us.archive.ubuntu.com/ubuntu/ precise/main libcanberra0 amd64 0.28-3ubuntu3 [43.8 kB]
+I, [2014-06-03T11:19:15.783610 #32092]  INFO -- default-ubuntu-1204: Get:81 http://us.archive.ubuntu.com/ubuntu/ precise/main gconf2-common all 3.2.5-0ubuntu2 [22.1 kB]
+I, [2014-06-03T11:19:15.783641 #32092]  INFO -- default-ubuntu-1204: Get:82 http://us.archive.ubuntu.com/ubuntu/ precise/main libgconf-2-4 amd64 3.2.5-0ubuntu2 [97.2 kB]
+I, [2014-06-03T11:19:15.783664 #32092]  INFO -- default-ubuntu-1204: Get:83 http://us.archive.ubuntu.com/ubuntu/ precise/main libgnome-keyring-common all 3.2.2-2 [5060 B]
+I, [2014-06-03T11:19:15.783685 #32092]  INFO -- default-ubuntu-1204: Get:84 http://us.archive.ubuntu.com/ubuntu/ precise/main libgnome-keyring0 amd64 3.2.2-2 [62.6 kB]
+I, [2014-06-03T11:19:15.783706 #32092]  INFO -- default-ubuntu-1204: Get:85 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgudev-1.0-0 amd64 1:175-0ubuntu9.5 [14.5 kB]
+I, [2014-06-03T11:19:15.783728 #32092]  INFO -- default-ubuntu-1204: Get:86 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main liblvm2app2.2 amd64 2.02.66-4ubuntu7.4 [223 kB]
+I, [2014-06-03T11:19:15.783749 #32092]  INFO -- default-ubuntu-1204: Get:87 http://us.archive.ubuntu.com/ubuntu/ precise/main libsgutils2-2 amd64 1.33-1 [64.4 kB]
+I, [2014-06-03T11:19:15.783770 #32092]  INFO -- default-ubuntu-1204: Get:88 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main udisks amd64 1.0.4-5ubuntu2.2 [250 kB]
+I, [2014-06-03T11:19:15.783791 #32092]  INFO -- default-ubuntu-1204: Get:89 http://us.archive.ubuntu.com/ubuntu/ precise/main libgdu0 amd64 3.0.2-2ubuntu7 [90.0 kB]
+I, [2014-06-03T11:19:15.783812 #32092]  INFO -- default-ubuntu-1204: Get:90 http://us.archive.ubuntu.com/ubuntu/ precise/main gconf-service-backend amd64 3.2.5-0ubuntu2 [74.1 kB]
+I, [2014-06-03T11:19:15.783833 #32092]  INFO -- default-ubuntu-1204: Get:91 http://us.archive.ubuntu.com/ubuntu/ precise/main gconf-service amd64 3.2.5-0ubuntu2 [2012 B]
+I, [2014-06-03T11:19:15.783854 #32092]  INFO -- default-ubuntu-1204: Get:92 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main dbus-x11 amd64 1.4.18-1ubuntu1.4 [22.1 kB]
+I, [2014-06-03T11:19:15.783875 #32092]  INFO -- default-ubuntu-1204: Get:93 http://us.archive.ubuntu.com/ubuntu/ precise/main gconf2 amd64 3.2.5-0ubuntu2 [79.7 kB]
+I, [2014-06-03T11:19:15.783896 #32092]  INFO -- default-ubuntu-1204: Get:94 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgnomevfs2-common amd64 1:2.24.4-1ubuntu2.1 [24.6 kB]
+I, [2014-06-03T11:19:15.783918 #32092]  INFO -- default-ubuntu-1204: Get:95 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgnomevfs2-0 amd64 1:2.24.4-1ubuntu2.1 [275 kB]
+I, [2014-06-03T11:19:15.783939 #32092]  INFO -- default-ubuntu-1204: Get:96 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgnome2-common all 2.32.1-2ubuntu1.1 [36.9 kB]
+I, [2014-06-03T11:19:15.783960 #32092]  INFO -- default-ubuntu-1204: Get:97 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgnome2-bin amd64 2.32.1-2ubuntu1.1 [15.9 kB]
+I, [2014-06-03T11:19:15.783982 #32092]  INFO -- default-ubuntu-1204: Get:98 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgnome2-0 amd64 2.32.1-2ubuntu1.1 [53.4 kB]
+I, [2014-06-03T11:19:15.784003 #32092]  INFO -- default-ubuntu-1204: Get:99 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libdconf0 amd64 0.12.0-0ubuntu1.1 [25.4 kB]
+I, [2014-06-03T11:19:15.784024 #32092]  INFO -- default-ubuntu-1204: Get:100 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main dconf-service amd64 0.12.0-0ubuntu1.1 [16.9 kB]
+I, [2014-06-03T11:19:15.784076 #32092]  INFO -- default-ubuntu-1204: Get:101 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main dconf-gsettings-backend amd64 0.12.0-0ubuntu1.1 [16.1 kB]
+I, [2014-06-03T11:19:15.784098 #32092]  INFO -- default-ubuntu-1204: Get:102 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk-3-common all 3.4.2-0ubuntu0.8 [145 kB]
+I, [2014-06-03T11:19:15.784119 #32092]  INFO -- default-ubuntu-1204: Get:103 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk-3-0 amd64 3.4.2-0ubuntu0.8 [2281 kB]
+I, [2014-06-03T11:19:15.784140 #32092]  INFO -- default-ubuntu-1204: Get:104 http://us.archive.ubuntu.com/ubuntu/ precise/main libice6 amd64 2:1.0.7-2build1 [46.1 kB]
+I, [2014-06-03T11:19:15.784168 #32092]  INFO -- default-ubuntu-1204: Get:105 http://us.archive.ubuntu.com/ubuntu/ precise/main libllvm3.0 amd64 3.0-4ubuntu1 [7456 kB]
+I, [2014-06-03T11:19:15.784191 #32092]  INFO -- default-ubuntu-1204: Get:106 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpolkit-agent-1-0 amd64 0.104-1ubuntu1.1 [17.7 kB]
+I, [2014-06-03T11:19:15.784212 #32092]  INFO -- default-ubuntu-1204: Get:107 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpolkit-backend-1-0 amd64 0.104-1ubuntu1.1 [41.7 kB]
+I, [2014-06-03T11:19:15.784234 #32092]  INFO -- default-ubuntu-1204: Get:108 http://us.archive.ubuntu.com/ubuntu/ precise/main libsm6 amd64 2:1.2.0-2build1 [18.1 kB]
+I, [2014-06-03T11:19:15.784255 #32092]  INFO -- default-ubuntu-1204: Get:109 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxt6 amd64 1:1.1.1-2ubuntu0.1 [186 kB]
+I, [2014-06-03T11:19:15.784277 #32092]  INFO -- default-ubuntu-1204: Get:110 http://us.archive.ubuntu.com/ubuntu/ precise/main libxmu6 amd64 2:1.1.0-3 [52.7 kB]
+I, [2014-06-03T11:19:15.784298 #32092]  INFO -- default-ubuntu-1204: Get:111 http://us.archive.ubuntu.com/ubuntu/ precise/main libxpm4 amd64 1:3.5.9-4 [37.0 kB]
+I, [2014-06-03T11:19:15.784319 #32092]  INFO -- default-ubuntu-1204: Get:112 http://us.archive.ubuntu.com/ubuntu/ precise/main libxaw7 amd64 2:1.0.9-3ubuntu1 [201 kB]
+I, [2014-06-03T11:19:15.784340 #32092]  INFO -- default-ubuntu-1204: Get:113 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcb-shape0 amd64 1.8.1-1ubuntu0.2 [6244 B]
+I, [2014-06-03T11:19:15.784362 #32092]  INFO -- default-ubuntu-1204: Get:114 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxv1 amd64 2:1.0.6-2ubuntu0.1 [12.4 kB]
+I, [2014-06-03T11:19:15.784383 #32092]  INFO -- default-ubuntu-1204: Get:115 http://us.archive.ubuntu.
+I, [2014-06-03T11:19:15.785145 #32092]  INFO -- default-ubuntu-1204: com/ubuntu/ precise-updates/main libck-connector0 amd64 0.4.5-2ubuntu0.1 [10.4 kB]
+I, [2014-06-03T11:19:15.785175 #32092]  INFO -- default-ubuntu-1204: Get:116 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main consolekit amd64 0.4.5-2ubuntu0.1 [120 kB]
+I, [2014-06-03T11:19:15.785198 #32092]  INFO -- default-ubuntu-1204: Get:117 http://us.archive.ubuntu.com/ubuntu/ precise/main libfontenc1 amd64 1:1.1.0-1 [15.4 kB]
+I, [2014-06-03T11:19:15.785220 #32092]  INFO -- default-ubuntu-1204: Get:118 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxxf86dga1 amd64 2:1.1.2-1ubuntu0.1 [13.9 kB]
+I, [2014-06-03T11:19:15.785242 #32092]  INFO -- default-ubuntu-1204: Get:119 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main x11-utils amd64 7.6+4ubuntu0.1 [230 kB]
+I, [2014-06-03T11:19:15.785264 #32092]  INFO -- default-ubuntu-1204: Get:120 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main gvfs-common all 1.12.1-0ubuntu1.2 [16.4 kB]
+I, [2014-06-03T11:19:15.785285 #32092]  INFO -- default-ubuntu-1204: Get:121 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main gvfs-libs amd64 1.12.1-0ubuntu1.2 [52.8 kB]
+I, [2014-06-03T11:19:15.785307 #32092]  INFO -- default-ubuntu-1204: Get:122 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main gvfs-daemons amd64 1.12.1-0ubuntu1.2 [348 kB]
+I, [2014-06-03T11:19:15.785329 #32092]  INFO -- default-ubuntu-1204: Get:123 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main gvfs amd64 1.12.1-0ubuntu1.2 [98.9 kB]
+I, [2014-06-03T11:19:15.785351 #32092]  INFO -- default-ubuntu-1204: Get:124 http://us.archive.ubuntu.com/ubuntu/ precise/main hicolor-icon-theme all 0.12-1ubuntu2 [10.2 kB]
+I, [2014-06-03T11:19:15.785373 #32092]  INFO -- default-ubuntu-1204: Get:125 http://us.archive.ubuntu.com/ubuntu/ precise/main libgconf2-4 amd64 3.2.5-0ubuntu2 [2016 B]
+I, [2014-06-03T11:19:15.785395 #32092]  INFO -- default-ubuntu-1204: Get:126 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgl1-mesa-dri amd64 8.0.4-0ubuntu0.7 [3035 kB]
+I, [2014-06-03T11:19:15.785416 #32092]  INFO -- default-ubuntu-1204: Get:127 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk-3-bin amd64 3.4.2-0ubuntu0.8 [15.9 kB]
+I, [2014-06-03T11:19:15.785448 #32092]  INFO -- default-ubuntu-1204: Get:128 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk2.0-bin amd64 2.24.10-0ubuntu6.1 [10.3 kB]
+I, [2014-06-03T11:19:15.785472 #32092]  INFO -- default-ubuntu-1204: Get:129 http://us.archive.ubuntu.com/ubuntu/ precise/main xorg-sgml-doctools all 1:1.10-1 [12.0 kB]
+I, [2014-06-03T11:19:15.785493 #32092]  INFO -- default-ubuntu-1204: Get:130 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main x11proto-core-dev all 7.0.22-1ubuntu0.1 [300 kB]
+I, [2014-06-03T11:19:15.785515 #32092]  INFO -- default-ubuntu-1204: Get:131 http://us.archive.ubuntu.com/ubuntu/ precise/main libice-dev amd64 2:1.0.7-2build1 [133 kB]
+I, [2014-06-03T11:19:15.785537 #32092]  INFO -- default-ubuntu-1204: Get:132 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpam-ck-connector amd64 0.4.5-2ubuntu0.1 [8188 B]
+I, [2014-06-03T11:19:15.785559 #32092]  INFO -- default-ubuntu-1204: Get:133 http://us.archive.ubuntu.com/ubuntu/ precise/main libpthread-stubs0 amd64 0.3-3 [3258 B]
+I, [2014-06-03T11:19:15.785622 #32092]  INFO -- default-ubuntu-1204: Get:134 http://us.archive.ubuntu.com/ubuntu/ precise/main libpthread-stubs0-dev amd64 0.3-3 [2866 B]
+I, [2014-06-03T11:19:15.785652 #32092]  INFO -- default-ubuntu-1204: Get:135 http://us.archive.ubuntu.com/ubuntu/ precise/main libsm-dev amd64 2:1.2.0-2build1 [89.5 kB]
+I, [2014-06-03T11:19:15.785672 #32092]  INFO -- default-ubuntu-1204: Get:136 http://us.archive.ubuntu.com/ubuntu/ precise/main libxau-dev amd64 1:1.0.6-4 [10.5 kB]
+I, [2014-06-03T11:19:15.785692 #32092]  INFO -- default-ubuntu-1204: Get:137 http://us.archive.ubuntu.com/ubuntu/ precise/main libxdmcp-dev amd64 1:1.1.0-4 [26.9 kB]
+I, [2014-06-03T11:19:15.785712 #32092]  INFO -- default-ubuntu-1204: Get:138 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main x11proto-input-dev all 2.3-1~precise1 [139 kB]
+I, [2014-06-03T11:19:15.785732 #32092]  INFO -- default-ubuntu-1204: Get:139 http://us.archive.ubuntu.com/ubuntu/ precise/main x11proto-kb-dev all 1.0.5-2 [27.6 kB]
+I, [2014-06-03T11:19:15.785752 #32092]  INFO -- default-ubuntu-1204: Get:140 http://us.archive.ubuntu.com/ubuntu/ precise/main xtrans-dev all 1.2.6-2 [82.9 kB]
+I, [2014-06-03T11:19:15.785772 #32092]  INFO -- default-ubuntu-1204: Get:141 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcb1-dev amd64 1.8.1-1ubuntu0.2 [82.5 kB]
+I, [2014-06-03T11:19:15.785792 #32092]  INFO -- default-ubuntu-1204: Get:142 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libx11-dev amd64 2:1.4.99.1-0ubuntu2.2 [912 kB]
+I, [2014-06-03T11:19:15.785812 #32092]  INFO -- default-ubuntu-1204: Get:143 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libx11-doc all 2:1.4.99.1-0ubuntu2.2 [2435 kB]
+I, [2014-06-03T11:19:15.785832 #32092]  INFO -- default-ubuntu-1204: Get:144 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxt-dev amd64 1:1.1.1-2ubuntu0.1 [490 kB]
+I, [2014-06-03T11:19:15.785852 #32092]  INFO -- default-ubuntu-1204: Get:145 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main mtools amd64 4.0.12-1ubuntu0.12.04.1 [186 kB]
+I, [2014-06-03T11:19:15.785872 #32092]  INFO -- default-ubuntu-1204: Get:146 http://us.archive.ubuntu.com/ubuntu/ precise-updates/universe openjdk-7-jdk amd64 7u55-2.4.7-1ubuntu1~0.12.04.2 [16.4 MB]
+I, [2014-06-03T11:19:15.785892 #32092]  INFO -- default-ubuntu-1204: STDERR: 
+I, [2014-06-03T11:19:15.785911 #32092]  INFO -- default-ubuntu-1204: ---- End output of apt-get -q -y install openjdk-7-jdk=7u55-2.4.7-1ubuntu1~0.12.04.2 ----
+I, [2014-06-03T11:19:15.785931 #32092]  INFO -- default-ubuntu-1204: Ran apt-get -q -y install openjdk-7-jdk=7u55-2.4.7-1ubuntu1~0.12.04.2 returned [0m
+I, [2014-06-03T11:19:15.785951 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.785970 #32092]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:19:15.785989 #32092]  INFO -- default-ubuntu-1204: Resource Declaration:[0m
+I, [2014-06-03T11:19:15.786014 #32092]  INFO -- default-ubuntu-1204: ---------------------[0m
+I, [2014-06-03T11:19:15.786034 #32092]  INFO -- default-ubuntu-1204: # In /tmp/kitchen/cookbooks/java/recipes/openjdk.rb
+I, [2014-06-03T11:19:15.786054 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.786073 #32092]  INFO -- default-ubuntu-1204:  46:   package pkg
+I, [2014-06-03T11:19:15.786126 #32092]  INFO -- default-ubuntu-1204:  47: end
+I, [2014-06-03T11:19:15.786145 #32092]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:19:15.786164 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.786183 #32092]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:19:15.786202 #32092]  INFO -- default-ubuntu-1204: Compiled Resource:[0m
+I, [2014-06-03T11:19:15.786230 #32092]  INFO -- default-ubuntu-1204: ------------------[0m
+I, [2014-06-03T11:19:15.786250 #32092]  INFO -- default-ubuntu-1204: # Declared in /tmp/kitchen/cookbooks/java/recipes/openjdk.rb:46:in `block in from_file'
+I, [2014-06-03T11:19:15.786271 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.786291 #32092]  INFO -- default-ubuntu-1204: package("openjdk-7-jdk") do
+I, [2014-06-03T11:19:15.786311 #32092]  INFO -- default-ubuntu-1204:   action :install
+I, [2014-06-03T11:19:15.786332 #32092]  INFO -- default-ubuntu-1204:   retries 0
+I, [2014-06-03T11:19:15.786352 #32092]  INFO -- default-ubuntu-1204:   retry_delay 2
+I, [2014-06-03T11:19:15.786372 #32092]  INFO -- default-ubuntu-1204:   guard_interpreter :default
+I, [2014-06-03T11:19:15.786393 #32092]  INFO -- default-ubuntu-1204:   package_name "openjdk-7-jdk"
+I, [2014-06-03T11:19:15.786413 #32092]  INFO -- default-ubuntu-1204:   version "7u55-2.4.7-1ubuntu1~0
+I, [2014-06-03T11:19:15.787321 #32092]  INFO -- default-ubuntu-1204: .12.04.2"
+I, [2014-06-03T11:19:15.787352 #32092]  INFO -- default-ubuntu-1204:   cookbook_name :java
+I, [2014-06-03T11:19:15.787375 #32092]  INFO -- default-ubuntu-1204:   recipe_name "openjdk"
+I, [2014-06-03T11:19:15.787396 #32092]  INFO -- default-ubuntu-1204: end
+I, [2014-06-03T11:19:15.787417 #32092]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:19:15.787438 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.787459 #32092]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:19:15.787480 #32092]  INFO -- default-ubuntu-1204: [2014-06-03T14:18:55+00:00] INFO: Running queued delayed notifications before re-raising exception
+I, [2014-06-03T11:19:15.787538 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.787560 #32092]  INFO -- default-ubuntu-1204: Running handlers:[0m
+I, [2014-06-03T11:19:15.787581 #32092]  INFO -- default-ubuntu-1204: [2014-06-03T14:18:55+00:00] ERROR: Running exception handlers
+I, [2014-06-03T11:19:15.787603 #32092]  INFO -- default-ubuntu-1204: Running handlers complete
+I, [2014-06-03T11:19:15.787624 #32092]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:19:15.787646 #32092]  INFO -- default-ubuntu-1204: [2014-06-03T14:18:55+00:00] ERROR: Exception handlers complete
+I, [2014-06-03T11:19:15.787894 #32092]  INFO -- default-ubuntu-1204: [2014-06-03T14:18:55+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2014-06-03T11:19:15.788034 #32092]  INFO -- default-ubuntu-1204: Chef Client failed. 5 resources updated in 670.276579615 seconds[0m
+[2014-06-03T14:18:55+00:00] ERROR: package[openjdk-7-jdk] (java::openjdk line 46) had an error: Mixlib::ShellOut::CommandTimeout: Command timed out after 600s:I, [2014-06-03T11:19:15.792715 #32092]  INFO -- default-ubuntu-1204: 
+Command execeded allowed execution time, process terminatedI, [2014-06-03T11:19:15.792937 #32092]  INFO -- default-ubuntu-1204: 
+---- Begin output of apt-get -q -y install openjdk-7-jdk=7u55-2.4.7-1ubuntu1~0.12.04.2 ----I, [2014-06-03T11:19:15.793188 #32092]  INFO -- default-ubuntu-1204: 
+STDOUT: Reading package lists...I, [2014-06-03T11:19:15.793386 #32092]  INFO -- default-ubuntu-1204: 
+Building dependency tree...I, [2014-06-03T11:19:15.793625 #32092]  INFO -- default-ubuntu-1204: 
+Reading state information...I, [2014-06-03T11:19:15.793841 #32092]  INFO -- default-ubuntu-1204: 
+The following extra packages will be installed:I, [2014-06-03T11:19:15.794074 #32092]  INFO -- default-ubuntu-1204: 
+  ca-certificates-java consolekit dbus-x11 dconf-gsettings-backendI, [2014-06-03T11:19:15.794269 #32092]  INFO -- default-ubuntu-1204: 
+  dconf-service fontconfig fontconfig-config gconf-serviceI, [2014-06-03T11:19:15.794451 #32092]  INFO -- default-ubuntu-1204: 
+  gconf-service-backend gconf2 gconf2-common gvfs gvfs-common gvfs-daemonsI, [2014-06-03T11:19:15.794693 #32092]  INFO -- default-ubuntu-1204: 
+  gvfs-libs hicolor-icon-theme icedtea-7-jre-jamvm java-common libasound2I, [2014-06-03T11:19:15.794877 #32092]  INFO -- default-ubuntu-1204: 
+  libasyncns0 libatasmart4 libatk-wrapper-java libatk-wrapper-java-jniI, [2014-06-03T11:19:15.795113 #32092]  INFO -- default-ubuntu-1204: 
+  libatk1.0-0 libatk1.0-data libavahi-client3 libavahi-common-dataI, [2014-06-03T11:19:15.795312 #32092]  INFO -- default-ubuntu-1204: 
+  libavahi-common3 libavahi-glib1 libbonobo2-0 libbonobo2-commonI, [2014-06-03T11:19:15.795514 #32092]  INFO -- default-ubuntu-1204: 
+  libcairo-gobject2 libcairo2 libcanberra0 libck-connector0 libcups2I, [2014-06-03T11:19:15.795750 #32092]  INFO -- default-ubuntu-1204: 
+  libdatrie1 libdconf0 libflac8 libfontconfig1 libfontenc1 libgconf-2-4I, [2014-06-03T11:19:15.796014 #32092]  INFO -- default-ubuntu-1204: 
+  libgconf2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgdu0 libgif4I, [2014-06-03T11:19:15.796260 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.796289 #32092]  INFO -- default-ubuntu-1204:   libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgnome-keyring-common
+I, [2014-06-03T11:19:15.796312 #32092]  INFO -- default-ubuntu-1204:   libgnome-keyring0 libgnome2-0 libgnome2-bin libgnome2-common libgnomevfs2-0
+I, [2014-06-03T11:19:15.796333 #32092]  INFO -- default-ubuntu-1204:   libgnomevfs2-common libgtk-3-0 libgtk-3-bin libgtk-3-common libgtk2.0-0
+I, [2014-06-03T11:19:15.796356 #32092]  INFO -- default-ubuntu-1204:   libgtk2.0-bin libgtk2.0-common libgudev-1.0-0 libice-dev libice6
+I, [2014-06-03T11:19:15.796377 #32092]  INFO -- default-ubuntu-1204:   libidl-common libidl0 libjasper1 libjpeg-turbo8 libjpeg8 libjson0 liblcms2-2
+I, [2014-06-03T11:19:15.796399 #32092]  INFO -- default-ubuntu-1204:   libllvm3.0 libltdl7 liblvm2app2.2 libnspr4 libnss3 libnss3-1d libogg0
+I, [2014-06-03T11:19:15.796421 #32092]  INFO -- default-ubuntu-1204:   liborbit2 libpam-ck-connector libpango1.0-0 libpcsclite1 libpixman-1-0
+I, [2014-06-03T11:19:15.796443 #32092]  INFO -- default-ubuntu-1204:   libpolkit-agent-1-0 libpolkit-backend-1-0 libpthread-stubs0
+I, [2014-06-03T11:19:15.796465 #32092]  INFO -- default-ubuntu-1204:   libpthread-stubs0-dev libpulse0 libsgutils2-2 libsm-dev libsm6 libsndfile1
+I, [2014-06-03T11:19:15.796487 #32092]  INFO -- default-ubuntu-1204:   libtdb1 libthai-data libthai0 libtiff4 libvorbis0a libvorbisenc2
+I, [2014-06-03T11:19:15.796509 #32092]  INFO -- default-ubuntu-1204:   libvorbisfile3 libx11-dev libx11-doc libx11-xcb1 libxau-dev libxaw7
+I, [2014-06-03T11:19:15.796531 #32092]  INFO -- default-ubuntu-1204:   libxcb-glx0 libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb1-dev
+I, [2014-06-03T11:19:15.796552 #32092]  INFO -- default-ubuntu-1204:   libxcomposite1 libxcursor1 libxdamage1 libxdmcp-dev libxfixes3 libxft2
+I, [2014-06-03T11:19:15.796906 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.796933 #32092]  INFO -- default-ubuntu-1204:   libxi6 libxinerama1 libxmu6 libxpm4 libxrandr2 libxrender1 libxt-dev libxt6
+I, [2014-06-03T11:19:15.796956 #32092]  INFO -- default-ubuntu-1204:   libxtst6 libxv1 libxxf86dga1 libxxf86vm1 mtools openjdk-7-jre
+I, [2014-06-03T11:19:15.796978 #32092]  INFO -- default-ubuntu-1204:   openjdk-7-jre-headless policykit-1 policykit-1-gnome shared-mime-info
+I, [2014-06-03T11:19:15.797000 #32092]  INFO -- default-ubuntu-1204:   sound-theme-freedesktop ttf-dejavu-core ttf-dejavu-extra tzdata tzdata-java
+I, [2014-06-03T11:19:15.797032 #32092]  INFO -- default-ubuntu-1204:   udisks x11-common x11-utils x11proto-core-dev x11proto-input-dev
+I, [2014-06-03T11:19:15.797055 #32092]  INFO -- default-ubuntu-1204:   x11proto-kb-dev xorg-sgml-doctools xtrans-dev
+I, [2014-06-03T11:19:15.797076 #32092]  INFO -- default-ubuntu-1204: Suggested packages:
+I, [2014-06-03T11:19:15.797135 #32092]  INFO -- default-ubuntu-1204:   gconf-defaults-service gvfs-backends default-jre equivs libasound2-plugins
+I, [2014-06-03T11:19:15.797157 #32092]  INFO -- default-ubuntu-1204:   libasound2-python libbonobo2-bin libcanberra-gtk0 libcanberra-pulse
+I, [2014-06-03T11:19:15.797179 #32092]  INFO -- default-ubuntu-1204:   cups-common libglide3 gnome-keyring desktop-base libgnomevfs2-bin
+I, [2014-06-03T11:19:15.797201 #32092]  INFO -- default-ubuntu-1204:   libgnomevfs2-extra gamin fam gnome-mime-data librsvg2-common
+I, [2014-06-03T11:19:15.797222 #32092]  INFO -- default-ubuntu-1204:   libjasper-runtime liblcms2-utils ttf-baekmuk ttf-arphic-gbsn00lp
+I, [2014-06-03T11:19:15.797244 #32092]  INFO -- default-ubuntu-1204:   ttf-arphic-bsmi00lp ttf-arphic-gkai00mp ttf-arphic-bkai00mp pcscd pulseaudio
+I, [2014-06-03T11:19:15.797266 #32092]  INFO -- default-ubuntu-1204:   sg3-utils libxcb-doc floppyd openjdk-7-demo openjdk-7-source visualvm
+I, [2014-06-03T11:19:15.797287 #32092]  INFO -- default-ubuntu-1204:   icedtea-7-plugin libnss-mdns sun-java6-fonts fonts-ipafont-gothic
+I, [2014-06-03T11:19:15.797309 #32092]  INFO -- default-ubuntu-1204:   fonts-ipafont-mincho ttf-wqy-microhei ttf-wqy-zenhei ttf-indic-fonts-core
+I, [2014-06-03T11:19:15.797331 #32092]  INFO -- default-ubuntu-1204:   ttf-telugu-fonts ttf-oriya-fonts ttf-kannada-fonts ttf-bengali-fonts
+I, [2014-06-03T11:19:15.797353 #32092]  INFO -- default-ubuntu-1204:   xfsprogs reiserfsprogs mdadm mesa-utils
+I, [2014-06-03T11:19:15.797374 #32092]  INFO -- default-ubuntu-1204: The following NEW packages will be installed:
+I, [2014-06-03T11:19:15.797396 #32092]  INFO -- default-ubuntu-1204:   ca-certificates-java consolekit dbus-x11 dconf-gsettings-backend
+I, [2014-06-03T11:19:15.797417 #32092]  INFO -- default-ubuntu-1204:   dconf-service fontconfig fontconfig-config gconf-service
+I, [2014-06-03T11:19:15.797439 #32092]  INFO -- default-ubuntu-1204:   gconf-service-backend gconf2 gconf2-common gvfs gvfs-common gvfs-daemons
+I, [2014-06-03T11:19:15.797461 #32092]  INFO -- default-ubuntu-1204:   gvfs-libs hicolor-icon-theme icedtea-7-jre-jamvm java-common libasound2
+I, [2014-06-03T11:19:15.797482 #32092]  INFO -- default-ubuntu-1204:   libasyncns0 libatasmart4 libatk-wrapper-java libatk-wrapper-java-jni
+I, [2014-06-03T11:19:15.797504 #32092]  INFO -- default-ubuntu-1204:   libatk1.0-0 libatk1.0-data libavahi-client3 libavahi-common-data
+I, [2014-06-03T11:19:15.797526 #32092]  INFO -- default-ubuntu-1204:   libavahi-common3 libavahi-glib1 libbonobo2-0 libbonobo2-common
+I, [2014-06-03T11:19:15.797547 #32092]  INFO -- default-ubuntu-1204:   libcairo-gobject2 libcairo2 libcanberra0 libck-connector0 libcups2
+I, [2014-06-03T11:19:15.797569 #32092]  INFO -- default-ubuntu-1204:   libdatrie1 libdconf0 libflac8 libfontconfig1 libfontenc1 libgconf-2-4
+I, [2014-06-03T11:19:15.797591 #32092]  INFO -- default-ubuntu-1204:   libgconf2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgdu0 libgif4
+I, [2014-06-03T11:19:15.797648 #32092]  INFO -- default-ubuntu-1204:   libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgnome-keyring-common
+I, [2014-06-03T11:19:15.797671 #32092]  INFO -- default-ubuntu-1204:   libgnome-keyring0 libgnome2-0 libgnome2-bin libgnome2-common libgnomevfs2-0
+I, [2014-06-03T11:19:15.797693 #32092]  INFO -- default-ubuntu-1204:   libgnomevfs2-common libgtk-3-0 libgtk-3-bin libgtk-3-common libgtk2.0-0
+I, [2014-06-03T11:19:15.797715 #32092]  INFO -- default-ubuntu-1204:   libgtk2.0-bin libgtk2.0-common libgudev-1.0-0 libice-dev libice6
+I, [2014-06-03T11:19:15.797737 #32092]  INFO -- default-ubuntu-1204:   libidl-common libidl0 libjasper1 libjpeg-turbo8 libjpeg8 libjson0 liblcms2-2
+I, [2014-06-03T11:19:15.797766 #32092]  INFO -- default-ubuntu-1204:   libllvm3.0 libltdl7 liblvm2app2.2 libnspr4 libnss3 libnss3-1d libogg0
+I, [2014-06-03T11:19:15.797789 #32092]  INFO -- default-ubuntu-1204:   liborbit2 libpam-ck-connector libpango1.0-0 libpcsclite1 libpixman-1-0
+I, [2014-06-03T11:19:15.797811 #32092]  INFO -- default-ubuntu-1204:   libpolkit-agent-1-0 libpolkit-backend-1-0 libpthread-stubs0
+I, [2014-06-03T11:19:15.797833 #32092]  INFO -- default-ubuntu-1204:   libpthread-stubs0-dev libpulse0 libsgutils2-2 libsm-dev libsm6 libsndfile1
+I, [2014-06-03T11:19:15.797855 #32092]  INFO -- default-ubuntu-1204:   libtdb1 libthai-data libthai0 libtiff4 libvorbis0a libvorbisenc2
+I, [2014-06-03T11:19:15.797877 #32092]  INFO -- default-ubuntu-1204:   libvorbisfile3 libx11-dev libx11-doc libx11-xcb1 libxau-dev libxaw7
+I, [2014-06-03T11:19:15.797899 #32092]  INFO -- default-ubuntu-1204:   libxcb-glx0 libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb1-dev
+I, [2014-06-03T11:19:15.797920 #32092]  INFO -- default-ubuntu-1204:   libxcomposite1 libxcursor1 libxdamage1 libxdmcp-dev libxfixes3 libxft2
+I, [2014-06-03T11:19:15.797942 #32092]  INFO -- default-ubuntu-1204:   libxi6 libxinerama1 libxmu6 libxpm4 libxrandr2 libxrender1 libxt-dev libxt6
+I, [2014-06-03T11:19:15.797964 #32092]  INFO -- default-ubuntu-1204:   libxtst6 libxv1 libxxf86dga1 libxxf86vm1 mtools openjdk-7-jdk openjdk-7-jre
+I, [2014-06-03T11:19:15.797986 #32092]  INFO -- default-ubuntu-1204:   openjdk-7-jre-headless policykit-1 policykit-1-gnome shared-mime-info
+I, [2014-06-03T11:19:15.798008 #32092]  INFO -- default-ubuntu-1204:   sound-theme-freedesktop ttf-dejavu-core ttf-dejavu-extra tzdata-java udisks
+I, [2014-06-03T11:19:15.798029 #32092]  INFO -- default-ubuntu-1204:   x11-common x11-utils x11proto-core-dev x11proto-input-dev x11proto-kb-dev
+I, [2014-06-03T11:19:15.798051 #32092]  INFO -- default-ubuntu-1204:   xorg-sgml-doctools xtrans-dev
+I, [2014-06-03T11:19:15.798073 #32092]  INFO -- default-ubuntu-1204: The following packages will be upgraded:
+I, [2014-06-03T11:19:15.798094 #32092]  INFO -- default-ubuntu-1204:   tzdata
+I, [2014-06-03T11:19:15.798115 #32092]  INFO -- default-ubuntu-1204: 1 upgraded, 148 newly installed, 0 to remove and 29 not upgraded.
+I, [2014-06-03T11:19:15.798145 #32092]  INFO -- default-ubuntu-1204: Need to get 95.7 MB of archives.
+I, [2014-06-03T11:19:15.798210 #32092]  INFO -- default-ubuntu-1204: After this operation, 207 MB of additional disk space will be used.
+I, [2014-06-03T11:19:15.798231 #32092]  INFO -- default-ubuntu-1204: Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libasound2 amd64 1.0.25-1ubuntu10.2 [428 kB]
+I, [2014-06-03T11:19:15.798251 #32092]  INFO -- default-ubuntu-1204: Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main libasyncns0 amd64 0.8-4 [13.2 kB]
+I, [2014-06-03T11:19:15.798271 #32092]  INFO -- default-ubuntu-1204: Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/main libatasmart4 amd64 0.18-3 [26.9 kB]
+I, [2014-06-03T11:19:15.798291 #32092]  INFO -- default-ubuntu-1204: Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/main libatk1.0-data all 2.4.0-0ubuntu1 [12.7 kB]
+I, [2014-06-03T11:19:15.798311 #32092]  INFO -- default-ubuntu-1204: Get:5 http://us.archive.ubuntu.com/ubuntu/ precise/main libatk1.0-0 amd64 2.4.0-0ubuntu1 [60.1 kB]
+I, [2014-06-03T11:19:15.798330 #32092]  INFO -- default-ubuntu-1204: Get:6 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main l
+I, [2014-06-03T11:19:15.799361 #32092]  INFO -- default-ubuntu-1204: ibgtk2.0-common all 2.24.10-0ubuntu6.1 [118 kB]
+I, [2014-06-03T11:19:15.799412 #32092]  INFO -- default-ubuntu-1204: Get:7 http://us.archive.ubuntu.com/ubuntu/ precise/main ttf-dejavu-core all 2.33-2ubuntu1 [1552 kB]
+I, [2014-06-03T11:19:15.799436 #32092]  INFO -- default-ubuntu-1204: Get:8 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main fontconfig-config all 2.8.0-3ubuntu9.1 [44.4 kB]
+I, [2014-06-03T11:19:15.799458 #32092]  INFO -- default-ubuntu-1204: Get:9 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libfontconfig1 amd64 2.8.0-3ubuntu9.1 [125 kB]
+I, [2014-06-03T11:19:15.799499 #32092]  INFO -- default-ubuntu-1204: Get:10 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpixman-1-0 amd64 0.30.2-1ubuntu0.0.0.0.1 [256 kB]
+I, [2014-06-03T11:19:15.799524 #32092]  INFO -- default-ubuntu-1204: Get:11 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcb-render0 amd64 1.8.1-1ubuntu0.2 [13.3 kB]
+I, [2014-06-03T11:19:15.799546 #32092]  INFO -- default-ubuntu-1204: Get:12 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcb-shm0 amd64 1.8.1-1ubuntu0.2 [5516 B]
+I, [2014-06-03T11:19:15.799568 #32092]  INFO -- default-ubuntu-1204: Get:13 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxrender1 amd64 1:0.9.6-2ubuntu0.1 [20.6 kB]
+I, [2014-06-03T11:19:15.799590 #32092]  INFO -- default-ubuntu-1204: Get:14 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libcairo2 amd64 1.10.2-6.1ubuntu3 [467 kB]
+I, [2014-06-03T11:19:15.799611 #32092]  INFO -- default-ubuntu-1204: Get:15 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libcairo2 amd64 1.10.2-6.1ubuntu3 [467 kB]
+I, [2014-06-03T11:19:15.799634 #32092]  INFO -- default-ubuntu-1204: Get:16 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libavahi-common-data amd64 0.6.30-5ubuntu2.1 [21.4 kB]
+I, [2014-06-03T11:19:15.799656 #32092]  INFO -- default-ubuntu-1204: Get:17 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libavahi-common3 amd64 0.6.30-5ubuntu2.1 [25.5 kB]
+I, [2014-06-03T11:19:15.799677 #32092]  INFO -- default-ubuntu-1204: Get:18 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libavahi-client3 amd64 0.6.30-5ubuntu2.1 [30.3 kB]
+I, [2014-06-03T11:19:15.799699 #32092]  INFO -- default-ubuntu-1204: Get:19 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libcups2 amd64 1.5.3-0ubuntu8.3 [171 kB]
+I, [2014-06-03T11:19:15.799763 #32092]  INFO -- default-ubuntu-1204: Get:20 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libjpeg-turbo8 amd64 1.1.90+svn733-0ubuntu4.3 [111 kB]
+I, [2014-06-03T11:19:15.799794 #32092]  INFO -- default-ubuntu-1204: Get:21 http://us.archive.ubuntu.com/ubuntu/ precise/main libjpeg8 amd64 8c-2ubuntu7 [2112 B]
+I, [2014-06-03T11:19:15.799814 #32092]  INFO -- default-ubuntu-1204: Get:22 http://us.archive.ubuntu.com/ubuntu/ precise/main libjasper1 amd64 1.900.1-13 [154 kB]
+I, [2014-06-03T11:19:15.799835 #32092]  INFO -- default-ubuntu-1204: Get:23 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libtiff4 amd64 3.9.5-2ubuntu1.6 [144 kB]
+I, [2014-06-03T11:19:15.799857 #32092]  INFO -- default-ubuntu-1204: Get:24 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgdk-pixbuf2.0-common all 2.26.1-1ubuntu1.1 [7846 B]
+I, [2014-06-03T11:19:15.799886 #32092]  INFO -- default-ubuntu-1204: Get:25 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgdk-pixbuf2.0-0 amd64 2.26.1-1ubuntu1.1 [200 kB]
+I, [2014-06-03T11:19:15.799905 #32092]  INFO -- default-ubuntu-1204: Get:26 http://us.archive.ubuntu.com/ubuntu/ precise/main libthai-data all 0.1.16-3 [179 kB]
+I, [2014-06-03T11:19:15.800415 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.800444 #32092]  INFO -- default-ubuntu-1204: Get:27 http://us.archive.ubuntu.com/ubuntu/ precise/main libdatrie1 amd64 0.2.5-3 [16.4 kB]
+I, [2014-06-03T11:19:15.800466 #32092]  INFO -- default-ubuntu-1204: Get:28 http://us.archive.ubuntu.com/ubuntu/ precise/main libthai0 amd64 0.1.16-3 [19.7 kB]
+I, [2014-06-03T11:19:15.800488 #32092]  INFO -- default-ubuntu-1204: Get:29 http://us.archive.ubuntu.com/ubuntu/ precise/main libxft2 amd64 2.2.0-3ubuntu2 [42.3 kB]
+I, [2014-06-03T11:19:15.800510 #32092]  INFO -- default-ubuntu-1204: Get:30 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main fontconfig amd64 2.8.0-3ubuntu9.1 [156 kB]
+I, [2014-06-03T11:19:15.800532 #32092]  INFO -- default-ubuntu-1204: Get:31 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpango1.0-0 amd64 1.30.0-0ubuntu3.1 [363 kB]
+I, [2014-06-03T11:19:15.800553 #32092]  INFO -- default-ubuntu-1204: Get:32 http://us.archive.ubuntu.com/ubuntu/ precise/main libxcomposite1 amd64 1:0.4.3-2build1 [7708 B]
+I, [2014-06-03T11:19:15.800584 #32092]  INFO -- default-ubuntu-1204: Get:33 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxfixes3 amd64 1:5.0-4ubuntu4.2 [12.5 kB]
+I, [2014-06-03T11:19:15.800608 #32092]  INFO -- default-ubuntu-1204: Get:34 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcursor1 amd64 1:1.1.12-1ubuntu0.1 [22.7 kB]
+I, [2014-06-03T11:19:15.800630 #32092]  INFO -- default-ubuntu-1204: Get:35 http://us.archive.ubuntu.com/ubuntu/ precise/main libxdamage1 amd64 1:1.1.3-2build1 [7560 B]
+I, [2014-06-03T11:19:15.800651 #32092]  INFO -- default-ubuntu-1204: Get:36 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxi6 amd64 2:1.7.1.901-1ubuntu1~precise1 [31.6 kB]
+I, [2014-06-03T11:19:15.800673 #32092]  INFO -- default-ubuntu-1204: Get:37 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxinerama1 amd64 2:1.1.1-3ubuntu0.1 [8072 B]
+I, [2014-06-03T11:19:15.800695 #32092]  INFO -- default-ubuntu-1204: Get:38 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxrandr2 amd64 2:1.3.2-2ubuntu0.2 [17.5 kB]
+I, [2014-06-03T11:19:15.800717 #32092]  INFO -- default-ubuntu-1204: Get:39 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main shared-mime-info amd64 1.0-0ubuntu4.1 [496 kB]
+I, [2014-06-03T11:19:15.800738 #32092]  INFO -- default-ubuntu-1204: Get:40 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk2.0-0 amd64 2.24.10-0ubuntu6.1 [2674 kB]
+I, [2014-06-03T11:19:15.800760 #32092]  INFO -- default-ubuntu-1204: Get:41 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libnspr4 amd64 4.9.5-0ubuntu0.12.04.2 [141 kB]
+I, [2014-06-03T11:19:15.800782 #32092]  INFO -- default-ubuntu-1204: Get:42 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libnss3 amd64 3.15.4-0ubuntu0.12.04.2 [1229 kB]
+I, [2014-06-03T11:19:15.800841 #32092]  INFO -- default-ubuntu-1204: Get:43 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libnss3-1d amd64 3.15.4-0ubuntu0.12.04.2 [13.4 kB]
+I, [2014-06-03T11:19:15.800863 #32092]  INFO -- default-ubuntu-1204: Get:44 http://us.archive.ubuntu.com/ubuntu/ precise/main ca-certificates-java all 20110912ubuntu6 [8186 B]
+I, [2014-06-03T11:19:15.800885 #32092]  INFO -- default-ubuntu-1204: Get:45 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main tzdata all 2014c-0ubuntu0.12.04 [478 kB]
+I, [2014-06-03T11:19:15.800907 #32092]  INFO -- default-ubuntu-1204: Get:46 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main tzdata-java all 2014c-0ubuntu0.12.04 [130 kB]
+I, [2014-06-03T11:19:15.800929 #32092]  INFO -- default-ubuntu-1204: Get:47 http://us.archive.ubuntu.com/ubuntu/ precise/main java-common all 0.43ubuntu2 [61.7 kB]
+I, [2014-06-03T11:19:15.800951 #32092]  INFO -- default-ubuntu-1204: Get:48 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main liblcms2-2 amd64 2.2+git20110628-2ubuntu3.1 [143 kB]
+I, [2014-06-03T11:19:15.800973 #32092]  INFO -- default-ubuntu-1204: Get:49 http://us.archive.ubuntu.com/ubuntu/ precise/main libpcsclite1 amd64 1.7.4-2ubuntu2 [23.5 kB]
+I, [2014-06-03T11:19:15.800994 #32092]  INFO -- default-ubuntu-1204: Get:50 http://us.archive.ubuntu.com/ubuntu/ precise-updates/universe openjdk-7-jre-headless amd64 7u55-2.4.7-1ubuntu1~0.12.04.2 [41.4 MB]
+I, [2014-06-03T11:19:15.801016 #32092]  INFO -- default-ubuntu-1204: Get:51 http://us.archive.ubuntu.com/ubuntu/ precise/main libgif4 amd64 4.1.6-9ubuntu1 [31.0 kB]
+I, [2014-06-03T11:19:15.801038 #32092]  INFO -- default-ubuntu-1204: Get:52 http://us.archive.ubuntu.com/ubuntu/ precise/main libjson0 amd64 0.9-1ubuntu1 [16.3 kB]
+I, [2014-06-03T11:19:15.801059 #32092]  INFO -- default-ubuntu-1204: Get:53 http://us.archive.ubuntu.com/ubuntu/ precise/main libogg0 amd64 1.2.2~dfsg-1ubuntu1 [17.2 kB]
+I, [2014-06-03T11:19:15.801081 #32092]  INFO -- default-ubuntu-1204: Get:54 http://us.archive.ubuntu.com/ubuntu/ precise/main libflac8 amd64 1.2.1-6 [144 kB]
+I, [2014-06-03T11:19:15.801103 #32092]  INFO -- default-ubuntu-1204: Get:55 http://us.archive.ubuntu.com/ubuntu/ precise/main libvorbis0a amd64 1.3.2-1ubuntu3 [103 kB]
+I, [2014-06-03T11:19:15.801131 #32092]  INFO -- default-ubuntu-1204: Get:56 http://us.archive.ubuntu.com/ubuntu/ precise/main libvorbisenc2 amd64 1.3.2-1ubuntu3 [136 kB]
+I, [2014-06-03T11:19:15.801154 #32092]  INFO -- default-ubuntu-1204: Get:57 http://us.archive.ubuntu.com/ubuntu/ precise/main libsndfile1 amd64 1.0.25-4 [163 kB]
+I, [2014-06-03T11:19:15.801175 #32092]  INFO -- default-ubuntu-1204: Get:58 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpulse0 amd64 1:1.1-0ubuntu15.4 [289 kB]
+I, [2014-06-03T11:19:15.801197 #32092]  INFO -- default-ubuntu-1204: Get:59 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main x11-common all 1:7.6+12ubuntu2 [52.0 kB]
+I, [2014-06-03T11:19:15.801218 #32092]  INFO -- default-ubuntu-1204: Get:60 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxtst6 amd64 2:1.2.0-4ubuntu0.1 [13.9 kB]
+I, [2014-06-03T11:19:15.801240 #32092]  INFO -- default-ubuntu-1204: Get:61 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libglapi-mesa amd64 8.0.4-0ubuntu0.7 [21.3 kB]
+I, [2014-06-03T11:19:15.801262 #32092]  INFO -- default-ubuntu-1204: Get:62 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libx11-xcb1 amd64 2:1.4.99.1-0ubuntu2.2 [10.5 kB]
+I, [2014-06-03T11:19:15.801283 #32092]  INFO -- default-ubuntu-1204: Get:63 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcb-glx0 amd64 1.8.1-1ubuntu0.2 [26.4 kB]
+I, [2014-06-03T11:19:15.801305 #32092]  INFO -- default-ubuntu-1204: Get:64 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxxf86vm1 amd64 1:1.1.1-2ubuntu0.1 [11.9 kB]
+I, [2014-06-03T11:19:15.801327 #32092]  INFO -- default-ubuntu-1204: Get
+I, [2014-06-03T11:19:15.802080 #32092]  INFO -- default-ubuntu-1204: :65 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgl1-mesa-glx amd64 8.0.4-0ubuntu0.7 [104 kB]
+I, [2014-06-03T11:19:15.802118 #32092]  INFO -- default-ubuntu-1204: Get:66 http://us.archive.ubuntu.com/ubuntu/ precise-updates/universe openjdk-7-jre amd64 7u55-2.4.7-1ubuntu1~0.12.04.2 [226 kB]
+I, [2014-06-03T11:19:15.802142 #32092]  INFO -- default-ubuntu-1204: Get:67 http://us.archive.ubuntu.com/ubuntu/ precise/main libatk-wrapper-java all 0.30.4-0ubuntu2 [30.9 kB]
+I, [2014-06-03T11:19:15.802164 #32092]  INFO -- default-ubuntu-1204: Get:68 http://us.archive.ubuntu.com/ubuntu/ precise/main libatk-wrapper-java-jni amd64 0.30.4-0ubuntu2 [30.5 kB]
+I, [2014-06-03T11:19:15.802186 #32092]  INFO -- default-ubuntu-1204: Get:69 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libavahi-glib1 amd64 0.6.30-5ubuntu2.1 [8838 B]
+I, [2014-06-03T11:19:15.802208 #32092]  INFO -- default-ubuntu-1204: Get:70 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libbonobo2-common all 2.32.1-0ubuntu1.1 [37.4 kB]
+I, [2014-06-03T11:19:15.802230 #32092]  INFO -- default-ubuntu-1204: Get:71 http://us.archive.ubuntu.com/ubuntu/ precise/main libidl-common all 0.8.14-0.2ubuntu2 [8572 B]
+I, [2014-06-03T11:19:15.802252 #32092]  INFO -- default-ubuntu-1204: Get:72 http://us.archive.ubuntu.com/ubuntu/ precise/main libidl0 amd64 0.8.14-0.2ubuntu2 [81.6 kB]
+I, [2014-06-03T11:19:15.802273 #32092]  INFO -- default-ubuntu-1204: Get:73 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main liborbit2 amd64 1:2.14.19-0.1ubuntu1 [186 kB]
+I, [2014-06-03T11:19:15.802295 #32092]  INFO -- default-ubuntu-1204: Get:74 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libbonobo2-0 amd64 2.32.1-0ubuntu1.1 [285 kB]
+I, [2014-06-03T11:19:15.802317 #32092]  INFO -- default-ubuntu-1204: Get:75 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libcairo-gobject2 amd64 1.10.2-6.1ubuntu3 [20.5 kB]
+I, [2014-06-03T11:19:15.802375 #32092]  INFO -- default-ubuntu-1204: Get:76 http://us.archive.ubuntu.com/ubuntu/ precise/main libltdl7 amd64 2.4.2-1ubuntu1 [37.6 kB]
+I, [2014-06-03T11:19:15.802399 #32092]  INFO -- default-ubuntu-1204: Get:77 http://us.archive.ubuntu.com/ubuntu/ precise/main libtdb1 amd64 1.2.9-4 [35.3 kB]
+I, [2014-06-03T11:19:15.802433 #32092]  INFO -- default-ubuntu-1204: Get:78 http://us.archive.ubuntu.com/ubuntu/ precise/main libvorbisfile3 amd64 1.3.2-1ubuntu3 [17.7 kB]
+I, [2014-06-03T11:19:15.802456 #32092]  INFO -- default-ubuntu-1204: Get:79 http://us.archive.ubuntu.com/ubuntu/ precise/main sound-theme-freedesktop all 0.7.pristine-2 [412 kB]
+I, [2014-06-03T11:19:15.802478 #32092]  INFO -- default-ubuntu-1204: Get:80 http://us.archive.ubuntu.com/ubuntu/ precise/main libcanberra0 amd64 0.28-3ubuntu3 [43.8 kB]
+I, [2014-06-03T11:19:15.802499 #32092]  INFO -- default-ubuntu-1204: Get:81 http://us.archive.ubuntu.com/ubuntu/ precise/main gconf2-common all 3.2.5-0ubuntu2 [22.1 kB]
+I, [2014-06-03T11:19:15.802521 #32092]  INFO -- default-ubuntu-1204: Get:82 http://us.archive.ubuntu.com/ubuntu/ precise/main libgconf-2-4 amd64 3.2.5-0ubuntu2 [97.2 kB]
+I, [2014-06-03T11:19:15.802543 #32092]  INFO -- default-ubuntu-1204: Get:83 http://us.archive.ubuntu.com/ubuntu/ precise/main libgnome-keyring-common all 3.2.2-2 [5060 B]
+I, [2014-06-03T11:19:15.802565 #32092]  INFO -- default-ubuntu-1204: Get:84 http://us.archive.ubuntu.com/ubuntu/ precise/main libgnome-keyring0 amd64 3.2.2-2 [62.6 kB]
+I, [2014-06-03T11:19:15.802587 #32092]  INFO -- default-ubuntu-1204: Get:85 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgudev-1.0-0 amd64 1:175-0ubuntu9.5 [14.5 kB]
+I, [2014-06-03T11:19:15.802608 #32092]  INFO -- default-ubuntu-1204: Get:86 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main liblvm2app2.2 amd64 2.02.66-4ubuntu7.4 [223 kB]
+I, [2014-06-03T11:19:15.802630 #32092]  INFO -- default-ubuntu-1204: Get:87 http://us.archive.ubuntu.com/ubuntu/ precise/main libsgutils2-2 amd64 1.33-1 [64.4 kB]
+I, [2014-06-03T11:19:15.802652 #32092]  INFO -- default-ubuntu-1204: Get:88 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main udisks amd64 1.0.4-5ubuntu2.2 [250 kB]
+I, [2014-06-03T11:19:15.802674 #32092]  INFO -- default-ubuntu-1204: Get:89 http://us.archive.ubuntu.com/ubuntu/ precise/main libgdu0 amd64 3.0.2-2ubuntu7 [90.0 kB]
+I, [2014-06-03T11:19:15.802695 #32092]  INFO -- default-ubuntu-1204: Get:90 http://us.archive.ubuntu.com/ubuntu/ precise/main gconf-service-backend amd64 3.2.5-0ubuntu2 [74.1 kB]
+I, [2014-06-03T11:19:15.802717 #32092]  INFO -- default-ubuntu-1204: Get:91 http://us.archive.ubuntu.com/ubuntu/ precise/main gconf-service amd64 3.2.5-0ubuntu2 [2012 B]
+I, [2014-06-03T11:19:15.802738 #32092]  INFO -- default-ubuntu-1204: Get:92 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main dbus-x11 amd64 1.4.18-1ubuntu1.4 [22.1 kB]
+I, [2014-06-03T11:19:15.802760 #32092]  INFO -- default-ubuntu-1204: Get:93 http://us.archive.ubuntu.com/ubuntu/ precise/main gconf2 amd64 3.2.5-0ubuntu2 [79.7 kB]
+I, [2014-06-03T11:19:15.802782 #32092]  INFO -- default-ubuntu-1204: Get:94 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgnomevfs2-common amd64 1:2.24.4-1ubuntu2.1 [24.6 kB]
+I, [2014-06-03T11:19:15.802803 #32092]  INFO -- default-ubuntu-1204: Get:95 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgnomevfs2-0 amd64 1:2.24.4-1ubuntu2.1 [275 kB]
+I, [2014-06-03T11:19:15.802825 #32092]  INFO -- default-ubuntu-1204: Get:96 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgnome2-common all 2.32.1-2ubuntu1.1 [36.9 kB]
+I, [2014-06-03T11:19:15.802846 #32092]  INFO -- default-ubuntu-1204: Get:97 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgnome2-bin amd64 2.32.1-2ubuntu1.1 [15.9 kB]
+I, [2014-06-03T11:19:15.802868 #32092]  INFO -- default-ubuntu-1204: Get:98 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgnome2-0 amd64 2.32.1-2ubuntu1.1 [53.4 kB]
+I, [2014-06-03T11:19:15.802925 #32092]  INFO -- default-ubuntu-1204: Get:99 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libdconf0 amd64 0.12.0-0ubuntu1.1 [25.4 kB]
+I, [2014-06-03T11:19:15.802948 #32092]  INFO -- default-ubuntu-1204: Get:100 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main dconf-service amd64 0.12.0-0ubuntu1.1 [16.9 kB]
+I, [2014-06-03T11:19:15.802976 #32092]  INFO -- default-ubuntu-1204: Get:101 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main dconf-gsettings-backend amd64 0.12.0-0ubuntu1.1 [16.1 kB]
+I, [2014-06-03T11:19:15.803000 #32092]  INFO -- default-ubuntu-1204: Get:102 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk-3-co
+I, [2014-06-03T11:19:15.803621 #32092]  INFO -- default-ubuntu-1204: mmon all 3.4.2-0ubuntu0.8 [145 kB]
+I, [2014-06-03T11:19:15.803650 #32092]  INFO -- default-ubuntu-1204: Get:103 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk-3-0 amd64 3.4.2-0ubuntu0.8 [2281 kB]
+I, [2014-06-03T11:19:15.803672 #32092]  INFO -- default-ubuntu-1204: Get:104 http://us.archive.ubuntu.com/ubuntu/ precise/main libice6 amd64 2:1.0.7-2build1 [46.1 kB]
+I, [2014-06-03T11:19:15.803694 #32092]  INFO -- default-ubuntu-1204: Get:105 http://us.archive.ubuntu.com/ubuntu/ precise/main libllvm3.0 amd64 3.0-4ubuntu1 [7456 kB]
+I, [2014-06-03T11:19:15.803715 #32092]  INFO -- default-ubuntu-1204: Get:106 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpolkit-agent-1-0 amd64 0.104-1ubuntu1.1 [17.7 kB]
+I, [2014-06-03T11:19:15.803737 #32092]  INFO -- default-ubuntu-1204: Get:107 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpolkit-backend-1-0 amd64 0.104-1ubuntu1.1 [41.7 kB]
+I, [2014-06-03T11:19:15.803758 #32092]  INFO -- default-ubuntu-1204: Get:108 http://us.archive.ubuntu.com/ubuntu/ precise/main libsm6 amd64 2:1.2.0-2build1 [18.1 kB]
+I, [2014-06-03T11:19:15.803779 #32092]  INFO -- default-ubuntu-1204: Get:109 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxt6 amd64 1:1.1.1-2ubuntu0.1 [186 kB]
+I, [2014-06-03T11:19:15.803801 #32092]  INFO -- default-ubuntu-1204: Get:110 http://us.archive.ubuntu.com/ubuntu/ precise/main libxmu6 amd64 2:1.1.0-3 [52.7 kB]
+I, [2014-06-03T11:19:15.803823 #32092]  INFO -- default-ubuntu-1204: Get:111 http://us.archive.ubuntu.com/ubuntu/ precise/main libxpm4 amd64 1:3.5.9-4 [37.0 kB]
+I, [2014-06-03T11:19:15.803876 #32092]  INFO -- default-ubuntu-1204: Get:112 http://us.archive.ubuntu.com/ubuntu/ precise/main libxaw7 amd64 2:1.0.9-3ubuntu1 [201 kB]
+I, [2014-06-03T11:19:15.803898 #32092]  INFO -- default-ubuntu-1204: Get:113 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcb-shape0 amd64 1.8.1-1ubuntu0.2 [6244 B]
+I, [2014-06-03T11:19:15.803920 #32092]  INFO -- default-ubuntu-1204: Get:114 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxv1 amd64 2:1.0.6-2ubuntu0.1 [12.4 kB]
+I, [2014-06-03T11:19:15.803942 #32092]  INFO -- default-ubuntu-1204: Get:115 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libck-connector0 amd64 0.4.5-2ubuntu0.1 [10.4 kB]
+I, [2014-06-03T11:19:15.803964 #32092]  INFO -- default-ubuntu-1204: Get:116 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main consolekit amd64 0.4.5-2ubuntu0.1 [120 kB]
+I, [2014-06-03T11:19:15.803986 #32092]  INFO -- default-ubuntu-1204: Get:117 http://us.archive.ubuntu.com/ubuntu/ precise/main libfontenc1 amd64 1:1.1.0-1 [15.4 kB]
+I, [2014-06-03T11:19:15.804007 #32092]  INFO -- default-ubuntu-1204: Get:118 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxxf86dga1 amd64 2:1.1.2-1ubuntu0.1 [13.9 kB]
+I, [2014-06-03T11:19:15.804029 #32092]  INFO -- default-ubuntu-1204: Get:119 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main x11-utils amd64 7.6+4ubuntu0.1 [230 kB]
+I, [2014-06-03T11:19:15.804051 #32092]  INFO -- default-ubuntu-1204: Get:120 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main gvfs-common all 1.12.1-0ubuntu1.2 [16.4 kB]
+I, [2014-06-03T11:19:15.804072 #32092]  INFO -- default-ubuntu-1204: Get:121 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main gvfs-libs amd64 1.12.1-0ubuntu1.2 [52.8 kB]
+I, [2014-06-03T11:19:15.804094 #32092]  INFO -- default-ubuntu-1204: Get:122 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main gvfs-daemons amd64 1.12.1-0ubuntu1.2 [348 kB]
+I, [2014-06-03T11:19:15.804116 #32092]  INFO -- default-ubuntu-1204: Get:123 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main gvfs amd64 1.12.1-0ubuntu1.2 [98.9 kB]
+I, [2014-06-03T11:19:15.804146 #32092]  INFO -- default-ubuntu-1204: Get:124 http://us.archive.ubuntu.com/ubuntu/ precise/main hicolor-icon-theme all 0.12-1ubuntu2 [10.2 kB]
+I, [2014-06-03T11:19:15.804170 #32092]  INFO -- default-ubuntu-1204: Get:125 http://us.archive.ubuntu.com/ubuntu/ precise/main libgconf2-4 amd64 3.2.5-0ubuntu2 [2016 B]
+I, [2014-06-03T11:19:15.804192 #32092]  INFO -- default-ubuntu-1204: Get:126 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgl1-mesa-dri amd64 8.0.4-0ubuntu0.7 [3035 kB]
+I, [2014-06-03T11:19:15.804214 #32092]  INFO -- default-ubuntu-1204: Get:127 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk-3-bin amd64 3.4.2-0ubuntu0.8 [15.9 kB]
+I, [2014-06-03T11:19:15.804683 #32092]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:19:15.804711 #32092]  INFO -- default-ubuntu-1204: Get:128 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgtk2.0-bin amd64 2.24.10-0ubuntu6.1 [10.3 kB]
+I, [2014-06-03T11:19:15.804733 #32092]  INFO -- default-ubuntu-1204: Get:129 http://us.archive.ubuntu.com/ubuntu/ precise/main xorg-sgml-doctools all 1:1.10-1 [12.0 kB]
+I, [2014-06-03T11:19:15.804755 #32092]  INFO -- default-ubuntu-1204: Get:130 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main x11proto-core-dev all 7.0.22-1ubuntu0.1 [300 kB]
+I, [2014-06-03T11:19:15.804777 #32092]  INFO -- default-ubuntu-1204: Get:131 http://us.archive.ubuntu.com/ubuntu/ precise/main libice-dev amd64 2:1.0.7-2build1 [133 kB]
+I, [2014-06-03T11:19:15.804798 #32092]  INFO -- default-ubuntu-1204: Get:132 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpam-ck-connector amd64 0.4.5-2ubuntu0.1 [8188 B]
+I, [2014-06-03T11:19:15.804853 #32092]  INFO -- default-ubuntu-1204: Get:133 http://us.archive.ubuntu.com/ubuntu/ precise/main libpthread-stubs0 amd64 0.3-3 [3258 B]
+I, [2014-06-03T11:19:15.804875 #32092]  INFO -- default-ubuntu-1204: Get:134 http://us.archive.ubuntu.com/ubuntu/ precise/main libpthread-stubs0-dev amd64 0.3-3 [2866 B]
+I, [2014-06-03T11:19:15.804897 #32092]  INFO -- default-ubuntu-1204: Get:135 http://us.archive.ubuntu.com/ubuntu/ precise/main libsm-dev amd64 2:1.2.0-2build1 [89.5 kB]
+I, [2014-06-03T11:19:15.804919 #32092]  INFO -- default-ubuntu-1204: Get:136 http://us.archive.ubuntu.com/ubuntu/ precise/main libxau-dev amd64 1:1.0.6-4 [10.5 kB]
+I, [2014-06-03T11:19:15.804941 #32092]  INFO -- default-ubuntu-1204: Get:137 http://us.archive.ubuntu.com/ubuntu/ precise/main libxdmcp-dev amd64 1:1.1.0-4 [26.9 kB]
+I, [2014-06-03T11:19:15.804963 #32092]  INFO -- default-ubuntu-1204: Get:138 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main x11proto-input-dev all 2.3-1~precise1 [139 kB]
+I, [2014-06-03T11:19:15.804984 #32092]  INFO -- default-ubuntu-1204: Get:139 http://us.archive.ubuntu.com/ubuntu/ precise/main x11proto-kb-dev all 1.0.5-2 [27.6 kB]
+I, [2014-06-03T11:19:15.805006 #32092]  INFO -- default-ubuntu-1204: Get:140 http://us.archive.ubuntu.com/ubuntu/ precise/main xtrans-dev all 1.2.6-2 [82.9 kB]
+I, [2014-06-03T11:19:15.805027 #32092]  INFO -- default-ubuntu-1204: Get:141 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxcb1-dev amd64 1.8.1-1ubuntu0.2 [82.5 kB]
+I, [2014-06-03T11:19:15.805049 #32092]  INFO -- default-ubuntu-1204: Get:142 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libx11-dev amd64 2:1.4.99.1-0ubuntu2.2 [912 kB]
+I, [2014-06-03T11:19:15.805071 #32092]  INFO -- default-ubuntu-1204: Get:143 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libx11-doc all 2:1.4.99.1-0ubuntu2.2 [2435 kB]
+I, [2014-06-03T11:19:15.805093 #32092]  INFO -- default-ubuntu-1204: Get:144 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libxt-dev amd64 1:1.1.1-2ubuntu0.1 [490 kB]
+I, [2014-06-03T11:19:15.805114 #32092]  INFO -- default-ubuntu-1204: Get:145 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main mtools amd64 4.0.12-1ubuntu0.12.04.1 [186 kB]
+I, [2014-06-03T11:19:15.805136 #32092]  INFO -- default-ubuntu-1204: Get:146 http://us.archive.ubuntu.com/ubuntu/ precise-updates/universe openjdk-7-jdk amd64 7u55-2.4.7-1ubuntu1~0.12.04.2 [16.4 MB]
+I, [2014-06-03T11:19:15.805166 #32092]  INFO -- default-ubuntu-1204: STDERR: 
+I, [2014-06-03T11:19:15.805189 #32092]  INFO -- default-ubuntu-1204: ---- End output of apt-get -q -y install openjdk-7-jdk=7u55-2.4.7-1ubuntu1~0.12.04.2 ----
+I, [2014-06-03T11:19:15.805211 #32092]  INFO -- default-ubuntu-1204: Ran apt-get -q -y install openjdk-7-jdk=7u55-2.4.7-1ubuntu1~0.12.04.2 returned 
+[2014-06-03T14:18:55+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-06-03T11:19:15.829652 #32092]  INFO -- default-ubuntu-1204: 
+E, [2014-06-03T11:19:15.886484 #32092] ERROR -- default-ubuntu-1204: Converge failed on instance <default-ubuntu-1204>.
+E, [2014-06-03T11:19:15.886611 #32092] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-06-03T11:19:15.886636 #32092] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-06-03T11:19:15.886656 #32092] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-06-03T11:19:15.886712 #32092] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-06-03T11:19:15.886731 #32092] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-06-03T11:19:15.886750 #32092] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-06-03T11:19:15.886768 #32092] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-06-03T11:19:15.886787 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:118:in `rescue in run_remote'
+E, [2014-06-03T11:19:15.886806 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:114:in `run_remote'
+E, [2014-06-03T11:19:15.886825 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:48:in `block in converge'
+E, [2014-06-03T11:19:15.886844 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-06-03T11:19:15.886863 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:43:in `new'
+E, [2014-06-03T11:19:15.886882 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:43:in `converge'
+E, [2014-06-03T11:19:15.886910 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-06-03T11:19:15.886929 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `public_send'
+E, [2014-06-03T11:19:15.886949 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `block in perform_action'
+E, [2014-06-03T11:19:15.886969 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:315:in `call'
+E, [2014-06-03T11:19:15.886988 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:315:in `synchronize_or_call'
+E, [2014-06-03T11:19:15.887016 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:290:in `block in action'
+E, [2014-06-03T11:19:15.887035 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-06-03T11:19:15.887054 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:289:in `action'
+E, [2014-06-03T11:19:15.887083 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `perform_action'
+E, [2014-06-03T11:19:15.887103 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:263:in `converge_action'
+E, [2014-06-03T11:19:15.887122 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:253:in `block in transition_to'
+E, [2014-06-03T11:19:15.887141 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:252:in `each'
+E, [2014-06-03T11:19:15.887160 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:252:in `transition_to'
+E, [2014-06-03T11:19:15.887179 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:119:in `converge'
+E, [2014-06-03T11:19:15.887233 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-06-03T11:19:15.887253 #32092] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-06-03T11:19:15.887272 #32092] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-06-03T11:22:03.327906 #32233]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-06-03T11:22:03.329446 #32233]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-06-03T11:22:03.329763 #32233]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf 3.1.2...
+I, [2014-06-03T11:22:03.432558 #32233]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-06-03T11:22:04.504718 #32233]  INFO -- default-ubuntu-1204: Transferring files to <default-ubuntu-1204>
+[2014-06-03T14:21:40+00:00] INFO: Forking chef instance to converge...I, [2014-06-03T11:22:05.446493 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:40+00:00] WARN: I, [2014-06-03T11:22:05.450219 #32233]  INFO -- default-ubuntu-1204: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * I, [2014-06-03T11:22:05.450457 #32233]  INFO -- default-ubuntu-1204: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-06-03T11:22:05.450688 #32233]  INFO -- default-ubuntu-1204: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-06-03T11:22:05.450871 #32233]  INFO -- default-ubuntu-1204: 
+attacks.I, [2014-06-03T11:22:05.451231 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:22:05.451398 #32233]  INFO -- default-ubuntu-1204: 
+To fix this issue add an entry like this to your configuration file:I, [2014-06-03T11:22:05.451613 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:22:05.451752 #32233]  INFO -- default-ubuntu-1204: 
+```I, [2014-06-03T11:22:05.451992 #32233]  INFO -- default-ubuntu-1204: 
+  # Verify all HTTPS connections (recommended)I, [2014-06-03T11:22:05.452231 #32233]  INFO -- default-ubuntu-1204: 
+  ssl_verify_mode :verify_peerI, [2014-06-03T11:22:05.452439 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:22:05.452571 #32233]  INFO -- default-ubuntu-1204: 
+  # OR, Verify only connections to chef-serverI, [2014-06-03T11:22:05.452888 #32233]  INFO -- default-ubuntu-1204: 
+  verify_api_cert trueI, [2014-06-03T11:22:05.453348 #32233]  INFO -- default-ubuntu-1204: 
+```I, [2014-06-03T11:22:05.453577 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:22:05.453699 #32233]  INFO -- default-ubuntu-1204: 
+To check your SSL configuration, or troubleshoot errors, you can use theI, [2014-06-03T11:22:05.453952 #32233]  INFO -- default-ubuntu-1204: 
+`knife ssl check` command like so:I, [2014-06-03T11:22:05.454183 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:22:05.454313 #32233]  INFO -- default-ubuntu-1204: 
+```I, [2014-06-03T11:22:05.454526 #32233]  INFO -- default-ubuntu-1204: 
+  knife ssl check -c /tmp/kitchen/solo.rbI, [2014-06-03T11:22:05.454727 #32233]  INFO -- default-ubuntu-1204: 
+```I, [2014-06-03T11:22:05.455091 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:22:05.455582 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:22:05.455616 #32233]  INFO -- default-ubuntu-1204: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+I, [2014-06-03T11:22:05.455641 #32233]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.12.4[0mI, [2014-06-03T11:22:05.485608 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:40+00:00] INFO: *** Chef 11.12.4 ***I, [2014-06-03T11:22:05.485848 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:40+00:00] INFO: Chef-client pid: 1811I, [2014-06-03T11:22:05.486086 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:42+00:00] INFO: Setting the run_list to ["recipe[apt]", "recipe[java]", "recipe[tomcat-all::default]"] from CLI optionsI, [2014-06-03T11:22:07.262338 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:42+00:00] INFO: Run List is [recipe[apt], recipe[java], recipe[tomcat-all::default]]I, [2014-06-03T11:22:07.265957 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:42+00:00] INFO: Run List expands to [apt, java, tomcat-all::default]I, [2014-06-03T11:22:07.266179 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:42+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-06-03T11:22:07.266403 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:42+00:00] INFO: Running start handlersI, [2014-06-03T11:22:07.266848 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:42+00:00] INFO: Start handlers complete.I, [2014-06-03T11:22:07.267167 #32233]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-06-03T11:22:07.271448 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:42+00:00] WARN: Cloning resource attributes for execute[apt-get-update] from prior resource (CHEF-3694)I, [2014-06-03T11:22:07.290388 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:42+00:00] WARN: Previous execute[apt-get-update]: /tmp/kitchen/cookbooks/apt/recipes/default.rb:29:in `from_file'I, [2014-06-03T11:22:07.290636 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:21:42+00:00] WARN: Current  execute[apt-get-update]: /tmp/kitchen/cookbooks/apt/recipes/default.rb:38:in `from_file'I, [2014-06-03T11:22:07.290840 #32233]  INFO -- default-ubuntu-1204: 
+Converging 24 resources[0mI, [2014-06-03T11:22:07.312098 #32233]  INFO -- default-ubuntu-1204: 
+Recipe: apt::default[0mI, [2014-06-03T11:22:07.313825 #32233]  INFO -- default-ubuntu-1204: 
+  * execute[apt-get-update] action nothing[0m[2014-06-03T14:21:42+00:00] INFO: Processing execute[apt-get-update] action nothing (apt::default line 29)I, [2014-06-03T11:22:07.314424 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-06-03T11:22:07.314888 #32233]  INFO -- default-ubuntu-1204: 
+  * execute[apt-get-update] action run[0m[2014-06-03T14:21:42+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 38)I, [2014-06-03T11:22:07.315526 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to not_if)[0mI, [2014-06-03T11:22:07.315983 #32233]  INFO -- default-ubuntu-1204: 
+  * execute[apt-get update] action nothing[0m[2014-06-03T14:21:42+00:00] INFO: Processing execute[apt-get update] action nothing (apt::default line 46)I, [2014-06-03T11:22:07.316419 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-06-03T11:22:07.316661 #32233]  INFO -- default-ubuntu-1204: 
+  * execute[apt-get autoremove] action nothing[0m[2014-06-03T14:21:42+00:00] INFO: Processing execute[apt-get autoremove] action nothing (apt::default line 54)I, [2014-06-03T11:22:07.317201 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-06-03T11:22:07.317405 #32233]  INFO -- default-ubuntu-1204: 
+  * execute[apt-get autoclean] action nothing[0m[2014-06-03T14:21:42+00:00] INFO: Processing execute[apt-get autoclean] action nothing (apt::default line 61)I, [2014-06-03T11:22:07.317931 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-06-03T11:22:07.318174 #32233]  INFO -- default-ubuntu-1204: 
+  * package[update-notifier-common] action install[0m[2014-06-03T14:21:42+00:00] INFO: Processing package[update-notifier-common] action install (apt::default line 68)I, [2014-06-03T11:22:07.318678 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:22:07.389980 #32233]  INFO -- default-ubuntu-1204:  (up to date)[0m
+I, [2014-06-03T11:22:07.390042 #32233]  INFO -- default-ubuntu-1204:   * execute[apt-get-update-periodic] action run[0m
+[2014-06-03T14:21:42+00:00] INFO: Processing execute[apt-get-update-periodic] action run (apt::default line 73)I, [2014-06-03T11:22:07.402275 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to only_if)[0mI, [2014-06-03T11:22:07.402741 #32233]  INFO -- default-ubuntu-1204: 
+  * directory[/var/cache/local] action create[0m[2014-06-03T14:21:42+00:00] INFO: Processing directory[/var/cache/local] action create (apt::default line 84)I, [2014-06-03T11:22:07.403489 #32233]  INFO -- default-ubuntu-1204: 
+ (up to date)[0mI, [2014-06-03T11:22:07.406543 #32233]  INFO -- default-ubuntu-1204: 
+  * directory[/var/cache/local/preseeding] action create[0m[2014-06-03T14:21:42+00:00] INFO: Processing directory[/var/cache/local/preseeding] action create (apt::default line 84)I, [2014-06-03T11:22:07.407178 #32233]  INFO -- default-ubuntu-1204: 
+ (up to date)[0mI, [2014-06-03T11:22:07.408537 #32233]  INFO -- default-ubuntu-1204: 
+Recipe: java::openjdk[0mI, [2014-06-03T11:22:07.408771 #32233]  INFO -- default-ubuntu-1204: 
+  * package[openjdk-7-jdk] action install[0m[2014-06-03T14:21:42+00:00] INFO: Processing package[openjdk-7-jdk] action install (java::openjdk line 46)I, [2014-06-03T11:22:07.409324 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:23:18.572260 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:18.572323 #32233]  INFO -- default-ubuntu-1204:     - install version 7u55-2.4.7-1ubuntu1~0.12.04.2 of package openjdk-7-jdk[0m
+I, [2014-06-03T11:23:18.572356 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:23:18.572378 #32233]  INFO -- default-ubuntu-1204:   * package[openjdk-7-jre-headless] action install[0m[2014-06-03T14:22:52+00:00] INFO: Processing package[openjdk-7-jre-headless] action install (java::openjdk line 46)
+I, [2014-06-03T11:23:18.621574 #32233]  INFO -- default-ubuntu-1204:  (up to date)[0m
+I, [2014-06-03T11:23:18.621634 #32233]  INFO -- default-ubuntu-1204:   * java_alternatives[set-java-alternatives] action set[0m[2014-06-03T14:22:52+00:00] INFO: Processing java_alternatives[set-java-alternatives] action set (java::openjdk line 50)
+I, [2014-06-03T11:23:18.885944 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:18.886001 #32233]  INFO -- default-ubuntu-1204:     - Add alternative for apt[0m
+I, [2014-06-03T11:23:19.556317 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:19.556376 #32233]  INFO -- default-ubuntu-1204:     - Add alternative for java[0m
+I, [2014-06-03T11:23:21.298439 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:21.298504 #32233]  INFO -- default-ubuntu-1204:     - Add alternative for keytool[0m
+I, [2014-06-03T11:23:21.523098 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:21.523159 #32233]  INFO -- default-ubuntu-1204:     - Add alternative for orbd[0m
+[32mI, [2014-06-03T11:23:21.671928 #32233]  INFO -- default-ubuntu-1204: 
+    - Add alternative for pack200[0mI, [2014-06-03T11:23:21.812774 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:21.812832 #32233]  INFO -- default-ubuntu-1204:     - Add alternative for policytool[0m
+I, [2014-06-03T11:23:22.019795 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:22.019856 #32233]  INFO -- default-ubuntu-1204:     - Add alternative for rmid[0m
+I, [2014-06-03T11:23:22.159548 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:22.159609 #32233]  INFO -- default-ubuntu-1204:     - Add alternative for rmiregistry[0m
+I, [2014-06-03T11:23:22.458094 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:22.458152 #32233]  INFO -- default-ubuntu-1204:     - Add alternative for servertool[0m
+I, [2014-06-03T11:23:22.647157 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:22.647218 #32233]  INFO -- default-ubuntu-1204:     - Add alternative for tnameserv[0m
+I, [2014-06-03T11:23:22.878443 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:22.878502 #32233]  INFO -- default-ubuntu-1204:     - Add alternative for unpack200[0m
+I, [2014-06-03T11:23:23.274733 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:23:23.274793 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:23:23.274817 #32233]  INFO -- default-ubuntu-1204: Recipe: java::default_java_symlink[0m
+I, [2014-06-03T11:23:23.274839 #32233]  INFO -- default-ubuntu-1204:   * link[/usr/lib/jvm/default-java] action create[0m[2014-06-03T14:22:56+00:00] INFO: Processing link[/usr/lib/jvm/default-java] action create (java::default_java_symlink line 16)
+I, [2014-06-03T11:23:23.274861 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:22:56+00:00] INFO: link[/usr/lib/jvm/default-java] created
+I, [2014-06-03T11:23:23.274883 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:23.274905 #32233]  INFO -- default-ubuntu-1204:     - create symlink at /usr/lib/jvm/default-java to /usr/lib/jvm/java-7-openjdk-amd64[0m
+I, [2014-06-03T11:23:23.274930 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:23:23.274960 #32233]  INFO -- default-ubuntu-1204: Recipe: java::set_java_home[0m
+I, [2014-06-03T11:23:23.274983 #32233]  INFO -- default-ubuntu-1204:   * ruby_block[set-env-java-home] action run[0m[2014-06-03T14:22:56+00:00] INFO: Processing ruby_block[set-env-java-home] action run (java::set_java_home line 19)
+I, [2014-06-03T11:23:23.275013 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:22:56+00:00] INFO: ruby_block[set-env-java-home] called
+I, [2014-06-03T11:23:23.275043 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:23.275065 #32233]  INFO -- default-ubuntu-1204:     - execute the ruby block set-env-java-home[0m
+I, [2014-06-03T11:23:23.275086 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:23:23.275108 #32233]  INFO -- default-ubuntu-1204:   * directory[/etc/profile.d] action create[0m[2014-06-03T14:22:56+00:00] INFO: Processing directory[/etc/profile.d] action create (java::set_java_home line 26)
+I, [2014-06-03T11:23:23.275142 #32233]  INFO -- default-ubuntu-1204:  (up to date)[0m
+I, [2014-06-03T11:23:23.275164 #32233]  INFO -- default-ubuntu-1204:   * file[/etc/profile.d/jdk.sh] action create[0m[2014-06-03T14:22:56+00:00] INFO: Processing file[/etc/profile.d/jdk.sh] action create (java::set_java_home line 30)
+[2014-06-03T14:22:56+00:00] INFO: file[/etc/profile.d/jdk.sh] created file /etc/profile.d/jdk.shI, [2014-06-03T11:23:23.275603 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:23:23.275805 #32233]  INFO -- default-ubuntu-1204: 
+    - create new file /etc/profile.d/jdk.sh[0m[2014-06-03T14:22:56+00:00] INFO: file[/etc/profile.d/jdk.sh] updated file contents /etc/profile.d/jdk.shI, [2014-06-03T11:23:23.279582 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:23:23.279985 #32233]  INFO -- default-ubuntu-1204: 
+    - update content in file /etc/profile.d/jdk.sh from none to 2eb1f0[0m[37mI, [2014-06-03T11:23:23.280380 #32233]  INFO -- default-ubuntu-1204: 
+        --- /etc/profile.d/jdk.sh	2014-06-03 14:22:56.801009644 +0000[0m[37mI, [2014-06-03T11:23:23.280911 #32233]  INFO -- default-ubuntu-1204: 
+        +++ /tmp/.jdk.sh20140603-1811-m7y2ar	2014-06-03 14:22:56.801009644 +0000[0m[37mI, [2014-06-03T11:23:23.281603 #32233]  INFO -- default-ubuntu-1204: 
+        @@ -1 +1,2 @@[0m[37mI, [2014-06-03T11:23:23.281930 #32233]  INFO -- default-ubuntu-1204: 
+        +export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64[0m[2014-06-03T14:22:56+00:00] INFO: file[/etc/profile.d/jdk.sh] mode changed to 755I, [2014-06-03T11:23:23.282557 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:23:23.282795 #32233]  INFO -- default-ubuntu-1204: 
+    - change mode from '' to '0755'[0mI, [2014-06-03T11:23:23.283367 #32233]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-06-03T11:23:23.283574 #32233]  INFO -- default-ubuntu-1204: 
+Recipe: tomcat-all::default[0mI, [2014-06-03T11:23:23.283850 #32233]  INFO -- default-ubuntu-1204: 
+  * group[tomcat] action create[0m[2014-06-03T14:22:56+00:00] INFO: Processing group[tomcat] action create (tomcat-all::default line 16)I, [2014-06-03T11:23:23.284342 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:23:23.357906 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:22:56+00:00] INFO: group[tomcat] created
+I, [2014-06-03T11:23:23.357966 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:23.357988 #32233]  INFO -- default-ubuntu-1204:     - create group[tomcat][0m
+I, [2014-06-03T11:23:23.358008 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:23:23.358027 #32233]  INFO -- default-ubuntu-1204:   * user[tomcat] action create[0m[2014-06-03T14:22:56+00:00] INFO: Processing user[tomcat] action create (tomcat-all::default line 19)
+I, [2014-06-03T11:23:23.445397 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:22:56+00:00] INFO: user[tomcat] created
+I, [2014-06-03T11:23:23.445454 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:23:23.445476 #32233]  INFO -- default-ubuntu-1204:     - create user user[tomcat][0m
+I, [2014-06-03T11:23:23.445522 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:23:23.445543 #32233]  INFO -- default-ubuntu-1204:   * ark[tomcat] action install[0m[2014-06-03T14:22:56+00:00] INFO: Processing ark[tomcat] action install (tomcat-all::default line 26)
+I, [2014-06-03T11:23:23.445565 #32233]  INFO -- default-ubuntu-1204: Recipe: <Dynamically Defined Resource>[0m
+I, [2014-06-03T11:23:23.445586 #32233]  INFO -- default-ubuntu-1204:   * directory[/opt/tomcat-7.0.53] action create[0m[2014-06-03T14:22:56+00:00] INFO: Processing directory[/opt/tomcat-7.0.53] action create (/tmp/kitchen/cookbooks/ark/providers/default.rb line 39)
+[2014-06-03T14:22:56+00:00] INFO: directory[/opt/tomcat-7.0.53] created directory /opt/tomcat-7.0.53I, [2014-06-03T11:23:23.450743 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:23:23.451093 #32233]  INFO -- default-ubuntu-1204: 
+    - create new directory /opt/tomcat-7.0.53[0mI, [2014-06-03T11:23:23.451715 #32233]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-06-03T11:23:23.451942 #32233]  INFO -- default-ubuntu-1204: 
+  * remote_file[/tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action create[0m[2014-06-03T14:22:56+00:00] INFO: Processing remote_file[/tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action create (/tmp/kitchen/cookbooks/ark/providers/default.rb line 45)I, [2014-06-03T11:23:23.452499 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:22:56+00:00] INFO: remote_file[/tmp/kitchen/cache/tomcat-7.0.53.tar.gz] created file /tmp/kitchen/cache/tomcat-7.0.53.tar.gzI, [2014-06-03T11:23:23.453199 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:23:23.453581 #32233]  INFO -- default-ubuntu-1204: 
+    - create new file /tmp/kitchen/cache/tomcat-7.0.53.tar.gz[0m[2014-06-03T14:24:03+00:00] INFO: remote_file[/tmp/kitchen/cache/tomcat-7.0.53.tar.gz] updated file contents /tmp/kitchen/cache/tomcat-7.0.53.tar.gzI, [2014-06-03T11:24:31.889453 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:24:31.928612 #32233]  INFO -- default-ubuntu-1204: 
+    - update content in file /tmp/kitchen/cache/tomcat-7.0.53.tar.gz from none to f5e79d[0m[37mI, [2014-06-03T11:24:31.928960 #32233]  INFO -- default-ubuntu-1204: 
+        (new content is binary, diff output suppressed)[0mI, [2014-06-03T11:24:31.929740 #32233]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-06-03T11:24:31.929987 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:24:03+00:00] INFO: remote_file[/tmp/kitchen/cache/tomcat-7.0.53.tar.gz] not queuing delayed action run on execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] (delayed), as it's already been queuedI, [2014-06-03T11:24:31.930403 #32233]  INFO -- default-ubuntu-1204: 
+  * execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action nothing[0m[2014-06-03T14:24:03+00:00] INFO: Processing execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action nothing (/tmp/kitchen/cookbooks/ark/providers/default.rb line 55)I, [2014-06-03T11:24:31.930916 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-06-03T11:24:31.931132 #32233]  INFO -- default-ubuntu-1204: 
+  * execute[set owner on /opt/tomcat-7.0.53] action nothing[0m[2014-06-03T14:24:03+00:00] INFO: Processing execute[set owner on /opt/tomcat-7.0.53] action nothing (/tmp/kitchen/cookbooks/ark/providers/default.rb line 64)I, [2014-06-03T11:24:31.931628 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-06-03T11:24:31.931866 #32233]  INFO -- default-ubuntu-1204: 
+  * link[/opt/tomcat] action create[0m[2014-06-03T14:24:03+00:00] INFO: Processing link[/opt/tomcat] action create (/tmp/kitchen/cookbooks/ark/providers/default.rb line 77)I, [2014-06-03T11:24:31.932376 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:24:03+00:00] INFO: link[/opt/tomcat] createdI, [2014-06-03T11:24:31.933142 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:24:31.933384 #32233]  INFO -- default-ubuntu-1204: 
+    - create symlink at /opt/tomcat to /opt/tomcat-7.0.53[0mI, [2014-06-03T11:24:31.933721 #32233]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-06-03T11:24:31.933956 #32233]  INFO -- default-ubuntu-1204: 
+  * template[/etc/profile.d/tomcat.sh] action create[0m[2014-06-03T14:24:03+00:00] INFO: Processing template[/etc/profile.d/tomcat.sh] action create (/tmp/kitchen/cookbooks/ark/providers/default.rb line 82)I, [2014-06-03T11:24:31.934582 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to only_if)[0mI, [2014-06-03T11:24:31.934844 #32233]  INFO -- default-ubuntu-1204: 
+  * ruby_block[adding '/opt/tomcat-7.0.53/bin' to chef-client ENV['PATH']] action run[0m[2014-06-03T14:24:03+00:00] INFO: Processing ruby_block[adding '/opt/tomcat-7.0.53/bin' to chef-client ENV['PATH']] action run (/tmp/kitchen/cookbooks/ark/providers/default.rb line 95)I, [2014-06-03T11:24:31.935317 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to only_if)[0mI, [2014-06-03T11:24:31.935548 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:24:03+00:00] INFO: directory[/opt/tomcat-7.0.53] sending run action to execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] (delayed)I, [2014-06-03T11:24:31.935945 #32233]  INFO -- default-ubuntu-1204: 
+  * execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action run[0m[2014-06-03T14:24:03+00:00] INFO: Processing execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action run (/tmp/kitchen/cookbooks/ark/providers/default.rb line 55)I, [2014-06-03T11:24:31.936472 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.093394 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:24:03+00:00] INFO: execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] ran successfully
+I, [2014-06-03T11:24:32.093458 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:24:32.093482 #32233]  INFO -- default-ubuntu-1204:     - execute /bin/tar xzf /tmp/kitchen/cache/tomcat-7.0.53.tar.gz --strip-components=1[0m
+I, [2014-06-03T11:24:32.093503 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:24:32.093524 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:24:03+00:00] INFO: execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] sending run action to execute[set owner on /opt/tomcat-7.0.53] (delayed)
+I, [2014-06-03T11:24:32.093566 #32233]  INFO -- default-ubuntu-1204:   * execute[set owner on /opt/tomcat-7.0.53] action run[0m[2014-06-03T14:24:03+00:00] INFO: Processing execute[set owner on /opt/tomcat-7.0.53] action run (/tmp/kitchen/cookbooks/ark/providers/default.rb line 64)
+I, [2014-06-03T11:24:32.136647 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:24:03+00:00] INFO: execute[set owner on /opt/tomcat-7.0.53] ran successfully
+I, [2014-06-03T11:24:32.136714 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:24:32.136738 #32233]  INFO -- default-ubuntu-1204:     - execute chown -R tomcat:0 /opt/tomcat-7.0.53[0m
+I, [2014-06-03T11:24:32.136781 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:24:32.136805 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.136825 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:24:32.136846 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:24:03+00:00] INFO: ark[tomcat] sending create action to template[/etc/logrotate.d/tomcat] (immediate)
+I, [2014-06-03T11:24:32.136871 #32233]  INFO -- default-ubuntu-1204: Recipe: tomcat-all::default[0m
+I, [2014-06-03T11:24:32.136892 #32233]  INFO -- default-ubuntu-1204:   * template[/etc/logrotate.d/tomcat] action create[0m[2014-06-03T14:24:03+00:00] INFO: Processing template[/etc/logrotate.d/tomcat] action create (tomcat-all::default line 36)
+[2014-06-03T14:24:04+00:00] INFO: template[/etc/logrotate.d/tomcat] created file /etc/logrotate.d/tomcatI, [2014-06-03T11:24:32.140391 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:24:32.140611 #32233]  INFO -- default-ubuntu-1204: 
+    - create new file /etc/logrotate.d/tomcat[0m[2014-06-03T14:24:04+00:00] INFO: template[/etc/logrotate.d/tomcat] updated file contents /etc/logrotate.d/tomcatI, [2014-06-03T11:24:32.142795 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:24:32.143199 #32233]  INFO -- default-ubuntu-1204: 
+    - update content in file /etc/logrotate.d/tomcat from none to 28366e[0m[37mI, [2014-06-03T11:24:32.143548 #32233]  INFO -- default-ubuntu-1204: 
+        --- /etc/logrotate.d/tomcat	2014-06-03 14:24:03.998590347 +0000[0m[37mI, [2014-06-03T11:24:32.144045 #32233]  INFO -- default-ubuntu-1204: 
+        +++ /tmp/chef-rendered-template20140603-1811-1mwmtir	2014-06-03 14:24:03.998590347 +0000[0m[37mI, [2014-06-03T11:24:32.145523 #32233]  INFO -- default-ubuntu-1204: 
+        @@ -1 +1,10 @@[0m[37mI, [2014-06-03T11:24:32.145827 #32233]  INFO -- default-ubuntu-1204: 
+        +# Created by Chef for default-ubuntu-1204[0m[37mI, [2014-06-03T11:24:32.146130 #32233]  INFO -- default-ubuntu-1204: 
+        +/opt/tomcat/logs/catalina.out {[0m[37mI, [2014-06-03T11:24:32.146419 #32233]  INFO -- default-ubuntu-1204: 
+        +        copytruncate[0m[37mI, [2014-06-03T11:24:32.146762 #32233]  INFO -- default-ubuntu-1204: 
+        +        daily[0m[37mI, [2014-06-03T11:24:32.147028 #32233]  INFO -- default-ubuntu-1204: 
+        +        rotate 7[0m[37mI, [2014-06-03T11:24:32.147295 #32233]  INFO -- default-ubuntu-1204: 
+        +        compress[0m[37mI, [2014-06-03T11:24:32.147547 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.147685 #32233]  INFO -- default-ubuntu-1204:  +        missingok[0m[37m
+I, [2014-06-03T11:24:32.147718 #32233]  INFO -- default-ubuntu-1204:  +        size 5M[0m[37m
+I, [2014-06-03T11:24:32.147745 #32233]  INFO -- default-ubuntu-1204:  +}[0m
+[0mI, [2014-06-03T11:24:32.147977 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:24:04+00:00] INFO: template[/etc/logrotate.d/tomcat] sending create action to template[/opt/tomcat/conf/server.xml] (immediate)I, [2014-06-03T11:24:32.148223 #32233]  INFO -- default-ubuntu-1204: 
+  * template[/opt/tomcat/conf/server.xml] action create[0m[2014-06-03T14:24:04+00:00] INFO: Processing template[/opt/tomcat/conf/server.xml] action create (tomcat-all::default line 42)I, [2014-06-03T11:24:32.148761 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:24:04+00:00] INFO: template[/opt/tomcat/conf/server.xml] backed up to /tmp/kitchen/backup/opt/tomcat/conf/server.xml.chef-20140603142404.014933I, [2014-06-03T11:24:32.153586 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:24:04+00:00] INFO: template[/opt/tomcat/conf/server.xml] updated file contents /opt/tomcat/conf/server.xmlI, [2014-06-03T11:24:32.154242 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:24:32.154625 #32233]  INFO -- default-ubuntu-1204: 
+    - update content in file /opt/tomcat/conf/server.xml from 8560d6 to 22d2c0[0m[37mI, [2014-06-03T11:24:32.154948 #32233]  INFO -- default-ubuntu-1204: 
+        --- /opt/tomcat/conf/server.xml	2014-03-25 03:26:32.000000000 +0000[0m[37mI, [2014-06-03T11:24:32.155452 #32233]  INFO -- default-ubuntu-1204: 
+        +++ /tmp/chef-rendered-template20140603-1811-nhtulq	2014-06-03 14:24:04.010596348 +0000[0m[37mI, [2014-06-03T11:24:32.156051 #32233]  INFO -- default-ubuntu-1204: 
+        @@ -1,44 +1,12 @@[0m[37mI, [2014-06-03T11:24:32.156393 #32233]  INFO -- default-ubuntu-1204: 
+         <?xml version='1.0' encoding='utf-8'?>[0m[37mI, [2014-06-03T11:24:32.156883 #32233]  INFO -- default-ubuntu-1204: 
+        -<!--[0m[37mI, [2014-06-03T11:24:32.157268 #32233]  INFO -- default-ubuntu-1204: 
+        -  Licensed to the Apache Software Foundation (ASF) under one or more[0m[37mI, [2014-06-03T11:24:32.157615 #32233]  INFO -- default-ubuntu-1204: 
+        -  contributor license agreements.  See the NOTICE file distributed with[0m[37mI, [2014-06-03T11:24:32.157935 #32233]  INFO -- default-ubuntu-1204: 
+        -  this work for additional information regarding copyright ownership.[0m[37mI, [2014-06-03T11:24:32.158428 #32233]  INFO -- default-ubuntu-1204: 
+        -  The ASF licenses this file to You under the Apache License, Version 2.0[0m[37mI, [2014-06-03T11:24:32.158834 #32233]  INFO -- default-ubuntu-1204: 
+        -  (the "License"); you may not use this file except in compliance with[0m[37mI, [2014-06-03T11:24:32.159131 #32233]  INFO -- default-ubuntu-1204: 
+        -  the License.  You may obtain a copy of the License at[0m[37mI, [2014-06-03T11:24:32.159606 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.159645 #32233]  INFO -- default-ubuntu-1204:  -[0m[37m
+I, [2014-06-03T11:24:32.159675 #32233]  INFO -- default-ubuntu-1204:  -      http://www.apache.org/licenses/LICENSE-2.0[0m[37m
+I, [2014-06-03T11:24:32.159703 #32233]  INFO -- default-ubuntu-1204:  -[0m[37m
+I, [2014-06-03T11:24:32.159730 #32233]  INFO -- default-ubuntu-1204:  -  Unless required by applicable law or agreed to in writing, software[0m[37m
+I, [2014-06-03T11:24:32.159758 #32233]  INFO -- default-ubuntu-1204:  -  distributed under the License is distributed on an "AS IS" BASIS,[0m[37m
+I, [2014-06-03T11:24:32.159995 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.160028 #32233]  INFO -- default-ubuntu-1204:  -  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.[0m[37m
+I, [2014-06-03T11:24:32.160056 #32233]  INFO -- default-ubuntu-1204:  -  See the License for the specific language governing permissions and[0m[37m
+I, [2014-06-03T11:24:32.160082 #32233]  INFO -- default-ubuntu-1204:  -  limitations under the License.[0m[37m
+I, [2014-06-03T11:24:32.160108 #32233]  INFO -- default-ubuntu-1204:  --->[0m[37m
+I, [2014-06-03T11:24:32.160134 #32233]  INFO -- default-ubuntu-1204:  -<!-- Note:  A "Server" is not itself a "Container", so you may not[0m[37m
+I, [2014-06-03T11:24:32.160161 #32233]  INFO -- default-ubuntu-1204:  -     define subcomponents such as "Valves" at this level.[0m[37m
+I, [2014-06-03T11:24:32.160188 #32233]  INFO -- default-ubuntu-1204:  -     Documentation at /docs/config/server.html[0m[37m
+I, [2014-06-03T11:24:32.160456 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.160488 #32233]  INFO -- default-ubuntu-1204:  - -->[0m[37m
+I, [2014-06-03T11:24:32.160515 #32233]  INFO -- default-ubuntu-1204:   <Server port="8005" shutdown="SHUTDOWN">[0m[37m
+I, [2014-06-03T11:24:32.160560 #32233]  INFO -- default-ubuntu-1204:  -  <!-- Security listener. Documentation at /docs/config/listeners.html[0m[37m
+I, [2014-06-03T11:24:32.160588 #32233]  INFO -- default-ubuntu-1204:  -  <Listener className="org.apache.catalina.security.SecurityListener" />[0m[37m
+I, [2014-06-03T11:24:32.160613 #32233]  INFO -- default-ubuntu-1204:  -  -->[0m[37m
+I, [2014-06-03T11:24:32.160639 #32233]  INFO -- default-ubuntu-1204:  -  <!--APR library loader. Documentation at /docs/apr.html -->[0m[37m
+I, [2014-06-03T11:24:32.160666 #32233]  INFO -- default-ubuntu-1204:     <Listener className="org.apache.catalina.core.AprLifecycleListener" SSLEngine="on" />[0m[37m
+I, [2014-06-03T11:24:32.160693 #32233]  INFO -- default-ubuntu-1204:  -  <!--Initialize Jasper prior to webapps are loaded. Documentation at /docs/jasper-howto.html -->[0m[37m
+I, [2014-06-03T11:24:32.160719 #32233]  INFO -- default-ubuntu-1204:     <Listener className="org.apache.catalina.core.JasperListener" />[0m[37m
+I, [2014-06-03T11:24:32.161048 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.161081 #32233]  INFO -- default-ubuntu-1204:  -  <!-- Prevent memory leaks due to use of particular java/javax APIs-->[0m[37m
+I, [2014-06-03T11:24:32.161108 #32233]  INFO -- default-ubuntu-1204:     <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />[0m[37m
+I, [2014-06-03T11:24:32.161134 #32233]  INFO -- default-ubuntu-1204:     <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />[0m[37m
+I, [2014-06-03T11:24:32.161254 #32233]  INFO -- default-ubuntu-1204:     <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />[0m[37m
+I, [2014-06-03T11:24:32.161475 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.161502 #32233]  INFO -- default-ubuntu-1204:  -  <!-- Global JNDI resources[0m[37m
+I, [2014-06-03T11:24:32.161528 #32233]  INFO -- default-ubuntu-1204:  -       Documentation at /docs/jndi-resources-howto.html[0m[37m
+I, [2014-06-03T11:24:32.161553 #32233]  INFO -- default-ubuntu-1204:  -  -->[0m[37m
+I, [2014-06-03T11:24:32.161831 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.161863 #32233]  INFO -- default-ubuntu-1204:     <GlobalNamingResources>[0m[37m
+I, [2014-06-03T11:24:32.161889 #32233]  INFO -- default-ubuntu-1204:  -    <!-- Editable user database that can also be used by[0m[37m
+I, [2014-06-03T11:24:32.161933 #32233]  INFO -- default-ubuntu-1204:  -         UserDatabaseRealm to authenticate users[0m[37m
+I, [2014-06-03T11:24:32.161963 #32233]  INFO -- default-ubuntu-1204:  -    -->[0m[37m
+I, [2014-06-03T11:24:32.161989 #32233]  INFO -- default-ubuntu-1204:       <Resource name="UserDatabase" auth="Container"[0m[37m
+I, [2014-06-03T11:24:32.162015 #32233]  INFO -- default-ubuntu-1204:                 type="org.apache.catalina.UserDatabase"[0m[37m
+I, [2014-06-03T11:24:32.162042 #32233]  INFO -- default-ubuntu-1204:                 description="User database that can be updated and saved"[0m[37m
+I, [2014-06-03T11:24:32.162068 #32233]  INFO -- default-ubuntu-1204:  @@ -46,99 +14,41 @@[0m[37m
+I, [2014-06-03T11:24:32.162094 #32233]  INFO -- default-ubuntu-1204:                 pathname="conf/tomcat-users.xml" />[0m[37m
+I, [2014-06-03T11:24:32.162394 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.162425 #32233]  INFO -- default-ubuntu-1204:     </GlobalNamingResources>[0m[37m
+I, [2014-06-03T11:24:32.162452 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.162478 #32233]  INFO -- default-ubuntu-1204:  -  <!-- A "Service" is a collection of one or more "Connectors" that share[0m[37m
+I, [2014-06-03T11:24:32.162505 #32233]  INFO -- default-ubuntu-1204:  -       a single "Container" Note:  A "Service" is not itself a "Container",[0m[37m
+I, [2014-06-03T11:24:32.162532 #32233]  INFO -- default-ubuntu-1204:  -       so you may not define subcomponents such as "Valves" at this level.[0m[37m
+I, [2014-06-03T11:24:32.162569 #32233]  INFO -- default-ubuntu-1204:  -       Documentation at /docs/config/service.html[0m[37m
+I, [2014-06-03T11:24:32.162620 #32233]  INFO -- default-ubuntu-1204:  -   -->[0m[37m
+I, [2014-06-03T11:24:32.162646 #32233]  INFO -- default-ubuntu-1204:     <Service name="Catalina">[0m[37m
+I, [2014-06-03T11:24:32.162671 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.162920 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.162953 #32233]  INFO -- default-ubuntu-1204:  -    <!--The connectors can use a shared executor, you can define one or more named thread pools-->[0m[37m
+I, [2014-06-03T11:24:32.162991 #32233]  INFO -- default-ubuntu-1204:  -    <!--[0m[37m
+I, [2014-06-03T11:24:32.163018 #32233]  INFO -- default-ubuntu-1204:       <Executor name="tomcatThreadPool" namePrefix="catalina-exec-"[0m[37m
+I, [2014-06-03T11:24:32.163045 #32233]  INFO -- default-ubuntu-1204:  -        maxThreads="150" minSpareThreads="4"/>[0m[37m
+I, [2014-06-03T11:24:32.163071 #32233]  INFO -- default-ubuntu-1204:  -    -->[0m[37m
+I, [2014-06-03T11:24:32.163097 #32233]  INFO -- default-ubuntu-1204:  +        maxThreads="100" minSpareThreads="10" />[0m[37m
+I, [2014-06-03T11:24:32.163123 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.163148 #32233]  INFO -- default-ubuntu-1204:  -[0m[37m
+I, [2014-06-03T11:24:32.163175 #32233]  INFO -- default-ubuntu-1204:  -    <!-- A "Connector" represents an endpoint by which requests are received[0m[37m
+I, [2014-06-03T11:24:32.163202 #32233]  INFO -- default-ubuntu-1204:  -         and responses are returned. Documentation at :[0m[37m
+I, [2014-06-03T11:24:32.163229 #32233]  INFO -- default-ubuntu-1204:  -         Java HTTP Connector: /docs/config/http.html (blocking & non-blocking)[0m[37m
+I, [2014-06-03T11:24:32.163255 #32233]  INFO -- default-ubuntu-1204:  -         Java AJP  Connector: /docs/config/ajp.html[0m[37m
+I, [2014-06-03T11:24:32.163575 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.163634 #32233]  INFO -- default-ubuntu-1204:  -         APR (HTTP/AJP) Connector: /docs/apr.html[0m[37m
+I, [2014-06-03T11:24:32.163662 #32233]  INFO -- default-ubuntu-1204:  -         Define a non-SSL HTTP/1.1 Connector on port 8080[0m[37m
+I, [2014-06-03T11:24:32.163688 #32233]  INFO -- default-ubuntu-1204:  -    -->[0m[37m
+I, [2014-06-03T11:24:32.163714 #32233]  INFO -- default-ubuntu-1204:  -    <Connector port="8080" protocol="HTTP/1.1"[0m[37m
+I, [2014-06-03T11:24:32.163740 #32233]  INFO -- default-ubuntu-1204:  -               connectionTimeout="20000"[0m[37m
+I, [2014-06-03T11:24:32.163766 #32233]  INFO -- default-ubuntu-1204:  -               redirectPort="8443" />[0m[37m
+I, [2014-06-03T11:24:32.163792 #32233]  INFO -- default-ubuntu-1204:  -    <!-- A "Connector" using the shared thread pool-->[0m[37m
+I, [2014-06-03T11:24:32.163818 #32233]  INFO -- default-ubuntu-1204:  -    <!--[0m[37m
+I, [2014-06-03T11:24:32.163843 #32233]  INFO -- default-ubuntu-1204:       <Connector executor="tomcatThreadPool"[0m[37m
+I, [2014-06-03T11:24:32.163869 #32233]  INFO -- default-ubuntu-1204:                  port="8080" protocol="HTTP/1.1"[0m[37m
+I, [2014-06-03T11:24:32.163895 #32233]  INFO -- default-ubuntu-1204:                  connectionTimeout="20000"[0m[37m
+I, [2014-06-03T11:24:32.163921 #32233]  INFO -- default-ubuntu-1204:                  redirectPort="8443" />[0m[37m
+I, [2014-06-03T11:24:32.163946 #32233]  INFO -- default-ubuntu-1204:  -    -->[0m[37m
+I, [2014-06-03T11:24:32.163972 #32233]  INFO -- default-ubuntu-1204:  -    <!-- Define a SSL HTTP/1.1 Connector on port 8443[0m[37m
+I, [2014-06-03T11:24:32.164340 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.164373 #32233]  INFO -- default-ubuntu-1204:  -         This connector uses the BIO implementation that requires the JSSE[0m[37m
+I, [2014-06-03T11:24:32.164415 #32233]  INFO -- default-ubuntu-1204:  -         style configuration. When using the APR/native implementation, the[0m[37m
+I, [2014-06-03T11:24:32.164454 #32233]  INFO -- default-ubuntu-1204:  -         OpenSSL style configuration is required as described in the APR/native[0m[37m
+I, [2014-06-03T11:24:32.164482 #32233]  INFO -- default-ubuntu-1204:  -         documentation -->[0m[37m
+I, [2014-06-03T11:24:32.164507 #32233]  INFO -- default-ubuntu-1204:       <!--[0m[37m
+I, [2014-06-03T11:24:32.164533 #32233]  INFO -- default-ubuntu-1204:  -    <Connector port="8443" protocol="org.apache.coyote.http11.Http11Protocol"[0m[37m
+I, [2014-06-03T11:24:32.164560 #32233]  INFO -- default-ubuntu-1204:  -               maxThreads="150" SSLEnabled="true" scheme="https" secure="true"[0m[37m
+I, [2014-06-03T11:24:32.164586 #32233]  INFO -- default-ubuntu-1204:  +    <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"[0m[37m
+I, [2014-06-03T11:24:32.164612 #32233]  INFO -- default-ubuntu-1204:  +               maxThreads="150" scheme="https" secure="true"[0m[37m
+I, [2014-06-03T11:24:32.164639 #32233]  INFO -- default-ubuntu-1204:                  clientAuth="false" sslProtocol="TLS" />[0m[37m
+I, [2014-06-03T11:24:32.164930 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.164961 #32233]  INFO -- default-ubuntu-1204:       -->[0m[37m
+I, [2014-06-03T11:24:32.165110 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.165141 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.165168 #32233]  INFO -- default-ubuntu-1204:  -    <!-- Define an AJP 1.3 Connector on port 8009 -->[0m[37m
+I, [2014-06-03T11:24:32.165194 #32233]  INFO -- default-ubuntu-1204:       <Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />[0m[37m
+I, [2014-06-03T11:24:32.165220 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.165245 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.165271 #32233]  INFO -- default-ubuntu-1204:  -    <!-- An Engine represents the entry point (within Catalina) that processes[0m[37m
+I, [2014-06-03T11:24:32.165298 #32233]  INFO -- default-ubuntu-1204:  -         every request.  The Engine implementation for Tomcat stand alone[0m[37m
+I, [2014-06-03T11:24:32.165324 #32233]  INFO -- default-ubuntu-1204:  -         analyzes the HTTP headers included with the request, and passes them[0m[37m
+I, [2014-06-03T11:24:32.165594 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.165627 #32233]  INFO -- default-ubuntu-1204:  -         on to the appropriate Host (virtual host).[0m[37m
+I, [2014-06-03T11:24:32.165654 #32233]  INFO -- default-ubuntu-1204:  -         Documentation at /docs/config/engine.html -->[0m[37m
+I, [2014-06-03T11:24:32.165680 #32233]  INFO -- default-ubuntu-1204:  -[0m[37m
+I, [2014-06-03T11:24:32.165706 #32233]  INFO -- default-ubuntu-1204:  -    <!-- You should set jvmRoute to support load-balancing via AJP ie :[0m[37m
+I, [2014-06-03T11:24:32.165732 #32233]  INFO -- default-ubuntu-1204:  -    <Engine name="Catalina" defaultHost="localhost" jvmRoute="jvm1">[0m[37m
+I, [2014-06-03T11:24:32.165757 #32233]  INFO -- default-ubuntu-1204:  -    -->[0m[37m
+I, [2014-06-03T11:24:32.165783 #32233]  INFO -- default-ubuntu-1204:       <Engine name="Catalina" defaultHost="localhost">[0m[37m
+I, [2014-06-03T11:24:32.165809 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.165835 #32233]  INFO -- default-ubuntu-1204:  -      <!--For clustering, please take a look at documentation at:[0m[37m
+I, [2014-06-03T11:24:32.165883 #32233]  INFO -- default-ubuntu-1204:  -          /docs/cluster-howto.html  (simple how to)[0m[37m
+I, [2014-06-03T11:24:32.165913 #32233]  INFO -- default-ubuntu-1204:  -          /docs/config/cluster.html (reference documentation) -->[0m[37m
+I, [2014-06-03T11:24:32.165939 #32233]  INFO -- default-ubuntu-1204:  -      <!--[0m[37m
+I, [2014-06-03T11:24:32.165965 #32233]  INFO -- default-ubuntu-1204:  -      <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"/>[0m[37m
+I, [2014-06-03T11:24:32.165991 #32233]  INFO -- default-ubuntu-1204:  -      -->[0m[37m
+I, [2014-06-03T11:24:32.166026 #32233]  INFO -- default-ubuntu-1204:  -[0m[37m
+I, [2014-06-03T11:24:32.166054 #32233]  INFO -- default-ubuntu-1204:  -      <!-- Use the LockOutRealm to prevent attempts to guess user passwords[0m[37m
+I, [2014-06-03T11:24:32.166081 #32233]  INFO -- default-ubuntu-1204:  -           via a brute-force attack -->[0m[37m
+I, [2014-06-03T11:24:32.166107 #32233]  INFO -- default-ubuntu-1204:         <Realm className="org.apache.catalina.realm.LockOutRealm">[0m[37m
+I, [2014-06-03T11:24:32.166134 #32233]  INFO -- default-ubuntu-1204:  -        <!-- This Realm uses the UserDatabase configured in the global JNDI[0m[37m
+I, [2014-06-03T11:24:32.166169 #32233]  INFO -- default-ubuntu-1204:  -             resources under the key "UserDatabase".  Any edits[0m[37m
+I, [2014-06-03T11:24:32.166203 #32233]  INFO -- default-ubuntu-1204:  -             that are performed against this UserDatabase are immediately[0m[37m
+I, [2014-06-03T11:24:32.166227 #32233]  INFO -- default-ubuntu-1204:  -             available for use by the Realm.  -->[0m[37m
+I, [2014-06-03T11:24:32.166250 #32233]  INFO -- default-ubuntu-1204:           <Realm className="org.apache.catalina.realm.UserDatabaseRealm"[0m[37m
+I, [2014-06-03T11:24:32.166274 #32233]  INFO -- default-ubuntu-1204:                  resourceName="UserDatabase"/>[0m[37m
+I, [2014-06-03T11:24:32.166298 #32233]  INFO -- default-ubuntu-1204:         </Realm>[0m[37m
+I, [2014-06-03T11:24:32.166341 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.166366 #32233]  INFO -- default-ubuntu-1204:  -      <Host name="localhost"  appBase="webapps"[0m[37m
+I, [2014-06-03T11:24:32.166390 #32233]  INFO -- default-ubuntu-1204:  -            unpackWARs="true" autoDeploy="true">[0m[37m
+I, [2014-06-03T11:24:32.166414 #32233]  INFO -- default-ubuntu-1204:  +      <Host name="localhost"  appBase="webapps" unpackWARs="true" autoDeploy="true">[0m[37m
+I, [2014-06-03T11:24:32.166438 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.166462 #32233]  INFO -- default-ubuntu-1204:  -        <!-- SingleSignOn valve, share authentication between web applications[0m[37m
+I, [2014-06-03T11:24:32.166486 #32233]  INFO -- default-ubuntu-1204:  -             Documentation at: /docs/config/valve.html -->[0m[37m
+I, [2014-06-03T11:24:32.166509 #32233]  INFO -- default-ubuntu-1204:  -        <!--[0m[37m
+I, [2014-06-03T11:24:32.166533 #32233]  INFO -- default-ubuntu-1204:  -        <Valve className="org.apache.catalina.authenticator.SingleSignOn" />[0m[37m
+I, [2014-06-03T11:24:32.166557 #32233]  INFO -- default-ubuntu-1204:  -        -->[0m[37m
+I, [2014-06-03T11:24:32.166590 #32233]  INFO -- default-ubuntu-1204:  -[0m[37m
+I, [2014-06-03T11:24:32.166615 #32233]  INFO -- default-ubuntu-1204:  -        <!-- Access log processes all example.[0m[37m
+I, [2014-06-03T11:24:32.166677 #32233]  INFO -- default-ubuntu-1204:  -             Documentation at: /docs/config/valve.html[0m[37m
+I, [2014-06-03T11:24:32.166704 #32233]  INFO -- default-ubuntu-1204:  -             Note: The pattern used is equivalent to using pattern="common" -->[0m[37m
+I, [2014-06-03T11:24:32.166730 #32233]  INFO -- default-ubuntu-1204:           <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"[0m[37m
+I, [2014-06-03T11:24:32.166755 #32233]  INFO -- default-ubuntu-1204:  -               prefix="localhost_access_log." suffix=".txt"[0m[37m
+I, [2014-06-03T11:24:32.166788 #32233]  INFO -- default-ubuntu-1204:  -               pattern="%h %l %u %t &quot;%r&quot; %s %b" />[0m[37m
+I, [2014-06-03T11:24:32.166812 #32233]  INFO -- default-ubuntu-1204:  +               prefix="localhost_access_log." suffix=".txt" pattern="%h %l %u %t &quot;%r&quot; %s %b" />[0m[37m
+I, [2014-06-03T11:24:32.166845 #32233]  INFO -- default-ubuntu-1204:   [0m[37m
+I, [2014-06-03T11:24:32.166870 #32233]  INFO -- default-ubuntu-1204:         </Host>[0m[37m
+I, [2014-06-03T11:24:32.166894 #32233]  INFO -- default-ubuntu-1204:  +[0m[37m
+I, [2014-06-03T11:24:32.166926 #32233]  INFO -- default-ubuntu-1204:       </Engine>[0m[37m
+I, [2014-06-03T11:24:32.166960 #32233]  INFO -- default-ubuntu-1204:  +[0m[37m
+I, [2014-06-03T11:24:32.166984 #32233]  INFO -- default-ubuntu-1204:     </Service>[0m[37m
+I, [2014-06-03T11:24:32.167007 #32233]  INFO -- default-ubuntu-1204:  +[0m[37m
+I, [2014-06-03T11:24:32.167030 #32233]  INFO -- default-ubuntu-1204:   </Server>[0m
+I, [2014-06-03T11:24:32.168060 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:24:32.168097 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:24:04+00:00] INFO: template[/opt/tomcat/conf/server.xml] sending create action to template[/opt/tomcat/bin/catalina.sh] (immediate)
+I, [2014-06-03T11:24:32.168250 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.168285 #32233]  INFO -- default-ubuntu-1204:   * template[/opt/tomcat/bin/catalina.sh] action create[0m[2014-06-03T14:24:04+00:00] INFO: Processing template[/opt/tomcat/bin/catalina.sh] action create (tomcat-all::default line 48)
+I, [2014-06-03T11:24:32.168400 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:24:04+00:00] INFO: template[/opt/tomcat/bin/catalina.sh] backed up to /tmp/kitchen/backup/opt/tomcat/bin/catalina.sh.chef-20140603142404.032263I, [2014-06-03T11:24:32.170749 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:24:04+00:00] INFO: template[/opt/tomcat/bin/catalina.sh] updated file contents /opt/tomcat/bin/catalina.shI, [2014-06-03T11:24:32.171479 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:24:32.172069 #32233]  INFO -- default-ubuntu-1204: 
+    - update content in file /opt/tomcat/bin/catalina.sh from d23400 to e6f200[0m[37mI, [2014-06-03T11:24:32.172384 #32233]  INFO -- default-ubuntu-1204: 
+        --- /opt/tomcat/bin/catalina.sh	2014-03-25 03:24:57.000000000 +0000[0m[37mI, [2014-06-03T11:24:32.173076 #32233]  INFO -- default-ubuntu-1204: 
+        +++ /tmp/chef-rendered-template20140603-1811-kz4bro	2014-06-03 14:24:04.026604347 +0000[0m[37mI, [2014-06-03T11:24:32.173607 #32233]  INFO -- default-ubuntu-1204: 
+        @@ -15,6 +15,10 @@[0m[37mI, [2014-06-03T11:24:32.173968 #32233]  INFO -- default-ubuntu-1204: 
+         # See the License for the specific language governing permissions and[0m[37mI, [2014-06-03T11:24:32.174298 #32233]  INFO -- default-ubuntu-1204: 
+         # limitations under the License.[0m[37mI, [2014-06-03T11:24:32.174716 #32233]  INFO -- default-ubuntu-1204: 
+         [0m[37mI, [2014-06-03T11:24:32.175010 #32233]  INFO -- default-ubuntu-1204: 
+        +JAVA_OPTS="-d64 -server -Djava.awt.headless=true"[0m[37mI, [2014-06-03T11:24:32.175446 #32233]  INFO -- default-ubuntu-1204: 
+        +CATALINA_HOME="/opt/tomcat"[0m[37mI, [2014-06-03T11:24:32.175790 #32233]  INFO -- default-ubuntu-1204: 
+        +CATALINA_PID="$CATALINA_HOME/catalina.pid"[0m[37mI, [2014-06-03T11:24:32.176147 #32233]  INFO -- default-ubuntu-1204: 
+        +[0m[37mI, [2014-06-03T11:24:32.176465 #32233]  INFO -- default-ubuntu-1204: 
+         # -----------------------------------------------------------------------------[0m[37mI, [2014-06-03T11:24:32.177187 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.177227 #32233]  INFO -- default-ubuntu-1204:   # Control Script for the CATALINA Server[0m[37m
+I, [2014-06-03T11:24:32.177256 #32233]  INFO -- default-ubuntu-1204:   #[0m
+[0mI, [2014-06-03T11:24:32.177490 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:24:04+00:00] INFO: template[/opt/tomcat/bin/catalina.sh] sending create action to template[/etc/init.d/tomcat] (immediate)I, [2014-06-03T11:24:32.177691 #32233]  INFO -- default-ubuntu-1204: 
+  * template[/etc/init.d/tomcat] action create[0m[2014-06-03T14:24:04+00:00] INFO: Processing template[/etc/init.d/tomcat] action create (tomcat-all::default line 54)I, [2014-06-03T11:24:32.178906 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.178951 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:24:04+00:00] INFO: template[/etc/init.d/tomcat] created file /etc/init.d/tomcat
+I, [2014-06-03T11:24:32.179101 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:24:32.179398 #32233]  INFO -- default-ubuntu-1204: 
+    - create new file /etc/init.d/tomcat[0m[2014-06-03T14:24:04+00:00] INFO: template[/etc/init.d/tomcat] updated file contents /etc/init.d/tomcatI, [2014-06-03T11:24:32.181163 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:24:32.181472 #32233]  INFO -- default-ubuntu-1204: 
+    - update content in file /etc/init.d/tomcat from none to 513752[0m[37mI, [2014-06-03T11:24:32.181932 #32233]  INFO -- default-ubuntu-1204: 
+        --- /etc/init.d/tomcat	2014-06-03 14:24:04.034608347 +0000[0m[37mI, [2014-06-03T11:24:32.182533 #32233]  INFO -- default-ubuntu-1204: 
+        +++ /tmp/chef-rendered-template20140603-1811-kn6hol	2014-06-03 14:24:04.038610347 +0000[0m[37mI, [2014-06-03T11:24:32.183294 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.183499 #32233]  INFO -- default-ubuntu-1204:  @@ -1 +1,39 @@[0m[37m
+I, [2014-06-03T11:24:32.183535 #32233]  INFO -- default-ubuntu-1204:  +#!/bin/bash[0m[37m
+I, [2014-06-03T11:24:32.183562 #32233]  INFO -- default-ubuntu-1204:  +#[0m[37m
+I, [2014-06-03T11:24:32.183743 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.183776 #32233]  INFO -- default-ubuntu-1204:  +# chkconfig: - 85 15[0m[37m
+I, [2014-06-03T11:24:32.183804 #32233]  INFO -- default-ubuntu-1204:  +# description: Jakarta Tomcat Java Servlets and JSP server[0m[37m
+I, [2014-06-03T11:24:32.183831 #32233]  INFO -- default-ubuntu-1204:  +# processname: tomcat[0m[37m
+I, [2014-06-03T11:24:32.183857 #32233]  INFO -- default-ubuntu-1204:  +# pidfile: /var/www/tomcat/tomcat.pid[0m[37m
+I, [2014-06-03T11:24:32.183882 #32233]  INFO -- default-ubuntu-1204:  +[0m[37m
+I, [2014-06-03T11:24:32.183908 #32233]  INFO -- default-ubuntu-1204:  +# Source function library.[0m[37m
+I, [2014-06-03T11:24:32.183933 #32233]  INFO -- default-ubuntu-1204:  +. /etc/init.d/functions[0m[37m
+I, [2014-06-03T11:24:32.184189 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.184221 #32233]  INFO -- default-ubuntu-1204:  +[0m[37m
+I, [2014-06-03T11:24:32.184247 #32233]  INFO -- default-ubuntu-1204:  +TOMCAT_USER=tomcat[0m[37m
+I, [2014-06-03T11:24:32.184273 #32233]  INFO -- default-ubuntu-1204:  +CATALINA_HOME=/opt/tomcat[0m[37m
+I, [2014-06-03T11:24:32.184298 #32233]  INFO -- default-ubuntu-1204:  +RETVAL=$?[0m[37m
+I, [2014-06-03T11:24:32.184323 #32233]  INFO -- default-ubuntu-1204:  +[0m[37m
+I, [2014-06-03T11:24:32.184349 #32233]  INFO -- default-ubuntu-1204:  +case "$1" in[0m[37m
+I, [2014-06-03T11:24:32.184373 #32233]  INFO -- default-ubuntu-1204:  +start)[0m[37m
+I, [2014-06-03T11:24:32.184399 #32233]  INFO -- default-ubuntu-1204:  +        echo "Starting Tomcat"[0m[37m
+I, [2014-06-03T11:24:32.184676 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.184709 #32233]  INFO -- default-ubuntu-1204:  +        exec su -l $TOMCAT_USER -c "$CATALINA_HOME/bin/catalina.sh start"[0m[37m
+I, [2014-06-03T11:24:32.184736 #32233]  INFO -- default-ubuntu-1204:  +;;[0m[37m
+I, [2014-06-03T11:24:32.184762 #32233]  INFO -- default-ubuntu-1204:  +[0m[37m
+I, [2014-06-03T11:24:32.184788 #32233]  INFO -- default-ubuntu-1204:  +stop)[0m[37m
+I, [2014-06-03T11:24:32.184814 #32233]  INFO -- default-ubuntu-1204:  +        echo "Stopping Tomcat"[0m[37m
+I, [2014-06-03T11:24:32.184840 #32233]  INFO -- default-ubuntu-1204:  +        exec su -l $TOMCAT_USER -c "$CATALINA_HOME/bin/catalina.sh stop -force"[0m[37m
+I, [2014-06-03T11:24:32.184866 #32233]  INFO -- default-ubuntu-1204:  +;;[0m[37m
+I, [2014-06-03T11:24:32.184908 #32233]  INFO -- default-ubuntu-1204:  +[0m[37m
+I, [2014-06-03T11:24:32.184935 #32233]  INFO -- default-ubuntu-1204:  +restart)[0m[37m
+I, [2014-06-03T11:24:32.185204 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.185236 #32233]  INFO -- default-ubuntu-1204:  +        $0 stop[0m[37m
+I, [2014-06-03T11:24:32.185278 #32233]  INFO -- default-ubuntu-1204:  +        sleep 15[0m[37m
+I, [2014-06-03T11:24:32.185306 #32233]  INFO -- default-ubuntu-1204:  +        $0 start[0m[37m
+I, [2014-06-03T11:24:32.185331 #32233]  INFO -- default-ubuntu-1204:  +;;[0m[37m
+I, [2014-06-03T11:24:32.185380 #32233]  INFO -- default-ubuntu-1204:  +[0m[37m
+I, [2014-06-03T11:24:32.185406 #32233]  INFO -- default-ubuntu-1204:  +*)[0m[37m
+I, [2014-06-03T11:24:32.185438 #32233]  INFO -- default-ubuntu-1204:  +        echo $"Usage: $0 {start|stop|restart}"[0m[37m
+I, [2014-06-03T11:24:32.185703 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.185734 #32233]  INFO -- default-ubuntu-1204:  +        exit 1[0m[37m
+I, [2014-06-03T11:24:32.185764 #32233]  INFO -- default-ubuntu-1204:  +;;[0m[37m
+I, [2014-06-03T11:24:32.185789 #32233]  INFO -- default-ubuntu-1204:  +esac[0m[37m
+I, [2014-06-03T11:24:32.185814 #32233]  INFO -- default-ubuntu-1204:  +[0m[37m
+I, [2014-06-03T11:24:32.185840 #32233]  INFO -- default-ubuntu-1204:  +exit $RETVAL[0m[2014-06-03T14:24:04+00:00] INFO: template[/etc/init.d/tomcat] mode changed to 755
+I, [2014-06-03T11:24:32.186054 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:24:32.186258 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.186421 #32233]  INFO -- default-ubuntu-1204:     - change mode from '' to '0755'[0m
+[0mI, [2014-06-03T11:24:32.186589 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.186619 #32233]  INFO -- default-ubuntu-1204:   * template[/etc/logrotate.d/tomcat] action create[0m
+[2014-06-03T14:24:04+00:00] INFO: Processing template[/etc/logrotate.d/tomcat] action create (tomcat-all::default line 36)I, [2014-06-03T11:24:32.186817 #32233]  INFO -- default-ubuntu-1204: 
+ (up to date)[0mI, [2014-06-03T11:24:32.188127 #32233]  INFO -- default-ubuntu-1204: 
+  * template[/opt/tomcat/conf/server.xml] action create[0m[2014-06-03T14:24:04+00:00] INFO: Processing template[/opt/tomcat/conf/server.xml] action create (tomcat-all::default line 42)I, [2014-06-03T11:24:32.188647 #32233]  INFO -- default-ubuntu-1204: 
+ (up to date)[0mI, [2014-06-03T11:24:32.190371 #32233]  INFO -- default-ubuntu-1204: 
+  * template[/opt/tomcat/bin/catalina.sh] action create[0m[2014-06-03T14:24:04+00:00] INFO: Processing template[/opt/tomcat/bin/catalina.sh] action create (tomcat-all::default line 48)I, [2014-06-03T11:24:32.190994 #32233]  INFO -- default-ubuntu-1204: 
+ (up to date)[0mI, [2014-06-03T11:24:32.193204 #32233]  INFO -- default-ubuntu-1204: 
+  * template[/etc/init.d/tomcat] action nothing[0m[2014-06-03T14:24:04+00:00] INFO: Processing template[/etc/init.d/tomcat] action nothing (tomcat-all::default line 54)I, [2014-06-03T11:24:32.193679 #32233]  INFO -- default-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-06-03T11:24:32.193928 #32233]  INFO -- default-ubuntu-1204: 
+  * service[tomcat] action enable[0m[2014-06-03T14:24:04+00:00] INFO: Processing service[tomcat] action enable (tomcat-all::default line 61)I, [2014-06-03T11:24:32.194398 #32233]  INFO -- default-ubuntu-1204: 
+[2014-06-03T14:24:04+00:00] INFO: service[tomcat] enabledI, [2014-06-03T11:24:32.263290 #32233]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-06-03T11:24:32.263502 #32233]  INFO -- default-ubuntu-1204: 
+    - enable service service[tomcat][0mI, [2014-06-03T11:24:32.263964 #32233]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-06-03T11:24:32.264200 #32233]  INFO -- default-ubuntu-1204: 
+  * service[tomcat] action start[0m[2014-06-03T14:24:04+00:00] INFO: Processing service[tomcat] action start (tomcat-all::default line 61)I, [2014-06-03T11:24:32.264851 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.368143 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:24:04+00:00] INFO: service[tomcat] started
+I, [2014-06-03T11:24:32.368203 #32233]  INFO -- default-ubuntu-1204: [32m
+I, [2014-06-03T11:24:32.368226 #32233]  INFO -- default-ubuntu-1204:     - start service service[tomcat][0m
+I, [2014-06-03T11:24:32.368246 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:24:32.368285 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:24:04+00:00] INFO: Chef Run complete in 141.581993755 seconds
+I, [2014-06-03T11:24:32.368317 #32233]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:24:32.368338 #32233]  INFO -- default-ubuntu-1204: Running handlers:[0m
+I, [2014-06-03T11:24:32.368359 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:24:04+00:00] INFO: Running report handlers
+I, [2014-06-03T11:24:32.368380 #32233]  INFO -- default-ubuntu-1204: Running handlers complete
+I, [2014-06-03T11:24:32.368401 #32233]  INFO -- default-ubuntu-1204: [0m
+I, [2014-06-03T11:24:32.368429 #32233]  INFO -- default-ubuntu-1204: [2014-06-03T14:24:04+00:00] INFO: Report handlers complete
+I, [2014-06-03T11:24:32.368449 #32233]  INFO -- default-ubuntu-1204: Chef Client finished, 19/27 resources updated in 143.358825297 seconds[0m
+I, [2014-06-03T11:24:32.500394 #32233]  INFO -- default-ubuntu-1204: Finished converging <default-ubuntu-1204> (2m29.17s).
+I, [2014-06-03T11:30:53.757401 #32354]  INFO -- default-ubuntu-1204: -----> Setting up <default-ubuntu-1204>...
+Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem ( 15%)Fetching: thor-0.19.0.gem ( 16%)Fetching: thor-0.19.0.gem ( 27%)Fetching: thor-0.19.0.gem ( 31%)Fetching: thor-0.19.0.gem ( 43%)Fetching: thor-0.19.0.gem ( 45%)Fetching: thor-0.19.0.gem ( 54%)Fetching: thor-0.19.0.gem ( 56%)Fetching: thor-0.19.0.gem ( 72%)Fetching: thor-0.19.0.gem ( 73%)Fetching: thor-0.19.0.gem ( 87%)Fetching: thor-0.19.0.gem ( 92%)Fetching: thor-0.19.0.gem ( 94%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)I, [2014-06-03T11:31:15.570670 #32354]  INFO -- default-ubuntu-1204: 
+Fetching: busser-0.6.2.gemFetching: busser-0.6.2.gem ( 61%)Fetching: busser-0.6.2.gem ( 68%)Fetching: busser-0.6.2.gem (100%)Fetching: busser-0.6.2.gem (100%)I, [2014-06-03T11:31:15.916406 #32354]  INFO -- default-ubuntu-1204: 
+Successfully installed thor-0.19.0I, [2014-06-03T11:31:15.969763 #32354]  INFO -- default-ubuntu-1204: 
+Successfully installed busser-0.6.2I, [2014-06-03T11:31:15.970494 #32354]  INFO -- default-ubuntu-1204: 
+2 gems installedI, [2014-06-03T11:31:15.970970 #32354]  INFO -- default-ubuntu-1204: 
+-----> Setting up BusserI, [2014-06-03T11:31:16.352873 #32354]  INFO -- default-ubuntu-1204: 
+       Creating BUSSER_ROOT in /tmp/busserI, [2014-06-03T11:31:16.353153 #32354]  INFO -- default-ubuntu-1204: 
+       Creating busser binstubI, [2014-06-03T11:31:16.353598 #32354]  INFO -- default-ubuntu-1204: 
+       Plugin serverspec installed (version 0.2.6)I, [2014-06-03T11:31:35.899956 #32354]  INFO -- default-ubuntu-1204: 
+-----> Running postinstall for serverspec pluginI, [2014-06-03T11:31:35.902475 #32354]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:31:49.274956 #32354]  INFO -- default-ubuntu-1204: Finished setting up <default-ubuntu-1204> (0m55.50s).
+I, [2014-06-03T11:34:28.026647 #32391]  INFO -- default-ubuntu-1204: -----> Verifying <default-ubuntu-1204>...
+       Suite path directory /tmp/busser/suites does not exist, skipping.I, [2014-06-03T11:34:28.317152 #32391]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/localhost/network_spec.rb (mode=0644)I, [2014-06-03T11:34:28.471344 #32391]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb (mode=0644)I, [2014-06-03T11:34:28.916039 #32391]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)I, [2014-06-03T11:34:29.355051 #32391]  INFO -- default-ubuntu-1204: 
+-----> Running serverspec test suiteI, [2014-06-03T11:34:29.794761 #32391]  INFO -- default-ubuntu-1204: 
+/opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -S /opt/chef/embedded/bin/rspec /tmp/busser/suites/serverspec/localhost/network_spec.rb /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb --color --format documentationI, [2014-06-03T11:34:29.898869 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:30.061529 #32391]  INFO -- default-ubuntu-1204: 
+Host "localhost"I, [2014-06-03T11:34:30.061826 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be reachable[0mI, [2014-06-03T11:34:31.172660 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be reachable[0mI, [2014-06-03T11:34:31.200452 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be reachable[0mI, [2014-06-03T11:34:31.208485 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.208753 #32391]  INFO -- default-ubuntu-1204: 
+Tomcat DaemonI, [2014-06-03T11:34:31.208999 #32391]  INFO -- default-ubuntu-1204: 
+[32m  is listening on port 8080[0mI, [2014-06-03T11:34:31.292015 #32391]  INFO -- default-ubuntu-1204: 
+/etc/init.d/tomcat: line 9: /etc/init.d/functions: No such file or directoryI, [2014-06-03T11:34:31.316219 #32391]  INFO -- default-ubuntu-1204: 
+[32m  has a running service of tomcat[0mI, [2014-06-03T11:34:31.333583 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.333871 #32391]  INFO -- default-ubuntu-1204: 
+Group "tomcat"I, [2014-06-03T11:34:31.334917 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should exist [][0mI, [2014-06-03T11:34:31.343489 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.343883 #32391]  INFO -- default-ubuntu-1204: 
+User "tomcat"I, [2014-06-03T11:34:31.344127 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should exist [][0mI, [2014-06-03T11:34:31.356939 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should belong to group "tomcat"[0mI, [2014-06-03T11:34:31.368608 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.369018 #32391]  INFO -- default-ubuntu-1204: 
+Package "openjdk-7-jdk"I, [2014-06-03T11:34:31.369415 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be installed[0mI, [2014-06-03T11:34:31.449215 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.449504 #32391]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat"I, [2014-06-03T11:34:31.452419 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be directory[0mI, [2014-06-03T11:34:31.479924 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.480081 #32391]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat/bin/catalina.sh"I, [2014-06-03T11:34:31.480525 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be owned by "tomcat"[0mI, [2014-06-03T11:34:31.493070 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be executable[0mI, [2014-06-03T11:34:31.515059 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be writable[0mI, [2014-06-03T11:34:31.552954 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be readable[0mI, [2014-06-03T11:34:31.580337 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.580646 #32391]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat/conf/server.xml"I, [2014-06-03T11:34:31.580873 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be owned by "tomcat"[0mI, [2014-06-03T11:34:31.594405 #32391]  INFO -- default-ubuntu-1204: 
+[31m  should be executable (FAILED - 1)[0mI, [2014-06-03T11:34:31.619969 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be writable[0mI, [2014-06-03T11:34:31.653568 #32391]  INFO -- default-ubuntu-1204: 
+[32m  should be readable[0mI, [2014-06-03T11:34:31.681578 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.681731 #32391]  INFO -- default-ubuntu-1204: 
+Failures:I, [2014-06-03T11:34:31.682053 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.682315 #32391]  INFO -- default-ubuntu-1204: 
+  1) File "/opt/tomcat/conf/server.xml" should be executableI, [2014-06-03T11:34:31.682792 #32391]  INFO -- default-ubuntu-1204: 
+     [31mFailure/Error:[0m [31mit { should be_executable.by_user("tomcat") }[0mI, [2014-06-03T11:34:31.683533 #32391]  INFO -- default-ubuntu-1204: 
+       [31menv PATH=/sbin:/usr/sbin:$PATH su -s /bin/sh -c "test -x /opt/tomcat/conf/server.xml" tomcat[0mI, [2014-06-03T11:34:31.683744 #32391]  INFO -- default-ubuntu-1204: 
+       [31mexpected File "/opt/tomcat/conf/server.xml" to be executable[0mI, [2014-06-03T11:34:31.684105 #32391]  INFO -- default-ubuntu-1204: 
+[36m     # /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb:47:in `block (2 levels) in <top (required)>'[0mI, [2014-06-03T11:34:31.684455 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.684686 #32391]  INFO -- default-ubuntu-1204: 
+Finished in 1.58 secondsI, [2014-06-03T11:34:31.684909 #32391]  INFO -- default-ubuntu-1204: 
+[31m18 examples, 1 failure[0mI, [2014-06-03T11:34:31.685220 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.685346 #32391]  INFO -- default-ubuntu-1204: 
+Failed examples:I, [2014-06-03T11:34:31.685578 #32391]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:31.685741 #32391]  INFO -- default-ubuntu-1204: 
+[31mrspec /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb:47[0m [36m# File "/opt/tomcat/conf/server.xml" should be executable[0mI, [2014-06-03T11:34:31.687627 #32391]  INFO -- default-ubuntu-1204: 
+/opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -S /opt/chef/embedded/bin/rspec /tmp/busser/suites/serverspec/localhost/network_spec.rb /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb --color --format documentation failedI, [2014-06-03T11:34:31.705102 #32391]  INFO -- default-ubuntu-1204: 
+Ruby Script [/tmp/busser/gems/gems/busser-serverspec-0.2.6/lib/busser/runner_plugin/../serverspec/runner.rb /tmp/busser/suites/serverspec] exit code was 1I, [2014-06-03T11:34:31.712809 #32391]  INFO -- default-ubuntu-1204: 
+E, [2014-06-03T11:34:31.730546 #32391] ERROR -- default-ubuntu-1204: Verify failed on instance <default-ubuntu-1204>.
+E, [2014-06-03T11:34:31.730689 #32391] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-06-03T11:34:31.730714 #32391] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-06-03T11:34:31.730734 #32391] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sh -c 'BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" ; export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE; sudo -E /tmp/busser/bin/busser test']
+E, [2014-06-03T11:34:31.730758 #32391] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-06-03T11:34:31.730777 #32391] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-06-03T11:34:31.730796 #32391] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sh -c 'BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" ; export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE; sudo -E /tmp/busser/bin/busser test']
+E, [2014-06-03T11:34:31.730816 #32391] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-06-03T11:34:31.730835 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:118:in `rescue in run_remote'
+E, [2014-06-03T11:34:31.730854 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:114:in `run_remote'
+E, [2014-06-03T11:34:31.730873 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:63:in `block in verify'
+E, [2014-06-03T11:34:31.730893 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-06-03T11:34:31.730925 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:61:in `new'
+E, [2014-06-03T11:34:31.730949 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:61:in `verify'
+E, [2014-06-03T11:34:31.730969 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:85:in `verify'
+E, [2014-06-03T11:34:31.730988 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `public_send'
+E, [2014-06-03T11:34:31.731027 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `block in perform_action'
+E, [2014-06-03T11:34:31.731048 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:315:in `call'
+E, [2014-06-03T11:34:31.731068 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:315:in `synchronize_or_call'
+E, [2014-06-03T11:34:31.731087 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:290:in `block in action'
+E, [2014-06-03T11:34:31.731107 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-06-03T11:34:31.731129 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:289:in `action'
+E, [2014-06-03T11:34:31.731149 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `perform_action'
+E, [2014-06-03T11:34:31.731169 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:271:in `verify_action'
+E, [2014-06-03T11:34:31.731188 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:253:in `block in transition_to'
+E, [2014-06-03T11:34:31.731208 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:252:in `each'
+E, [2014-06-03T11:34:31.731235 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:252:in `transition_to'
+E, [2014-06-03T11:34:31.731254 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-06-03T11:34:31.731273 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-06-03T11:34:31.731292 #32391] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-06-03T11:34:31.731313 #32391] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-06-03T11:34:56.187263 #32407]  INFO -- default-ubuntu-1204: -----> Verifying <default-ubuntu-1204>...
+       Removing /tmp/busser/suites/serverspecI, [2014-06-03T11:34:56.451244 #32407]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/localhost/network_spec.rb (mode=0644)I, [2014-06-03T11:34:56.603231 #32407]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb (mode=0644)I, [2014-06-03T11:34:57.044243 #32407]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)I, [2014-06-03T11:34:57.486581 #32407]  INFO -- default-ubuntu-1204: 
+-----> Running serverspec test suiteI, [2014-06-03T11:34:57.927296 #32407]  INFO -- default-ubuntu-1204: 
+/opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -S /opt/chef/embedded/bin/rspec /tmp/busser/suites/serverspec/localhost/network_spec.rb /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb --color --format documentationI, [2014-06-03T11:34:57.989797 #32407]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:58.141842 #32407]  INFO -- default-ubuntu-1204: 
+Host "localhost"I, [2014-06-03T11:34:58.142143 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be reachable[0mI, [2014-06-03T11:34:59.208636 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be reachable[0mI, [2014-06-03T11:34:59.216945 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be reachable[0mI, [2014-06-03T11:34:59.222589 #32407]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:59.222903 #32407]  INFO -- default-ubuntu-1204: 
+Tomcat DaemonI, [2014-06-03T11:34:59.223266 #32407]  INFO -- default-ubuntu-1204: 
+[32m  is listening on port 8080[0mI, [2014-06-03T11:34:59.228125 #32407]  INFO -- default-ubuntu-1204: 
+/etc/init.d/tomcat: line 9: /etc/init.d/functions: No such file or directoryI, [2014-06-03T11:34:59.234193 #32407]  INFO -- default-ubuntu-1204: 
+[32m  has a running service of tomcat[0mI, [2014-06-03T11:34:59.243202 #32407]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:59.243519 #32407]  INFO -- default-ubuntu-1204: 
+Group "tomcat"I, [2014-06-03T11:34:59.243883 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should exist [][0mI, [2014-06-03T11:34:59.252674 #32407]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:59.252898 #32407]  INFO -- default-ubuntu-1204: 
+User "tomcat"I, [2014-06-03T11:34:59.253249 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should exist [][0mI, [2014-06-03T11:34:59.257615 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should belong to group "tomcat"[0mI, [2014-06-03T11:34:59.263247 #32407]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:59.263401 #32407]  INFO -- default-ubuntu-1204: 
+Package "openjdk-7-jdk"I, [2014-06-03T11:34:59.263836 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be installed[0mI, [2014-06-03T11:34:59.285877 #32407]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:59.286043 #32407]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat"I, [2014-06-03T11:34:59.286234 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be directory[0mI, [2014-06-03T11:34:59.289825 #32407]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:59.290036 #32407]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat/bin/catalina.sh"I, [2014-06-03T11:34:59.290285 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be owned by "tomcat"[0mI, [2014-06-03T11:34:59.295289 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be executable[0mI, [2014-06-03T11:34:59.308931 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be writable[0mI, [2014-06-03T11:34:59.334658 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be readable[0mI, [2014-06-03T11:34:59.353703 #32407]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:59.354112 #32407]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat/conf/server.xml"I, [2014-06-03T11:34:59.354481 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be owned by "tomcat"[0mI, [2014-06-03T11:34:59.363536 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be writable[0mI, [2014-06-03T11:34:59.380520 #32407]  INFO -- default-ubuntu-1204: 
+[32m  should be readable[0mI, [2014-06-03T11:34:59.399012 #32407]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:59.399492 #32407]  INFO -- default-ubuntu-1204: 
+Finished in 1.23 secondsI, [2014-06-03T11:34:59.399751 #32407]  INFO -- default-ubuntu-1204: 
+[32m17 examples, 0 failures[0mI, [2014-06-03T11:34:59.399958 #32407]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:34:59.425116 #32407]  INFO -- default-ubuntu-1204: Finished verifying <default-ubuntu-1204> (0m3.24s).
+I, [2014-06-03T11:42:59.799558 #32513]  INFO -- default-ubuntu-1204: -----> Verifying <default-ubuntu-1204>...
+       Removing /tmp/busser/suites/serverspecI, [2014-06-03T11:43:00.083714 #32513]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/localhost/network_spec.rb (mode=0644)I, [2014-06-03T11:43:00.240906 #32513]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb (mode=0644)I, [2014-06-03T11:43:00.688904 #32513]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)I, [2014-06-03T11:43:01.144338 #32513]  INFO -- default-ubuntu-1204: 
+-----> Running serverspec test suiteI, [2014-06-03T11:43:01.605164 #32513]  INFO -- default-ubuntu-1204: 
+/opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -S /opt/chef/embedded/bin/rspec /tmp/busser/suites/serverspec/localhost/network_spec.rb /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb --color --format documentationI, [2014-06-03T11:43:01.668902 #32513]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:43:01.823959 #32513]  INFO -- default-ubuntu-1204: 
+Host "localhost"I, [2014-06-03T11:43:01.824234 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be reachable[0mI, [2014-06-03T11:43:02.890901 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be reachable[0mI, [2014-06-03T11:43:02.899333 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be reachable[0mI, [2014-06-03T11:43:02.904731 #32513]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:43:02.904982 #32513]  INFO -- default-ubuntu-1204: 
+Tomcat DaemonI, [2014-06-03T11:43:02.905281 #32513]  INFO -- default-ubuntu-1204: 
+[32m  is listening on port 8080[0mI, [2014-06-03T11:43:02.910077 #32513]  INFO -- default-ubuntu-1204: 
+/etc/init.d/tomcat: line 9: /etc/init.d/functions: No such file or directoryI, [2014-06-03T11:43:02.916387 #32513]  INFO -- default-ubuntu-1204: 
+[32m  has a running service of tomcat[0mI, [2014-06-03T11:43:02.927288 #32513]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:43:02.927453 #32513]  INFO -- default-ubuntu-1204: 
+Group "tomcat"I, [2014-06-03T11:43:02.927796 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should exist [][0mI, [2014-06-03T11:43:02.933416 #32513]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:43:02.933570 #32513]  INFO -- default-ubuntu-1204: 
+User "tomcat"I, [2014-06-03T11:43:02.934175 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should exist [][0mI, [2014-06-03T11:43:02.941828 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should belong to group "tomcat"[0mI, [2014-06-03T11:43:02.948173 #32513]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:43:02.948476 #32513]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat"I, [2014-06-03T11:43:02.948725 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be directory[0mI, [2014-06-03T11:43:02.954163 #32513]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:43:02.954326 #32513]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat/bin/catalina.sh"I, [2014-06-03T11:43:02.954601 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be owned by "tomcat"[0mI, [2014-06-03T11:43:02.960112 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be executable[0mI, [2014-06-03T11:43:02.974655 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be writable[0mI, [2014-06-03T11:43:02.992889 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be readable[0mI, [2014-06-03T11:43:03.018430 #32513]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:43:03.018593 #32513]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat/conf/server.xml"I, [2014-06-03T11:43:03.018922 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be owned by "tomcat"[0mI, [2014-06-03T11:43:03.028464 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be writable[0mI, [2014-06-03T11:43:03.043468 #32513]  INFO -- default-ubuntu-1204: 
+[32m  should be readable[0mI, [2014-06-03T11:43:03.063622 #32513]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:43:03.063818 #32513]  INFO -- default-ubuntu-1204: 
+Finished in 1.21 secondsI, [2014-06-03T11:43:03.064120 #32513]  INFO -- default-ubuntu-1204: 
+[32m16 examples, 0 failures[0mI, [2014-06-03T11:43:03.064599 #32513]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:43:03.088664 #32513]  INFO -- default-ubuntu-1204: Finished verifying <default-ubuntu-1204> (0m3.29s).
+I, [2014-06-03T11:44:33.692665 #32540]  INFO -- default-ubuntu-1204: -----> Verifying <default-ubuntu-1204>...
+       Removing /tmp/busser/suites/serverspecI, [2014-06-03T11:44:33.948812 #32540]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb (mode=0644)I, [2014-06-03T11:44:34.101843 #32540]  INFO -- default-ubuntu-1204: 
+Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)I, [2014-06-03T11:44:34.536586 #32540]  INFO -- default-ubuntu-1204: 
+-----> Running serverspec test suiteI, [2014-06-03T11:44:34.968743 #32540]  INFO -- default-ubuntu-1204: 
+/opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -S /opt/chef/embedded/bin/rspec /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb --color --format documentationI, [2014-06-03T11:44:35.029218 #32540]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:44:35.174678 #32540]  INFO -- default-ubuntu-1204: 
+Tomcat DaemonI, [2014-06-03T11:44:35.174959 #32540]  INFO -- default-ubuntu-1204: 
+[32m  is listening on port 8080[0mI, [2014-06-03T11:44:35.216962 #32540]  INFO -- default-ubuntu-1204: 
+/etc/init.d/tomcat: line 9: /etc/init.d/functions: No such file or directoryI, [2014-06-03T11:44:35.223152 #32540]  INFO -- default-ubuntu-1204: 
+[32m  has a running service of tomcat[0mI, [2014-06-03T11:44:35.232240 #32540]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:44:35.232395 #32540]  INFO -- default-ubuntu-1204: 
+Group "tomcat"I, [2014-06-03T11:44:35.232752 #32540]  INFO -- default-ubuntu-1204: 
+[32m  should exist [][0mI, [2014-06-03T11:44:35.238227 #32540]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:44:35.238478 #32540]  INFO -- default-ubuntu-1204: 
+User "tomcat"I, [2014-06-03T11:44:35.238830 #32540]  INFO -- default-ubuntu-1204: 
+[32m  should exist [][0mI, [2014-06-03T11:44:35.242987 #32540]  INFO -- default-ubuntu-1204: 
+[32m  should belong to group "tomcat"[0mI, [2014-06-03T11:44:35.248471 #32540]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:44:35.248623 #32540]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat"I, [2014-06-03T11:44:35.248983 #32540]  INFO -- default-ubuntu-1204: 
+[32m  should be directory[0mI, [2014-06-03T11:44:35.258270 #32540]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:44:35.258422 #32540]  INFO -- default-ubuntu-1204: 
+File "/opt/tomcat/bin/catalina.sh"I, [2014-06-03T11:44:35.258881 #32540]  INFO -- default-ubuntu-1204: 
+[32m  should be owned by "tomcat"[0mI, [2014-06-03T11:44:35.263917 #32540]  INFO -- default-ubuntu-1204: 
+[32m  should be executable[0mI, [2014-06-03T11:44:35.277860 #32540]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:44:35.296326 #32540]  INFO -- default-ubuntu-1204: [32m  should be writable[0m
+I, [2014-06-03T11:44:35.314578 #32540]  INFO -- default-ubuntu-1204: [32m  should be readable[0m
+I, [2014-06-03T11:44:35.314636 #32540]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:44:35.314665 #32540]  INFO -- default-ubuntu-1204: File "/opt/tomcat/conf/server.xml"
+[32m  should be owned by "tomcat"[0mI, [2014-06-03T11:44:35.321543 #32540]  INFO -- default-ubuntu-1204: 
+[32m  should be writable[0mI, [2014-06-03T11:44:35.339148 #32540]  INFO -- default-ubuntu-1204: 
+[32m  should be readable[0mI, [2014-06-03T11:44:35.355039 #32540]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:44:35.355312 #32540]  INFO -- default-ubuntu-1204: 
+Finished in 0.17634 secondsI, [2014-06-03T11:44:35.355535 #32540]  INFO -- default-ubuntu-1204: 
+[32m13 examples, 0 failures[0mI, [2014-06-03T11:44:35.355915 #32540]  INFO -- default-ubuntu-1204: 
+I, [2014-06-03T11:44:35.381008 #32540]  INFO -- default-ubuntu-1204: Finished verifying <default-ubuntu-1204> (0m1.69s).

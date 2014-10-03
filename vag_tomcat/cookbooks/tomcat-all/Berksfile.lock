@@ -1,0 +1,13 @@
+DEPENDENCIES
+  tomcat-all
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.4.0)
+  ark (0.8.2)
+  java (1.22.0)
+  tomcat-all (0.1.0)
+    apt (~> 2.4.0)
+    ark (~> 0.8.2)
+    java (~> 1.22.0)

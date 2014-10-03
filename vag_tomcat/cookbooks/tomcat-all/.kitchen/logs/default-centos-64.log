@@ -1,0 +1,824 @@
+I, [2014-06-03T11:24:32.500570 #32233]  INFO -- default-centos-64: -----> Creating <default-centos-64>...
+I, [2014-06-03T11:24:33.790052 #32233]  INFO -- default-centos-64: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-06-03T11:24:34.185299 #32233]  INFO -- default-centos-64: ==> default: Importing base box 'opscode-centos-6.4'...
+[KProgress: 10%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[KI, [2014-06-03T11:25:12.059910 #32233]  INFO -- default-centos-64: ==> default: Matching MAC address for NAT networking...
+I, [2014-06-03T11:25:12.761465 #32233]  INFO -- default-centos-64: ==> default: Setting the name of the VM: default-centos-64_default_1401805512739_73958
+I, [2014-06-03T11:25:12.983844 #32233]  INFO -- default-centos-64: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2014-06-03T11:25:13.034824 #32233]  INFO -- default-centos-64: ==> default: Clearing any previously set network interfaces...
+I, [2014-06-03T11:25:13.167993 #32233]  INFO -- default-centos-64: ==> default: Preparing network interfaces based on configuration...
+I, [2014-06-03T11:25:13.168445 #32233]  INFO -- default-centos-64:     default: Adapter 1: nat
+I, [2014-06-03T11:25:13.168738 #32233]  INFO -- default-centos-64:     default: Adapter 2: hostonly
+I, [2014-06-03T11:25:13.197800 #32233]  INFO -- default-centos-64: ==> default: Forwarding ports...
+I, [2014-06-03T11:25:13.265564 #32233]  INFO -- default-centos-64:     default: 22 => 2200 (adapter 1)
+I, [2014-06-03T11:25:15.433081 #32233]  INFO -- default-centos-64: ==> default: Booting VM...
+I, [2014-06-03T11:25:15.704612 #32233]  INFO -- default-centos-64: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-06-03T11:25:16.317583 #32233]  INFO -- default-centos-64:     default: SSH address: 127.0.0.1:2200
+I, [2014-06-03T11:25:16.317734 #32233]  INFO -- default-centos-64:     default: SSH username: vagrant
+I, [2014-06-03T11:25:16.317940 #32233]  INFO -- default-centos-64:     default: SSH auth method: private key
+I, [2014-06-03T11:25:31.443741 #32233]  INFO -- default-centos-64:     default: Warning: Connection timeout. Retrying...
+I, [2014-06-03T11:25:40.723149 #32233]  INFO -- default-centos-64: ==> default: Machine booted and ready!
+I, [2014-06-03T11:25:40.723609 #32233]  INFO -- default-centos-64: ==> default: Checking for guest additions in VM...
+I, [2014-06-03T11:25:40.746045 #32233]  INFO -- default-centos-64: ==> default: Setting hostname...
+I, [2014-06-03T11:25:44.572123 #32233]  INFO -- default-centos-64: ==> default: Configuring and enabling network interfaces...
+I, [2014-06-03T11:25:45.311358 #32233]  INFO -- default-centos-64: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-06-03T11:25:46.827488 #32233]  INFO -- default-centos-64: Vagrant instance <default-centos-64> created.
+I, [2014-06-03T11:25:46.828717 #32233]  INFO -- default-centos-64: Finished creating <default-centos-64> (1m14.33s).
+I, [2014-06-03T11:25:46.828806 #32233]  INFO -- default-centos-64: -----> Converging <default-centos-64>...
+I, [2014-06-03T11:25:46.829604 #32233]  INFO -- default-centos-64: Preparing files for transfer
+I, [2014-06-03T11:25:46.830029 #32233]  INFO -- default-centos-64: Resolving cookbook dependencies with Berkshelf 3.1.2...
+I, [2014-06-03T11:25:47.043926 #32233]  INFO -- default-centos-64: Removing non-cookbook files before transfer
+I, [2014-06-03T11:25:47.285374 #32233]  INFO -- default-centos-64: -----> Installing Chef Omnibus (true)
+I, [2014-06-03T11:25:47.285438 #32233]  INFO -- default-centos-64: downloading https://www.getchef.com/chef/install.sh
+I, [2014-06-03T11:25:47.285463 #32233]  INFO -- default-centos-64:   to file /tmp/install.sh
+I, [2014-06-03T11:25:47.285484 #32233]  INFO -- default-centos-64: trying wget...
+I, [2014-06-03T11:25:52.910637 #32233]  INFO -- default-centos-64: trying curl...
+I, [2014-06-03T11:25:58.738087 #32233]  INFO -- default-centos-64:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+I, [2014-06-03T11:25:58.738178 #32233]  INFO -- default-centos-64:                           Dload  Upload   Total   Spent    Left  Speed
+I, [2014-06-03T11:25:58.738205 #32233]  INFO -- default-centos-64:   0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
+I, [2014-06-03T11:25:59.128533 #32233]  INFO -- default-centos-64: 100 15934  100 15934    0     0   2579      0  0:00:06  0:00:06 --:--:-- 40751
+I, [2014-06-03T11:25:59.184125 #32233]  INFO -- default-centos-64: Downloading Chef  for el...
+I, [2014-06-03T11:25:59.186648 #32233]  INFO -- default-centos-64: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
+I, [2014-06-03T11:25:59.186691 #32233]  INFO -- default-centos-64:   to file /tmp/install.sh.3014/metadata.txt
+I, [2014-06-03T11:25:59.186786 #32233]  INFO -- default-centos-64: trying wget...
+I, [2014-06-03T11:26:04.790669 #32233]  INFO -- default-centos-64: trying curl...
+I, [2014-06-03T11:26:10.711187 #32233]  INFO -- default-centos-64: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.12.4-1.el6.x86_64.rpm
+I, [2014-06-03T11:26:10.711248 #32233]  INFO -- default-centos-64: md5	959acd5df77c25f4f69d1f786f3c7360
+I, [2014-06-03T11:26:10.711272 #32233]  INFO -- default-centos-64: sha256	d4eacc6b16c448a628367e7201922a4c58997f68808c5f698676e8a5eaf169b5
+I, [2014-06-03T11:26:10.714584 #32233]  INFO -- default-centos-64: downloaded metadata file looks valid...
+I, [2014-06-03T11:26:10.749153 #32233]  INFO -- default-centos-64: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.12.4-1.el6.x86_64.rpm
+I, [2014-06-03T11:26:10.749213 #32233]  INFO -- default-centos-64:   to file /tmp/install.sh.3014/chef-11.12.4-1.el6.x86_64.rpm
+I, [2014-06-03T11:26:10.749238 #32233]  INFO -- default-centos-64: trying wget...
+I, [2014-06-03T11:27:11.624791 #32233]  INFO -- default-centos-64: Comparing checksum with sha256sum...
+I, [2014-06-03T11:27:11.801888 #32233]  INFO -- default-centos-64: Installing Chef 
+I, [2014-06-03T11:27:11.801950 #32233]  INFO -- default-centos-64: installing with rpm...
+I, [2014-06-03T11:27:12.119952 #32233]  INFO -- default-centos-64: warning: /tmp/install.sh.3014/chef-11.12.4-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)I, [2014-06-03T11:27:13.589751 #32233]  INFO -- default-centos-64: #########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+   1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)I, [2014-06-03T11:27:16.182323 #32233]  INFO -- default-centos-64: ########################################### ( 99%)########################################### [100%]
+I, [2014-06-03T11:27:17.062627 #32233]  INFO -- default-centos-64: Thank you for installing Chef!
+I, [2014-06-03T11:27:17.102205 #32233]  INFO -- default-centos-64: Transferring files to <default-centos-64>
+I, [2014-06-03T11:27:18.121733 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:16+00:00] INFO: Forking chef instance to converge...
+I, [2014-06-03T11:27:18.133239 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:16+00:00] WARN: 
+I, [2014-06-03T11:27:18.133291 #32233]  INFO -- default-centos-64: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+I, [2014-06-03T11:27:18.133317 #32233]  INFO -- default-centos-64: SSL validation of HTTPS requests is disabled. HTTPS connections are still
+I, [2014-06-03T11:27:18.133354 #32233]  INFO -- default-centos-64: encrypted, but chef is not able to detect forged replies or man in the middle
+I, [2014-06-03T11:27:18.133396 #32233]  INFO -- default-centos-64: attacks.
+I, [2014-06-03T11:27:18.133419 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:27:18.133441 #32233]  INFO -- default-centos-64: To fix this issue add an entry like this to your configuration file:
+I, [2014-06-03T11:27:18.133462 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:27:18.133482 #32233]  INFO -- default-centos-64: ```
+I, [2014-06-03T11:27:18.133503 #32233]  INFO -- default-centos-64:   # Verify all HTTPS connections (recommended)
+I, [2014-06-03T11:27:18.133524 #32233]  INFO -- default-centos-64:   ssl_verify_mode :verify_peer
+I, [2014-06-03T11:27:18.133566 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:27:18.133588 #32233]  INFO -- default-centos-64:   # OR, Verify only connections to chef-server
+I, [2014-06-03T11:27:18.133608 #32233]  INFO -- default-centos-64:   verify_api_cert true
+I, [2014-06-03T11:27:18.133629 #32233]  INFO -- default-centos-64: ```
+I, [2014-06-03T11:27:18.133649 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:27:18.133670 #32233]  INFO -- default-centos-64: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-06-03T11:27:18.133691 #32233]  INFO -- default-centos-64: `knife ssl check` command like so:
+I, [2014-06-03T11:27:18.133712 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:27:18.133732 #32233]  INFO -- default-centos-64: ```
+I, [2014-06-03T11:27:18.133753 #32233]  INFO -- default-centos-64:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-06-03T11:27:18.133773 #32233]  INFO -- default-centos-64: ```
+I, [2014-06-03T11:27:18.133793 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:27:18.133814 #32233]  INFO -- default-centos-64: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+I, [2014-06-03T11:27:18.133856 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:27:18.191442 #32233]  INFO -- default-centos-64: Starting Chef Client, version 11.12.4[0m
+I, [2014-06-03T11:27:18.191501 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:16+00:00] INFO: *** Chef 11.12.4 ***
+I, [2014-06-03T11:27:18.191524 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:16+00:00] INFO: Chef-client pid: 3136
+I, [2014-06-03T11:27:25.548114 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:24+00:00] INFO: Setting the run_list to ["recipe[java]", "recipe[tomcat-all::default]"] from CLI options
+I, [2014-06-03T11:27:25.553356 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:24+00:00] INFO: Run List is [recipe[java], recipe[tomcat-all::default]]
+I, [2014-06-03T11:27:25.553400 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:24+00:00] INFO: Run List expands to [java, tomcat-all::default]
+I, [2014-06-03T11:27:25.553429 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:24+00:00] INFO: Starting Chef Run for default-centos-64
+I, [2014-06-03T11:27:25.553450 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:24+00:00] INFO: Running start handlers
+I, [2014-06-03T11:27:25.553470 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:24+00:00] INFO: Start handlers complete.
+I, [2014-06-03T11:27:25.556620 #32233]  INFO -- default-centos-64: Compiling Cookbooks...[0m
+I, [2014-06-03T11:27:25.590102 #32233]  INFO -- default-centos-64: Converging 14 resources[0m
+I, [2014-06-03T11:27:25.591019 #32233]  INFO -- default-centos-64: Recipe: java::openjdk[0m
+I, [2014-06-03T11:27:25.591055 #32233]  INFO -- default-centos-64:   * package[java-1.7.0-openjdk] action install[0m[2014-06-03T14:27:24+00:00] INFO: Processing package[java-1.7.0-openjdk] action install (java::openjdk line 46)
+I, [2014-06-03T11:27:50.114586 #32233]  INFO -- default-centos-64: [2014-06-03T14:27:48+00:00] INFO: package[java-1.7.0-openjdk] installing java-1.7.0-openjdk-1.7.0.55-2.4.7.1.el6_5 from updates repository
+I, [2014-06-03T11:28:50.406622 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:28:50.406704 #32233]  INFO -- default-centos-64:     - install version 1.7.0.55-2.4.7.1.el6_5 of package java-1.7.0-openjdk[0m
+I, [2014-06-03T11:28:50.424272 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:28:50.424339 #32233]  INFO -- default-centos-64:   * package[java-1.7.0-openjdk-devel] action install[0m[2014-06-03T14:28:48+00:00] INFO: Processing package[java-1.7.0-openjdk-devel] action install (java::openjdk line 46)
+I, [2014-06-03T11:28:52.125240 #32233]  INFO -- default-centos-64: [2014-06-03T14:28:50+00:00] INFO: package[java-1.7.0-openjdk-devel] installing java-1.7.0-openjdk-devel-1.7.0.55-2.4.7.1.el6_5 from updates repository
+I, [2014-06-03T11:29:10.529795 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:10.537198 #32233]  INFO -- default-centos-64:     - install version 1.7.0.55-2.4.7.1.el6_5 of package java-1.7.0-openjdk-devel[0m
+I, [2014-06-03T11:29:10.537262 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:29:10.537285 #32233]  INFO -- default-centos-64:   * java_alternatives[set-java-alternatives] action set[0m[2014-06-03T14:29:09+00:00] INFO: Processing java_alternatives[set-java-alternatives] action set (java::openjdk line 50)
+I, [2014-06-03T11:29:10.644271 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:10.644342 #32233]  INFO -- default-centos-64:     - Add alternative for appletviewer[0m
+I, [2014-06-03T11:29:10.759208 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:10.759267 #32233]  INFO -- default-centos-64:     - Add alternative for apt[0m
+I, [2014-06-03T11:29:10.926691 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:10.926751 #32233]  INFO -- default-centos-64:     - Add alternative for extcheck[0m
+I, [2014-06-03T11:29:11.142883 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:11.142943 #32233]  INFO -- default-centos-64:     - Add alternative for idlj[0m
+I, [2014-06-03T11:29:11.462091 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:11.462150 #32233]  INFO -- default-centos-64:     - Add alternative for jar[0m
+I, [2014-06-03T11:29:11.782728 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:11.782786 #32233]  INFO -- default-centos-64:     - Add alternative for jarsigner[0m
+I, [2014-06-03T11:29:12.106918 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:12.106977 #32233]  INFO -- default-centos-64:     - Add alternative for java[0m
+I, [2014-06-03T11:29:12.426100 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:12.426158 #32233]  INFO -- default-centos-64:     - Add alternative for javac[0m
+I, [2014-06-03T11:29:12.749657 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:12.749717 #32233]  INFO -- default-centos-64:     - Add alternative for javadoc[0m
+I, [2014-06-03T11:29:13.073552 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:13.073612 #32233]  INFO -- default-centos-64:     - Add alternative for javah[0m
+I, [2014-06-03T11:29:13.397197 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:13.397257 #32233]  INFO -- default-centos-64:     - Add alternative for javap[0m
+I, [2014-06-03T11:29:13.720621 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:13.720679 #32233]  INFO -- default-centos-64:     - Add alternative for jcmd[0m
+I, [2014-06-03T11:29:14.035050 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:14.035122 #32233]  INFO -- default-centos-64:     - Add alternative for jconsole[0m
+I, [2014-06-03T11:29:14.191938 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:14.191996 #32233]  INFO -- default-centos-64:     - Add alternative for jdb[0m
+I, [2014-06-03T11:29:14.341779 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:14.341840 #32233]  INFO -- default-centos-64:     - Add alternative for jhat[0m
+I, [2014-06-03T11:29:14.486616 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:14.486675 #32233]  INFO -- default-centos-64:     - Add alternative for jinfo[0m
+I, [2014-06-03T11:29:14.630601 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:14.630669 #32233]  INFO -- default-centos-64:     - Add alternative for jmap[0m
+I, [2014-06-03T11:29:14.768420 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:14.768482 #32233]  INFO -- default-centos-64:     - Add alternative for jps[0m
+I, [2014-06-03T11:29:14.904940 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:14.904999 #32233]  INFO -- default-centos-64:     - Add alternative for jrunscript[0m
+I, [2014-06-03T11:29:15.033821 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:15.033880 #32233]  INFO -- default-centos-64:     - Add alternative for jsadebugd[0m
+I, [2014-06-03T11:29:15.164065 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:15.164124 #32233]  INFO -- default-centos-64:     - Add alternative for jstack[0m
+I, [2014-06-03T11:29:15.290816 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:15.290877 #32233]  INFO -- default-centos-64:     - Add alternative for jstat[0m
+I, [2014-06-03T11:29:15.415918 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:15.415980 #32233]  INFO -- default-centos-64:     - Add alternative for jstatd[0m
+I, [2014-06-03T11:29:15.539090 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:15.539157 #32233]  INFO -- default-centos-64:     - Add alternative for keytool[0m
+I, [2014-06-03T11:29:15.704911 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:15.704972 #32233]  INFO -- default-centos-64:     - Add alternative for native2ascii[0m
+I, [2014-06-03T11:29:15.965083 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:15.965141 #32233]  INFO -- default-centos-64:     - Add alternative for orbd[0m
+I, [2014-06-03T11:29:16.270382 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:16.270483 #32233]  INFO -- default-centos-64:     - Add alternative for pack200[0m
+I, [2014-06-03T11:29:16.574338 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:16.574409 #32233]  INFO -- default-centos-64:     - Add alternative for policytool[0m
+I, [2014-06-03T11:29:16.882128 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:16.882187 #32233]  INFO -- default-centos-64:     - Add alternative for rmic[0m
+I, [2014-06-03T11:29:17.186562 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:17.186624 #32233]  INFO -- default-centos-64:     - Add alternative for rmid[0m
+I, [2014-06-03T11:29:17.495683 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:17.495746 #32233]  INFO -- default-centos-64:     - Add alternative for rmiregistry[0m
+I, [2014-06-03T11:29:17.803120 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:17.803179 #32233]  INFO -- default-centos-64:     - Add alternative for schemagen[0m
+I, [2014-06-03T11:29:18.108614 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:18.108675 #32233]  INFO -- default-centos-64:     - Add alternative for serialver[0m
+I, [2014-06-03T11:29:18.417763 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:18.417823 #32233]  INFO -- default-centos-64:     - Add alternative for servertool[0m
+I, [2014-06-03T11:29:18.637677 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:18.637735 #32233]  INFO -- default-centos-64:     - Add alternative for tnameserv[0m
+I, [2014-06-03T11:29:18.794549 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:18.794609 #32233]  INFO -- default-centos-64:     - Add alternative for unpack200[0m
+I, [2014-06-03T11:29:18.942330 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:18.942388 #32233]  INFO -- default-centos-64:     - Add alternative for wsgen[0m
+I, [2014-06-03T11:29:19.083591 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.083652 #32233]  INFO -- default-centos-64:     - Add alternative for wsimport[0m
+I, [2014-06-03T11:29:19.223007 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.223066 #32233]  INFO -- default-centos-64:     - Add alternative for xjc[0m
+I, [2014-06-03T11:29:19.252347 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:29:19.252407 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:29:19.252449 #32233]  INFO -- default-centos-64: Recipe: java::set_java_home[0m
+I, [2014-06-03T11:29:19.252473 #32233]  INFO -- default-centos-64:   * ruby_block[set-env-java-home] action run[0m[2014-06-03T14:29:17+00:00] INFO: Processing ruby_block[set-env-java-home] action run (java::set_java_home line 19)
+I, [2014-06-03T11:29:19.252495 #32233]  INFO -- default-centos-64: [2014-06-03T14:29:17+00:00] INFO: ruby_block[set-env-java-home] called
+I, [2014-06-03T11:29:19.252517 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.252538 #32233]  INFO -- default-centos-64:     - execute the ruby block set-env-java-home[0m
+I, [2014-06-03T11:29:19.252576 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:29:19.252598 #32233]  INFO -- default-centos-64:   * directory[/etc/profile.d] action create[0m[2014-06-03T14:29:17+00:00] INFO: Processing directory[/etc/profile.d] action create (java::set_java_home line 26)
+I, [2014-06-03T11:29:19.254751 #32233]  INFO -- default-centos-64:  (up to date)[0m
+I, [2014-06-03T11:29:19.254789 #32233]  INFO -- default-centos-64:   * file[/etc/profile.d/jdk.sh] action create[0m[2014-06-03T14:29:17+00:00] INFO: Processing file[/etc/profile.d/jdk.sh] action create (java::set_java_home line 30)
+I, [2014-06-03T11:29:19.256122 #32233]  INFO -- default-centos-64: [2014-06-03T14:29:17+00:00] INFO: file[/etc/profile.d/jdk.sh] created file /etc/profile.d/jdk.sh
+I, [2014-06-03T11:29:19.256158 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.256181 #32233]  INFO -- default-centos-64:     - create new file /etc/profile.d/jdk.sh[0m
+I, [2014-06-03T11:29:19.292997 #32233]  INFO -- default-centos-64: [2014-06-03T14:29:17+00:00] INFO: file[/etc/profile.d/jdk.sh] updated file contents /etc/profile.d/jdk.sh
+I, [2014-06-03T11:29:19.293843 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.293881 #32233]  INFO -- default-centos-64:     - update content in file /etc/profile.d/jdk.sh from none to b45e89[0m[37m
+I, [2014-06-03T11:29:19.293915 #32233]  INFO -- default-centos-64:  --- /etc/profile.d/jdk.sh	2014-06-03 14:29:17.813654104 +0000[0m[37m
+I, [2014-06-03T11:29:19.293942 #32233]  INFO -- default-centos-64:  +++ /tmp/.jdk.sh20140603-3136-ba0ia4	2014-06-03 14:29:17.813654105 +0000[0m[37m
+I, [2014-06-03T11:29:19.293999 #32233]  INFO -- default-centos-64:  @@ -1 +1,2 @@[0m[37m
+I, [2014-06-03T11:29:19.294025 #32233]  INFO -- default-centos-64:  +export JAVA_HOME=/usr/lib/jvm/java-1.7.0[0m
+I, [2014-06-03T11:29:19.294857 #32233]  INFO -- default-centos-64: [2014-06-03T14:29:17+00:00] INFO: file[/etc/profile.d/jdk.sh] mode changed to 755
+I, [2014-06-03T11:29:19.294894 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.294918 #32233]  INFO -- default-centos-64:     - change mode from '' to '0755'[0m
+I, [2014-06-03T11:29:19.487992 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.488051 #32233]  INFO -- default-centos-64:     - restore selinux security context[0m
+I, [2014-06-03T11:29:19.488110 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:29:19.488131 #32233]  INFO -- default-centos-64: Recipe: tomcat-all::default[0m
+I, [2014-06-03T11:29:19.488151 #32233]  INFO -- default-centos-64:   * group[tomcat] action create[0m[2014-06-03T14:29:18+00:00] INFO: Processing group[tomcat] action create (tomcat-all::default line 16)
+I, [2014-06-03T11:29:19.638778 #32233]  INFO -- default-centos-64: [2014-06-03T14:29:18+00:00] INFO: group[tomcat] created
+I, [2014-06-03T11:29:19.638864 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.638888 #32233]  INFO -- default-centos-64:     - create group[tomcat][0m
+I, [2014-06-03T11:29:19.638908 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:29:19.638928 #32233]  INFO -- default-centos-64:   * user[tomcat] action create[0m[2014-06-03T14:29:18+00:00] INFO: Processing user[tomcat] action create (tomcat-all::default line 19)
+I, [2014-06-03T11:29:19.700133 #32233]  INFO -- default-centos-64: [2014-06-03T14:29:18+00:00] INFO: user[tomcat] created
+I, [2014-06-03T11:29:19.700228 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.700253 #32233]  INFO -- default-centos-64:     - create user user[tomcat][0m
+I, [2014-06-03T11:29:19.700274 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:29:19.700294 #32233]  INFO -- default-centos-64:   * ark[tomcat] action install[0m[2014-06-03T14:29:18+00:00] INFO: Processing ark[tomcat] action install (tomcat-all::default line 26)
+I, [2014-06-03T11:29:19.705071 #32233]  INFO -- default-centos-64: Recipe: <Dynamically Defined Resource>[0m
+I, [2014-06-03T11:29:19.705110 #32233]  INFO -- default-centos-64:   * directory[/opt/tomcat-7.0.53] action create[0m[2014-06-03T14:29:18+00:00] INFO: Processing directory[/opt/tomcat-7.0.53] action create (/tmp/kitchen/cookbooks/ark/providers/default.rb line 39)
+I, [2014-06-03T11:29:19.739124 #32233]  INFO -- default-centos-64: [2014-06-03T14:29:18+00:00] INFO: directory[/opt/tomcat-7.0.53] created directory /opt/tomcat-7.0.53
+I, [2014-06-03T11:29:19.739184 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.739207 #32233]  INFO -- default-centos-64:     - create new directory /opt/tomcat-7.0.53[0m
+I, [2014-06-03T11:29:19.896625 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.896694 #32233]  INFO -- default-centos-64:     - restore selinux security context[0m
+I, [2014-06-03T11:29:19.897450 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:29:19.897487 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:29:19.897512 #32233]  INFO -- default-centos-64:   * remote_file[/tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action create[0m[2014-06-03T14:29:18+00:00] INFO: Processing remote_file[/tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action create (/tmp/kitchen/cookbooks/ark/providers/default.rb line 45)
+I, [2014-06-03T11:29:19.910773 #32233]  INFO -- default-centos-64: [2014-06-03T14:29:18+00:00] INFO: remote_file[/tmp/kitchen/cache/tomcat-7.0.53.tar.gz] created file /tmp/kitchen/cache/tomcat-7.0.53.tar.gz
+I, [2014-06-03T11:29:19.910815 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:29:19.910838 #32233]  INFO -- default-centos-64:     - create new file /tmp/kitchen/cache/tomcat-7.0.53.tar.gz[0m
+I, [2014-06-03T11:30:32.427500 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: remote_file[/tmp/kitchen/cache/tomcat-7.0.53.tar.gz] updated file contents /tmp/kitchen/cache/tomcat-7.0.53.tar.gz
+I, [2014-06-03T11:30:32.468887 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:32.468947 #32233]  INFO -- default-centos-64:     - update content in file /tmp/kitchen/cache/tomcat-7.0.53.tar.gz from none to f5e79d[0m[37m
+I, [2014-06-03T11:30:32.468979 #32233]  INFO -- default-centos-64:  (new content is binary, diff output suppressed)[0m
+I, [2014-06-03T11:30:32.587478 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:32.587552 #32233]  INFO -- default-centos-64:     - restore selinux security context[0m
+I, [2014-06-03T11:30:32.587575 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:32.587595 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: remote_file[/tmp/kitchen/cache/tomcat-7.0.53.tar.gz] not queuing delayed action run on execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] (delayed), as it's already been queued
+I, [2014-06-03T11:30:32.588329 #32233]  INFO -- default-centos-64:   * execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action nothing[0m[2014-06-03T14:30:31+00:00] INFO: Processing execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action nothing (/tmp/kitchen/cookbooks/ark/providers/default.rb line 55)
+I, [2014-06-03T11:30:32.588366 #32233]  INFO -- default-centos-64:  (skipped due to action :nothing)[0m
+I, [2014-06-03T11:30:32.588390 #32233]  INFO -- default-centos-64:   * execute[set owner on /opt/tomcat-7.0.53] action nothing[0m[2014-06-03T14:30:31+00:00] INFO: Processing execute[set owner on /opt/tomcat-7.0.53] action nothing (/tmp/kitchen/cookbooks/ark/providers/default.rb line 64)
+I, [2014-06-03T11:30:32.588432 #32233]  INFO -- default-centos-64:  (skipped due to action :nothing)[0m
+I, [2014-06-03T11:30:32.588468 #32233]  INFO -- default-centos-64:   * link[/opt/tomcat] action create[0m
+I, [2014-06-03T11:30:32.590016 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: Processing link[/opt/tomcat] action create (/tmp/kitchen/cookbooks/ark/providers/default.rb line 77)
+I, [2014-06-03T11:30:32.591285 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: link[/opt/tomcat] created
+I, [2014-06-03T11:30:32.591321 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:32.591344 #32233]  INFO -- default-centos-64:     - create symlink at /opt/tomcat to /opt/tomcat-7.0.53[0m
+I, [2014-06-03T11:30:32.591365 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:32.591386 #32233]  INFO -- default-centos-64:   * template[/etc/profile.d/tomcat.sh] action create[0m[2014-06-03T14:30:31+00:00] INFO: Processing template[/etc/profile.d/tomcat.sh] action create (/tmp/kitchen/cookbooks/ark/providers/default.rb line 82)
+I, [2014-06-03T11:30:32.591407 #32233]  INFO -- default-centos-64:  (skipped due to only_if)[0m
+I, [2014-06-03T11:30:32.591428 #32233]  INFO -- default-centos-64:   * ruby_block[adding '/opt/tomcat-7.0.53/bin' to chef-client ENV['PATH']] action run[0m
+I, [2014-06-03T11:30:32.592020 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: Processing ruby_block[adding '/opt/tomcat-7.0.53/bin' to chef-client ENV['PATH']] action run (/tmp/kitchen/cookbooks/ark/providers/default.rb line 95)
+I, [2014-06-03T11:30:32.592058 #32233]  INFO -- default-centos-64:  (skipped due to only_if)[0m
+I, [2014-06-03T11:30:32.592082 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: directory[/opt/tomcat-7.0.53] sending run action to execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] (delayed)
+I, [2014-06-03T11:30:32.592104 #32233]  INFO -- default-centos-64:   * execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action run[0m
+I, [2014-06-03T11:30:32.593464 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: Processing execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] action run (/tmp/kitchen/cookbooks/ark/providers/default.rb line 55)
+I, [2014-06-03T11:30:32.852191 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] ran successfully
+I, [2014-06-03T11:30:32.852253 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:32.852275 #32233]  INFO -- default-centos-64:     - execute /bin/tar xzf /tmp/kitchen/cache/tomcat-7.0.53.tar.gz --strip-components=1[0m
+I, [2014-06-03T11:30:32.852296 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:32.852317 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: execute[unpack /tmp/kitchen/cache/tomcat-7.0.53.tar.gz] sending run action to execute[set owner on /opt/tomcat-7.0.53] (delayed)
+I, [2014-06-03T11:30:32.852337 #32233]  INFO -- default-centos-64:   * execute[set owner on /opt/tomcat-7.0.53] action run[0m[2014-06-03T14:30:31+00:00] INFO: Processing execute[set owner on /opt/tomcat-7.0.53] action run (/tmp/kitchen/cookbooks/ark/providers/default.rb line 64)
+I, [2014-06-03T11:30:32.898862 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: execute[set owner on /opt/tomcat-7.0.53] ran successfully
+I, [2014-06-03T11:30:32.898956 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:32.898979 #32233]  INFO -- default-centos-64:     - execute chown -R tomcat:0 /opt/tomcat-7.0.53[0m
+I, [2014-06-03T11:30:32.898999 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:32.899019 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:30:32.899038 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:32.899058 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: ark[tomcat] sending create action to template[/etc/logrotate.d/tomcat] (immediate)
+I, [2014-06-03T11:30:32.899097 #32233]  INFO -- default-centos-64: Recipe: tomcat-all::default[0m
+I, [2014-06-03T11:30:32.899119 #32233]  INFO -- default-centos-64:   * template[/etc/logrotate.d/tomcat] action create[0m[2014-06-03T14:30:31+00:00] INFO: Processing template[/etc/logrotate.d/tomcat] action create (tomcat-all::default line 36)
+I, [2014-06-03T11:30:32.945468 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/etc/logrotate.d/tomcat] created file /etc/logrotate.d/tomcat
+I, [2014-06-03T11:30:32.945524 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:32.945546 #32233]  INFO -- default-centos-64:     - create new file /etc/logrotate.d/tomcat[0m
+I, [2014-06-03T11:30:32.947119 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/etc/logrotate.d/tomcat] updated file contents /etc/logrotate.d/tomcat
+I, [2014-06-03T11:30:32.947155 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:32.947179 #32233]  INFO -- default-centos-64:     - update content in file /etc/logrotate.d/tomcat from none to 3409da[0m[37m
+I, [2014-06-03T11:30:32.947226 #32233]  INFO -- default-centos-64:  --- /etc/logrotate.d/tomcat	2014-06-03 14:30:31.552505023 +0000[0m[37m
+I, [2014-06-03T11:30:32.947252 #32233]  INFO -- default-centos-64:  +++ /tmp/chef-rendered-template20140603-3136-1wbayqx	2014-06-03 14:30:31.552505023 +0000[0m[37m
+I, [2014-06-03T11:30:32.947279 #32233]  INFO -- default-centos-64:  @@ -1 +1,10 @@[0m[37m
+I, [2014-06-03T11:30:32.947304 #32233]  INFO -- default-centos-64:  +# Created by Chef for default-centos-64[0m[37m
+I, [2014-06-03T11:30:32.947329 #32233]  INFO -- default-centos-64:  +/opt/tomcat/logs/catalina.out {[0m[37m
+I, [2014-06-03T11:30:32.947354 #32233]  INFO -- default-centos-64:  +        copytruncate[0m[37m
+I, [2014-06-03T11:30:32.947392 #32233]  INFO -- default-centos-64:  +        daily[0m[37m
+I, [2014-06-03T11:30:32.947418 #32233]  INFO -- default-centos-64:  +        rotate 7[0m[37m
+I, [2014-06-03T11:30:32.947443 #32233]  INFO -- default-centos-64:  +        compress[0m[37m
+I, [2014-06-03T11:30:32.947468 #32233]  INFO -- default-centos-64:  +        missingok[0m[37m
+I, [2014-06-03T11:30:32.947493 #32233]  INFO -- default-centos-64:  +        size 5M[0m[37m
+I, [2014-06-03T11:30:32.947518 #32233]  INFO -- default-centos-64:  +}[0m
+I, [2014-06-03T11:30:33.065891 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:33.065951 #32233]  INFO -- default-centos-64:     - restore selinux security context[0m
+I, [2014-06-03T11:30:33.066794 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:30:33.066827 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:33.066849 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/etc/logrotate.d/tomcat] sending create action to template[/opt/tomcat/conf/server.xml] (immediate)
+I, [2014-06-03T11:30:33.066895 #32233]  INFO -- default-centos-64:   * template[/opt/tomcat/conf/server.xml] action create[0m[2014-06-03T14:30:31+00:00] INFO: Processing template[/opt/tomcat/conf/server.xml] action create (tomcat-all::default line 42)
+I, [2014-06-03T11:30:33.074492 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/opt/tomcat/conf/server.xml] backed up to /tmp/kitchen/backup/opt/tomcat/conf/server.xml.chef-20140603143031.681946
+I, [2014-06-03T11:30:33.074543 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/opt/tomcat/conf/server.xml] updated file contents /opt/tomcat/conf/server.xml
+I, [2014-06-03T11:30:33.075028 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:33.075059 #32233]  INFO -- default-centos-64:     - update content in file /opt/tomcat/conf/server.xml from 8560d6 to 22d2c0[0m[37m
+I, [2014-06-03T11:30:33.075090 #32233]  INFO -- default-centos-64:  --- /opt/tomcat/conf/server.xml	2014-03-25 03:26:32.000000000 +0000[0m[37m
+I, [2014-06-03T11:30:33.075117 #32233]  INFO -- default-centos-64:  +++ /tmp/chef-rendered-template20140603-3136-2wjg5r	2014-06-03 14:30:31.676567022 +0000[0m[37m
+I, [2014-06-03T11:30:33.075163 #32233]  INFO -- default-centos-64:  @@ -1,44 +1,12 @@[0m[37m
+I, [2014-06-03T11:30:33.075225 #32233]  INFO -- default-centos-64:   <?xml version='1.0' encoding='utf-8'?>[0m[37m
+I, [2014-06-03T11:30:33.075251 #32233]  INFO -- default-centos-64:  -<!--[0m[37m
+I, [2014-06-03T11:30:33.075278 #32233]  INFO -- default-centos-64:  -  Licensed to the Apache Software Foundation (ASF) under one or more[0m[37m
+I, [2014-06-03T11:30:33.075305 #32233]  INFO -- default-centos-64:  -  contributor license agreements.  See the NOTICE file distributed with[0m[37m
+I, [2014-06-03T11:30:33.075331 #32233]  INFO -- default-centos-64:  -  this work for additional information regarding copyright ownership.[0m[37m
+I, [2014-06-03T11:30:33.075358 #32233]  INFO -- default-centos-64:  -  The ASF licenses this file to You under the Apache License, Version 2.0[0m[37m
+I, [2014-06-03T11:30:33.075384 #32233]  INFO -- default-centos-64:  -  (the "License"); you may not use this file except in compliance with[0m[37m
+I, [2014-06-03T11:30:33.075428 #32233]  INFO -- default-centos-64:  -  the License.  You may obtain a copy of the License at[0m[37m
+I, [2014-06-03T11:30:33.075455 #32233]  INFO -- default-centos-64:  -[0m[37m
+I, [2014-06-03T11:30:33.075489 #32233]  INFO -- default-centos-64:  -      http://www.apache.org/licenses/LICENSE-2.0[0m[37m
+I, [2014-06-03T11:30:33.075512 #32233]  INFO -- default-centos-64:  -[0m[37m
+I, [2014-06-03T11:30:33.075536 #32233]  INFO -- default-centos-64:  -  Unless required by applicable law or agreed to in writing, software[0m[37m
+I, [2014-06-03T11:30:33.075561 #32233]  INFO -- default-centos-64:  -  distributed under the License is distributed on an "AS IS" BASIS,[0m[37m
+I, [2014-06-03T11:30:33.075605 #32233]  INFO -- default-centos-64:  -  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.[0m[37m
+I, [2014-06-03T11:30:33.075630 #32233]  INFO -- default-centos-64:  -  See the License for the specific language governing permissions and[0m[37m
+I, [2014-06-03T11:30:33.075654 #32233]  INFO -- default-centos-64:  -  limitations under the License.[0m[37m
+I, [2014-06-03T11:30:33.075677 #32233]  INFO -- default-centos-64:  --->[0m[37m
+I, [2014-06-03T11:30:33.075702 #32233]  INFO -- default-centos-64:  -<!-- Note:  A "Server" is not itself a "Container", so you may not[0m[37m
+I, [2014-06-03T11:30:33.075726 #32233]  INFO -- default-centos-64:  -     define subcomponents such as "Valves" at this level.[0m[37m
+I, [2014-06-03T11:30:33.075767 #32233]  INFO -- default-centos-64:  -     Documentation at /docs/config/server.html[0m[37m
+I, [2014-06-03T11:30:33.075791 #32233]  INFO -- default-centos-64:  - -->[0m[37m
+I, [2014-06-03T11:30:33.075815 #32233]  INFO -- default-centos-64:   <Server port="8005" shutdown="SHUTDOWN">[0m[37m
+I, [2014-06-03T11:30:33.075838 #32233]  INFO -- default-centos-64:  -  <!-- Security listener. Documentation at /docs/config/listeners.html[0m[37m
+I, [2014-06-03T11:30:33.075862 #32233]  INFO -- default-centos-64:  -  <Listener className="org.apache.catalina.security.SecurityListener" />[0m[37m
+I, [2014-06-03T11:30:33.075895 #32233]  INFO -- default-centos-64:  -  -->[0m[37m
+I, [2014-06-03T11:30:33.075921 #32233]  INFO -- default-centos-64:  -  <!--APR library loader. Documentation at /docs/apr.html -->[0m
+I, [2014-06-03T11:30:33.076686 #32233]  INFO -- default-centos-64: [37m
+I, [2014-06-03T11:30:33.076722 #32233]  INFO -- default-centos-64:     <Listener className="org.apache.catalina.core.AprLifecycleListener" SSLEngine="on" />[0m[37m
+I, [2014-06-03T11:30:33.076750 #32233]  INFO -- default-centos-64:  -  <!--Initialize Jasper prior to webapps are loaded. Documentation at /docs/jasper-howto.html -->[0m[37m
+I, [2014-06-03T11:30:33.076777 #32233]  INFO -- default-centos-64:     <Listener className="org.apache.catalina.core.JasperListener" />[0m[37m
+I, [2014-06-03T11:30:33.076804 #32233]  INFO -- default-centos-64:  -  <!-- Prevent memory leaks due to use of particular java/javax APIs-->[0m[37m
+I, [2014-06-03T11:30:33.076840 #32233]  INFO -- default-centos-64:     <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />[0m[37m
+I, [2014-06-03T11:30:33.076868 #32233]  INFO -- default-centos-64:     <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />[0m[37m
+I, [2014-06-03T11:30:33.076894 #32233]  INFO -- default-centos-64:     <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />[0m[37m
+I, [2014-06-03T11:30:33.076937 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.076964 #32233]  INFO -- default-centos-64:  -  <!-- Global JNDI resources[0m[37m
+I, [2014-06-03T11:30:33.076990 #32233]  INFO -- default-centos-64:  -       Documentation at /docs/jndi-resources-howto.html[0m[37m
+I, [2014-06-03T11:30:33.077015 #32233]  INFO -- default-centos-64:  -  -->[0m[37m
+I, [2014-06-03T11:30:33.077056 #32233]  INFO -- default-centos-64:     <GlobalNamingResources>[0m[37m
+I, [2014-06-03T11:30:33.077085 #32233]  INFO -- default-centos-64:  -    <!-- Editable user database that can also be used by[0m[37m
+I, [2014-06-03T11:30:33.077112 #32233]  INFO -- default-centos-64:  -         UserDatabaseRealm to authenticate users[0m[37m
+I, [2014-06-03T11:30:33.077138 #32233]  INFO -- default-centos-64:  -    -->[0m[37m
+I, [2014-06-03T11:30:33.077163 #32233]  INFO -- default-centos-64:       <Resource name="UserDatabase" auth="Container"[0m[37m
+I, [2014-06-03T11:30:33.077202 #32233]  INFO -- default-centos-64:                 type="org.apache.catalina.UserDatabase"[0m[37m
+I, [2014-06-03T11:30:33.077230 #32233]  INFO -- default-centos-64:                 description="User database that can be updated and saved"[0m[37m
+I, [2014-06-03T11:30:33.077256 #32233]  INFO -- default-centos-64:  @@ -46,99 +14,41 @@[0m[37m
+I, [2014-06-03T11:30:33.077282 #32233]  INFO -- default-centos-64:                 pathname="conf/tomcat-users.xml" />[0m[37m
+I, [2014-06-03T11:30:33.077320 #32233]  INFO -- default-centos-64:     </GlobalNamingResources>[0m[37m
+I, [2014-06-03T11:30:33.077346 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.077373 #32233]  INFO -- default-centos-64:  -  <!-- A "Service" is a collection of one or more "Connectors" that share[0m[37m
+I, [2014-06-03T11:30:33.077418 #32233]  INFO -- default-centos-64:  -       a single "Container" Note:  A "Service" is not itself a "Container",[0m[37m
+I, [2014-06-03T11:30:33.077446 #32233]  INFO -- default-centos-64:  -       so you may not define subcomponents such as "Valves" at this level.[0m[37m
+I, [2014-06-03T11:30:33.077481 #32233]  INFO -- default-centos-64:  -       Documentation at /docs/config/service.html[0m[37m
+I, [2014-06-03T11:30:33.077508 #32233]  INFO -- default-centos-64:  -   -->[0m[37m
+I, [2014-06-03T11:30:33.077547 #32233]  INFO -- default-centos-64:     <Service name="Catalina">[0m[37m
+I, [2014-06-03T11:30:33.077574 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.077601 #32233]  INFO -- default-centos-64:  -    <!--The connectors can use a shared executor, you can define one or more named thread pools-->[0m[37m
+I, [2014-06-03T11:30:33.077627 #32233]  INFO -- default-centos-64:  -    <!--[0m[37m
+I, [2014-06-03T11:30:33.077652 #32233]  INFO -- default-centos-64:       <Executor name="tomcatThreadPool" namePrefix="catalina-exec-"[0m[37m
+I, [2014-06-03T11:30:33.077688 #32233]  INFO -- default-centos-64:  -        maxThreads="150" minSpareThreads="4"/>[0m[37m
+I, [2014-06-03T11:30:33.077714 #32233]  INFO -- default-centos-64:  -    -->[0m[37m
+I, [2014-06-03T11:30:33.077790 #32233]  INFO -- default-centos-64:  +        maxThreads="100" minSpareThreads="10" />[0m[37m
+I, [2014-06-03T11:30:33.077817 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.077843 #32233]  INFO -- default-centos-64:  -[0m[37m
+I, [2014-06-03T11:30:33.077881 #32233]  INFO -- default-centos-64:  -    <!-- A "Connector" represents an endpoint by which requests are received[0m[37m
+I, [2014-06-03T11:30:33.077917 #32233]  INFO -- default-centos-64:  -         and responses are returned. Documentation at :[0m[37m
+I, [2014-06-03T11:30:33.077953 #32233]  INFO -- default-centos-64:  -         Java HTTP Connector: /docs/config/http.html (blocking & non-blocking)[0m[37m
+I, [2014-06-03T11:30:33.077986 #32233]  INFO -- default-centos-64:  -         Java AJP  Connector: /docs/config/ajp.html[0m[37m
+I, [2014-06-03T11:30:33.078012 #32233]  INFO -- default-centos-64:  -         APR (HTTP/AJP) Connector: /docs/apr.html[0m[37m
+I, [2014-06-03T11:30:33.078037 #32233]  INFO -- default-centos-64:  -         Define a non-SSL HTTP/1.1 Connector on port 8080[0m[37m
+I, [2014-06-03T11:30:33.078074 #32233]  INFO -- default-centos-64:  -    -->[0m[37m
+I, [2014-06-03T11:30:33.078099 #32233]  INFO -- default-centos-64:  -    <Connector port="8080" protocol="HTTP/1.1"[0m[37m
+I, [2014-06-03T11:30:33.078142 #32233]  INFO -- default-centos-64:  -               connectionTimeout="20000"[0m[37m
+I, [2014-06-03T11:30:33.078170 #32233]  INFO -- default-centos-64:  -               redirectPort="8443" />[0m[37m
+I, [2014-06-03T11:30:33.078195 #32233]  INFO -- default-centos-64:  -    <!-- A "Connector" using the shared thread pool-->[0m[37m
+I, [2014-06-03T11:30:33.078235 #32233]  INFO -- default-centos-64:  -    <!--[0m[37m
+I, [2014-06-03T11:30:33.078261 #32233]  INFO -- default-centos-64:       <Connector executor="tomcatThreadPool"[0m[37m
+I, [2014-06-03T11:30:33.078286 #32233]  INFO -- default-centos-64:                  port="8080" protocol="HTTP/1.1"[0m[37m
+I, [2014-06-03T11:30:33.078312 #32233]  INFO -- default-centos-64:                  connectionTimeout="20000"[0m[37m
+I, [2014-06-03T11:30:33.078348 #32233]  INFO -- default-centos-64:                  redirectPort="8443" />[0m[37m
+I, [2014-06-03T11:30:33.078374 #32233]  INFO -- default-centos-64:  -    -->[0m[37m
+I, [2014-06-03T11:30:33.078399 #32233]  INFO -- default-centos-64:  -    <!-- Define a SSL HTTP/1.1 Connector on port 8443[0m[37m
+I, [2014-06-03T11:30:33.078424 #32233]  INFO -- default-centos-64:  -         This connector uses the BIO implementation that requires the JSSE[0m[37m
+I, [2014-06-03T11:30:33.078470 #32233]  INFO -- default-centos-64:  -         style configuration. When using the APR/native implementation, the[0m[37m
+I, [2014-06-03T11:30:33.078498 #32233]  INFO -- default-centos-64:  -         OpenSSL style configuration is required as described in the APR/native[0m[37m
+I, [2014-06-03T11:30:33.078524 #32233]  INFO -- default-centos-64:  -         documentation -->[0m[37m
+I, [2014-06-03T11:30:33.078548 #32233]  INFO -- default-centos-64:       <!--[0m[37m
+I, [2014-06-03T11:30:33.078573 #32233]  INFO -- default-centos-64:  -    <Connector port="8443" protocol="org.apache.coyote.http11.Http11Protocol"[0m[37m
+I, [2014-06-03T11:30:33.078598 #32233]  INFO -- default-centos-64:  -               maxThreads="150" SSLEnabled="true" scheme="https" secure="true"[0m[37m
+I, [2014-06-03T11:30:33.078628 #32233]  INFO -- default-centos-64:       
+I, [2014-06-03T11:30:33.080017 #32233]  INFO -- default-centos-64:   +    <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"[0m[37m
+I, [2014-06-03T11:30:33.080060 #32233]  INFO -- default-centos-64:  +               maxThreads="150" scheme="https" secure="true"[0m[37m
+I, [2014-06-03T11:30:33.080089 #32233]  INFO -- default-centos-64:                  clientAuth="false" sslProtocol="TLS" />[0m[37m
+I, [2014-06-03T11:30:33.080115 #32233]  INFO -- default-centos-64:       -->[0m[37m
+I, [2014-06-03T11:30:33.080141 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.080167 #32233]  INFO -- default-centos-64:  -    <!-- Define an AJP 1.3 Connector on port 8009 -->[0m[37m
+I, [2014-06-03T11:30:33.080194 #32233]  INFO -- default-centos-64:       <Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />[0m[37m
+I, [2014-06-03T11:30:33.080234 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.080273 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.080301 #32233]  INFO -- default-centos-64:  -    <!-- An Engine represents the entry point (within Catalina) that processes[0m[37m
+I, [2014-06-03T11:30:33.080328 #32233]  INFO -- default-centos-64:  -         every request.  The Engine implementation for Tomcat stand alone[0m[37m
+I, [2014-06-03T11:30:33.080664 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:30:33.080699 #32233]  INFO -- default-centos-64:  -         analyzes the HTTP headers included with the request, and passes them[0m[37m
+I, [2014-06-03T11:30:33.080727 #32233]  INFO -- default-centos-64:  -         on to the appropriate Host (virtual host).[0m[37m
+I, [2014-06-03T11:30:33.080754 #32233]  INFO -- default-centos-64:  -         Documentation at /docs/config/engine.html -->[0m[37m
+I, [2014-06-03T11:30:33.080780 #32233]  INFO -- default-centos-64:  -[0m[37m
+I, [2014-06-03T11:30:33.080806 #32233]  INFO -- default-centos-64:  -    <!-- You should set jvmRoute to support load-balancing via AJP ie :[0m[37m
+I, [2014-06-03T11:30:33.080843 #32233]  INFO -- default-centos-64:  -    <Engine name="Catalina" defaultHost="localhost" jvmRoute="jvm1">[0m[37m
+I, [2014-06-03T11:30:33.080869 #32233]  INFO -- default-centos-64:  -    -->[0m[37m
+I, [2014-06-03T11:30:33.080895 #32233]  INFO -- default-centos-64:       <Engine name="Catalina" defaultHost="localhost">[0m[37m
+I, [2014-06-03T11:30:33.080933 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.080959 #32233]  INFO -- default-centos-64:  -      <!--For clustering, please take a look at documentation at:[0m[37m
+I, [2014-06-03T11:30:33.080985 #32233]  INFO -- default-centos-64:  -          /docs/cluster-howto.html  (simple how to)[0m[37m
+I, [2014-06-03T11:30:33.081012 #32233]  INFO -- default-centos-64:  -          /docs/config/cluster.html (reference documentation) -->[0m[37m
+I, [2014-06-03T11:30:33.081049 #32233]  INFO -- default-centos-64:  -      <!--[0m[37m
+I, [2014-06-03T11:30:33.081075 #32233]  INFO -- default-centos-64:  -      <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"/>[0m[37m
+I, [2014-06-03T11:30:33.081101 #32233]  INFO -- default-centos-64:  -      -->[0m[37m
+I, [2014-06-03T11:30:33.081134 #32233]  INFO -- default-centos-64:  -[0m[37m
+I, [2014-06-03T11:30:33.081160 #32233]  INFO -- default-centos-64:  -      <!-- Use the LockOutRealm to prevent attempts to guess user passwords[0m[37m
+I, [2014-06-03T11:30:33.081192 #32233]  INFO -- default-centos-64:  -           via a brute-force attack -->[0m[37m
+I, [2014-06-03T11:30:33.081217 #32233]  INFO -- default-centos-64:         <Realm className="org.apache.catalina.realm.LockOutRealm">[0m[37m
+I, [2014-06-03T11:30:33.081274 #32233]  INFO -- default-centos-64:  -        <!-- This Realm uses the UserDatabase configured in the global JNDI[0m[37m
+I, [2014-06-03T11:30:33.081302 #32233]  INFO -- default-centos-64:  -             resources under the key "UserDatabase".  Any edits[0m[37m
+I, [2014-06-03T11:30:33.081329 #32233]  INFO -- default-centos-64:  -             that are performed against this UserDatabase are immediately[0m[37m
+I, [2014-06-03T11:30:33.081354 #32233]  INFO -- default-centos-64:  -             available for use by the Realm.  -->[0m[37m
+I, [2014-06-03T11:30:33.081379 #32233]  INFO -- default-centos-64:           <Realm className="org.apache.catalina.realm.UserDatabaseRealm"[0m[37m
+I, [2014-06-03T11:30:33.081405 #32233]  INFO -- default-centos-64:                  resourceName="UserDatabase"/>[0m[37m
+I, [2014-06-03T11:30:33.081430 #32233]  INFO -- default-centos-64:         </Realm>[0m[37m
+I, [2014-06-03T11:30:33.081454 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.081479 #32233]  INFO -- default-centos-64:  -      <Host name="localhost"  appBase="webapps"[0m[37m
+I, [2014-06-03T11:30:33.081519 #32233]  INFO -- default-centos-64:  -            unpackWARs="true" autoDeploy="true">[0m[37m
+I, [2014-06-03T11:30:33.081555 #32233]  INFO -- default-centos-64:  +      <Host name="localhost"  appBase="webapps" unpackWARs="true" autoDeploy="true">[0m[37m
+I, [2014-06-03T11:30:33.081581 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.081607 #32233]  INFO -- default-centos-64:  -        <!-- SingleSignOn valve, share authentication between web applications[0m[37m
+I, [2014-06-03T11:30:33.081633 #32233]  INFO -- default-centos-64:  -             Documentation at: /docs/config/valve.html -->[0m[37m
+I, [2014-06-03T11:30:33.081658 #32233]  INFO -- default-centos-64:  -        <!--[0m[37m
+I, [2014-06-03T11:30:33.081684 #32233]  INFO -- default-centos-64:  -        <Valve className="org.apache.catalina.authenticator.SingleSignOn" />[0m[37m
+I, [2014-06-03T11:30:33.081709 #32233]  INFO -- default-centos-64:  -        -->[0m[37m
+I, [2014-06-03T11:30:33.081734 #32233]  INFO -- default-centos-64:  -[0m[37m
+I, [2014-06-03T11:30:33.081758 #32233]  INFO -- default-centos-64:  -        <!-- Access log processes all example.[0m[37m
+I, [2014-06-03T11:30:33.081784 #32233]  INFO -- default-centos-64:  -             Documentation at: /docs/config/valve.html[0m[37m
+I, [2014-06-03T11:30:33.081824 #32233]  INFO -- default-centos-64:  -             Note: The pattern used is equivalent to using pattern="common" -->[0m[37m
+I, [2014-06-03T11:30:33.081850 #32233]  INFO -- default-centos-64:           <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"[0m[37m
+I, [2014-06-03T11:30:33.081875 #32233]  INFO -- default-centos-64:  -               prefix="localhost_access_log." suffix=".txt"[0m[37m
+I, [2014-06-03T11:30:33.081901 #32233]  INFO -- default-centos-64:  -               pattern="%h %l %u %t &quot;%r&quot; %s %b" />[0m[37m
+I, [2014-06-03T11:30:33.081927 #32233]  INFO -- default-centos-64:  +               prefix="localhost_access_log." suffix=".txt" pattern="%h %l %u %t &quot;%r&quot; %s %b" />[0m[37m
+I, [2014-06-03T11:30:33.081952 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.081977 #32233]  INFO -- default-centos-64:         </Host>[0m[37m
+I, [2014-06-03T11:30:33.082001 #32233]  INFO -- default-centos-64:  +[0m[37m
+I, [2014-06-03T11:30:33.082025 #32233]  INFO -- default-centos-64:       </Engine>[0m[37m
+I, [2014-06-03T11:30:33.082050 #32233]  INFO -- default-centos-64:  +[0m[37m
+I, [2014-06-03T11:30:33.082074 #32233]  INFO -- default-centos-64:     </Service>[0m[37m
+I, [2014-06-03T11:30:33.082102 #32233]  INFO -- default-centos-64:  +[0m
+I, [2014-06-03T11:30:33.083113 #32233]  INFO -- default-centos-64: [37m
+I, [2014-06-03T11:30:33.083147 #32233]  INFO -- default-centos-64:   </Server>[0m
+I, [2014-06-03T11:30:33.188627 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:33.188687 #32233]  INFO -- default-centos-64:     - restore selinux security context[0m
+I, [2014-06-03T11:30:33.188709 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:33.188729 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/opt/tomcat/conf/server.xml] sending create action to template[/opt/tomcat/bin/catalina.sh] (immediate)
+I, [2014-06-03T11:30:33.189496 #32233]  INFO -- default-centos-64:   * template[/opt/tomcat/bin/catalina.sh] action create[0m[2014-06-03T14:30:31+00:00] INFO: Processing template[/opt/tomcat/bin/catalina.sh] action create (tomcat-all::default line 48)
+I, [2014-06-03T11:30:33.198963 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/opt/tomcat/bin/catalina.sh] backed up to /tmp/kitchen/backup/opt/tomcat/bin/catalina.sh.chef-20140603143031.807210
+I, [2014-06-03T11:30:33.199939 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/opt/tomcat/bin/catalina.sh] updated file contents /opt/tomcat/bin/catalina.sh
+I, [2014-06-03T11:30:33.199973 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:33.200001 #32233]  INFO -- default-centos-64:     - update content in file /opt/tomcat/bin/catalina.sh from d23400 to e6f200[0m[37m
+I, [2014-06-03T11:30:33.200051 #32233]  INFO -- default-centos-64:  --- /opt/tomcat/bin/catalina.sh	2014-03-25 03:24:57.000000000 +0000[0m[37m
+I, [2014-06-03T11:30:33.200077 #32233]  INFO -- default-centos-64:  +++ /tmp/chef-rendered-template20140603-3136-1mhyhu0	2014-06-03 14:30:31.799628521 +0000[0m[37m
+I, [2014-06-03T11:30:33.200108 #32233]  INFO -- default-centos-64:  @@ -15,6 +15,10 @@[0m[37m
+I, [2014-06-03T11:30:33.200134 #32233]  INFO -- default-centos-64:   # See the License for the specific language governing permissions and[0m[37m
+I, [2014-06-03T11:30:33.200159 #32233]  INFO -- default-centos-64:   # limitations under the License.[0m[37m
+I, [2014-06-03T11:30:33.200188 #32233]  INFO -- default-centos-64:   [0m[37m
+I, [2014-06-03T11:30:33.200213 #32233]  INFO -- default-centos-64:  +JAVA_OPTS="-d64 -server -Djava.awt.headless=true"[0m[37m
+I, [2014-06-03T11:30:33.200244 #32233]  INFO -- default-centos-64:  +CATALINA_HOME="/opt/tomcat"[0m[37m
+I, [2014-06-03T11:30:33.200268 #32233]  INFO -- default-centos-64:  +CATALINA_PID="$CATALINA_HOME/catalina.pid"[0m[37m
+I, [2014-06-03T11:30:33.200292 #32233]  INFO -- default-centos-64:  +[0m[37m
+I, [2014-06-03T11:30:33.200316 #32233]  INFO -- default-centos-64:   # -----------------------------------------------------------------------------[0m[37m
+I, [2014-06-03T11:30:33.200340 #32233]  INFO -- default-centos-64:   # Control Script for the CATALINA Server[0m[37m
+I, [2014-06-03T11:30:33.200364 #32233]  INFO -- default-centos-64:   #[0m
+I, [2014-06-03T11:30:33.310392 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:33.310451 #32233]  INFO -- default-centos-64:     - restore selinux security context[0m
+I, [2014-06-03T11:30:33.310499 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:33.310520 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/opt/tomcat/bin/catalina.sh] sending create action to template[/etc/init.d/tomcat] (immediate)
+I, [2014-06-03T11:30:33.311445 #32233]  INFO -- default-centos-64:   * template[/etc/init.d/tomcat] action create[0m[2014-06-03T14:30:31+00:00] INFO: Processing template[/etc/init.d/tomcat] action create (tomcat-all::default line 54)
+I, [2014-06-03T11:30:33.313903 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/etc/init.d/tomcat] created file /etc/init.d/tomcat
+I, [2014-06-03T11:30:33.313943 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:33.313966 #32233]  INFO -- default-centos-64:     - create new file /etc/init.d/tomcat[0m
+I, [2014-06-03T11:30:33.315557 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/etc/init.d/tomcat] updated file contents /etc/init.d/tomcat
+I, [2014-06-03T11:30:33.315593 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:33.315617 #32233]  INFO -- default-centos-64:     - update content in file /etc/init.d/tomcat from none to 513752[0m[37m
+I, [2014-06-03T11:30:33.315647 #32233]  INFO -- default-centos-64:  --- /etc/init.d/tomcat	2014-06-03 14:30:31.920689023 +0000[0m[37m
+I, [2014-06-03T11:30:33.315674 #32233]  INFO -- default-centos-64:  +++ /tmp/chef-rendered-template20140603-3136-2f54v5	2014-06-03 14:30:31.920689023 +0000[0m[37m
+I, [2014-06-03T11:30:33.315700 #32233]  INFO -- default-centos-64:  @@ -1 +1,39 @@[0m[37m
+I, [2014-06-03T11:30:33.315725 #32233]  INFO -- default-centos-64:  +#!/bin/bash[0m[37m
+I, [2014-06-03T11:30:33.315750 #32233]  INFO -- default-centos-64:  +#[0m[37m
+I, [2014-06-03T11:30:33.315776 #32233]  INFO -- default-centos-64:  +# chkconfig: - 85 15[0m[37m
+I, [2014-06-03T11:30:33.315801 #32233]  INFO -- default-centos-64:  +# description: Jakarta Tomcat Java Servlets and JSP server[0m[37m
+I, [2014-06-03T11:30:33.315827 #32233]  INFO -- default-centos-64:  +# processname: tomcat[0m[37m
+I, [2014-06-03T11:30:33.315852 #32233]  INFO -- default-centos-64:  +# pidfile: /var/www/tomcat/tomcat.pid[0m[37m
+I, [2014-06-03T11:30:33.315898 #32233]  INFO -- default-centos-64:  +[0m[37m
+I, [2014-06-03T11:30:33.315926 #32233]  INFO -- default-centos-64:  +# Source function library.[0m
+I, [2014-06-03T11:30:33.316534 #32233]  INFO -- default-centos-64: [37m
+I, [2014-06-03T11:30:33.316573 #32233]  INFO -- default-centos-64:  +. /etc/init.d/functions[0m[37m
+I, [2014-06-03T11:30:33.316623 #32233]  INFO -- default-centos-64:  +[0m[37m
+I, [2014-06-03T11:30:33.316650 #32233]  INFO -- default-centos-64:  +TOMCAT_USER=tomcat[0m[37m
+I, [2014-06-03T11:30:33.316675 #32233]  INFO -- default-centos-64:  +CATALINA_HOME=/opt/tomcat[0m[37m
+I, [2014-06-03T11:30:33.316699 #32233]  INFO -- default-centos-64:  +RETVAL=$?[0m[37m
+I, [2014-06-03T11:30:33.316724 #32233]  INFO -- default-centos-64:  +[0m[37m
+I, [2014-06-03T11:30:33.316749 #32233]  INFO -- default-centos-64:  +case "$1" in[0m[37m
+I, [2014-06-03T11:30:33.316773 #32233]  INFO -- default-centos-64:  +start)[0m[37m
+I, [2014-06-03T11:30:33.316798 #32233]  INFO -- default-centos-64:  +        echo "Starting Tomcat"[0m[37m
+I, [2014-06-03T11:30:33.316824 #32233]  INFO -- default-centos-64:  +        exec su -l $TOMCAT_USER -c "$CATALINA_HOME/bin/catalina.sh start"[0m[37m
+I, [2014-06-03T11:30:33.316849 #32233]  INFO -- default-centos-64:  +;;[0m[37m
+I, [2014-06-03T11:30:33.316874 #32233]  INFO -- default-centos-64:  +[0m[37m
+I, [2014-06-03T11:30:33.316898 #32233]  INFO -- default-centos-64:  +stop)[0m[37m
+I, [2014-06-03T11:30:33.316923 #32233]  INFO -- default-centos-64:  +        echo "Stopping Tomcat"[0m[37m
+I, [2014-06-03T11:30:33.316949 #32233]  INFO -- default-centos-64:  +        exec su -l $TOMCAT_USER -c "$CATALINA_HOME/bin/catalina.sh stop -force"[0m[37m
+I, [2014-06-03T11:30:33.316974 #32233]  INFO -- default-centos-64:  +;;[0m[37m
+I, [2014-06-03T11:30:33.317021 #32233]  INFO -- default-centos-64:  +[0m[37m
+I, [2014-06-03T11:30:33.317046 #32233]  INFO -- default-centos-64:  +restart)[0m[37m
+I, [2014-06-03T11:30:33.317071 #32233]  INFO -- default-centos-64:  +        $0 stop[0m[37m
+I, [2014-06-03T11:30:33.317097 #32233]  INFO -- default-centos-64:  +        sleep 15[0m[37m
+I, [2014-06-03T11:30:33.317122 #32233]  INFO -- default-centos-64:  +        $0 start[0m[37m
+I, [2014-06-03T11:30:33.317146 #32233]  INFO -- default-centos-64:  +;;[0m[37m
+I, [2014-06-03T11:30:33.317171 #32233]  INFO -- default-centos-64:  +[0m[37m
+I, [2014-06-03T11:30:33.317195 #32233]  INFO -- default-centos-64:  +*)[0m[37m
+I, [2014-06-03T11:30:33.317220 #32233]  INFO -- default-centos-64:  +        echo $"Usage: $0 {start|stop|restart}"[0m[37m
+I, [2014-06-03T11:30:33.317246 #32233]  INFO -- default-centos-64:  +        exit 1[0m[37m
+I, [2014-06-03T11:30:33.317279 #32233]  INFO -- default-centos-64:  +;;[0m[37m
+I, [2014-06-03T11:30:33.317313 #32233]  INFO -- default-centos-64:  +esac[0m[37m
+I, [2014-06-03T11:30:33.317354 #32233]  INFO -- default-centos-64:  +[0m[37m
+I, [2014-06-03T11:30:33.317388 #32233]  INFO -- default-centos-64:  +exit $RETVAL[0m
+I, [2014-06-03T11:30:33.318044 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:31+00:00] INFO: template[/etc/init.d/tomcat] mode changed to 755
+I, [2014-06-03T11:30:33.318074 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:33.318096 #32233]  INFO -- default-centos-64:     - change mode from '' to '0755'[0m
+I, [2014-06-03T11:30:33.433836 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:33.433897 #32233]  INFO -- default-centos-64:     - restore selinux security context[0m
+I, [2014-06-03T11:30:33.434740 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:30:33.434774 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:33.434796 #32233]  INFO -- default-centos-64:   * template[/etc/logrotate.d/tomcat] action create[0m[2014-06-03T14:30:32+00:00] INFO: Processing template[/etc/logrotate.d/tomcat] action create (tomcat-all::default line 36)
+I, [2014-06-03T11:30:33.438403 #32233]  INFO -- default-centos-64:  (up to date)[0m
+I, [2014-06-03T11:30:33.438461 #32233]  INFO -- default-centos-64:   * template[/opt/tomcat/conf/server.xml] action create[0m[2014-06-03T14:30:32+00:00] INFO: Processing template[/opt/tomcat/conf/server.xml] action create (tomcat-all::default line 42)
+I, [2014-06-03T11:30:33.440749 #32233]  INFO -- default-centos-64:  (up to date)[0m
+I, [2014-06-03T11:30:33.440787 #32233]  INFO -- default-centos-64:   * template[/opt/tomcat/bin/catalina.sh] action create[0m[2014-06-03T14:30:32+00:00] INFO: Processing template[/opt/tomcat/bin/catalina.sh] action create (tomcat-all::default line 48)
+I, [2014-06-03T11:30:33.444359 #32233]  INFO -- default-centos-64:  (up to date)[0m
+I, [2014-06-03T11:30:33.444401 #32233]  INFO -- default-centos-64:   * template[/etc/init.d/tomcat] action nothing[0m[2014-06-03T14:30:32+00:00] INFO: Processing template[/etc/init.d/tomcat] action nothing (tomcat-all::default line 54)
+I, [2014-06-03T11:30:33.444447 #32233]  INFO -- default-centos-64:  (skipped due to action :nothing)[0m
+I, [2014-06-03T11:30:33.444468 #32233]  INFO -- default-centos-64:   * service[tomcat] action enable[0m[2014-06-03T14:30:32+00:00] INFO: Processing service[tomcat] action enable (tomcat-all::default line 61)
+I, [2014-06-03T11:30:33.665029 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:32+00:00] INFO: service[tomcat] enabled
+I, [2014-06-03T11:30:33.665091 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:33.665114 #32233]  INFO -- default-centos-64:     - enable service service[tomcat][0m
+I, [2014-06-03T11:30:33.665134 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:33.665154 #32233]  INFO -- default-centos-64:   * service[tomcat] action start[0m[2014-06-03T14:30:32+00:00] INFO: Processing service[tomcat] action start (tomcat-all::default line 61)
+I, [2014-06-03T11:30:34.740788 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:33+00:00] INFO: service[tomcat] started
+I, [2014-06-03T11:30:34.740850 #32233]  INFO -- default-centos-64: [32m
+I, [2014-06-03T11:30:34.740873 #32233]  INFO -- default-centos-64:     - start service service[tomcat][0m
+I, [2014-06-03T11:30:34.740894 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:34.740915 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:33+00:00] INFO: Chef Run complete in 189.317427889 seconds
+I, [2014-06-03T11:30:34.740936 #32233]  INFO -- default-centos-64: 
+I, [2014-06-03T11:30:34.740956 #32233]  INFO -- default-centos-64: Running handlers:[0m
+I, [2014-06-03T11:30:34.740977 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:33+00:00] INFO: Running report handlers
+I, [2014-06-03T11:30:34.740998 #32233]  INFO -- default-centos-64: Running handlers complete
+I, [2014-06-03T11:30:34.741019 #32233]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:30:34.741040 #32233]  INFO -- default-centos-64: [2014-06-03T14:30:33+00:00] INFO: Report handlers complete
+I, [2014-06-03T11:30:34.741061 #32233]  INFO -- default-centos-64: Chef Client finished, 19/23 resources updated in 196.753430674 seconds[0m
+I, [2014-06-03T11:30:35.158574 #32233]  INFO -- default-centos-64: Finished converging <default-centos-64> (4m48.33s).
+I, [2014-06-03T11:31:49.295826 #32354]  INFO -- default-centos-64: -----> Setting up <default-centos-64>...
+Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem (  2%)Fetching: thor-0.19.0.gem ( 16%)Fetching: thor-0.19.0.gem ( 30%)Fetching: thor-0.19.0.gem ( 32%)Fetching: thor-0.19.0.gem ( 44%)Fetching: thor-0.19.0.gem ( 46%)Fetching: thor-0.19.0.gem ( 62%)Fetching: thor-0.19.0.gem ( 73%)Fetching: thor-0.19.0.gem ( 76%)Fetching: thor-0.19.0.gem ( 87%)Fetching: thor-0.19.0.gem ( 90%)Fetching: thor-0.19.0.gem ( 93%)I, [2014-06-03T11:32:27.632614 #32354]  INFO -- default-centos-64: Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
+Fetching: busser-0.6.2.gemFetching: busser-0.6.2.gem (  7%)Fetching: busser-0.6.2.gem ( 13%)Fetching: busser-0.6.2.gem ( 19%)Fetching: busser-0.6.2.gem ( 26%)Fetching: busser-0.6.2.gem ( 32%)Fetching: busser-0.6.2.gem ( 51%)Fetching: busser-0.6.2.gem ( 57%)Fetching: busser-0.6.2.gem ( 82%)I, [2014-06-03T11:32:28.037107 #32354]  INFO -- default-centos-64: Fetching: busser-0.6.2.gem (100%)Fetching: busser-0.6.2.gem (100%)
+I, [2014-06-03T11:32:28.055655 #32354]  INFO -- default-centos-64: Successfully installed thor-0.19.0
+I, [2014-06-03T11:32:28.055736 #32354]  INFO -- default-centos-64: Successfully installed busser-0.6.2
+I, [2014-06-03T11:32:28.055761 #32354]  INFO -- default-centos-64: 2 gems installed
+I, [2014-06-03T11:32:28.373447 #32354]  INFO -- default-centos-64: -----> Setting up Busser
+I, [2014-06-03T11:32:28.373521 #32354]  INFO -- default-centos-64: Creating BUSSER_ROOT in /tmp/busser
+I, [2014-06-03T11:32:28.373553 #32354]  INFO -- default-centos-64: Creating busser binstub
+I, [2014-06-03T11:32:46.441362 #32354]  INFO -- default-centos-64: Plugin serverspec installed (version 0.2.6)
+I, [2014-06-03T11:32:46.454437 #32354]  INFO -- default-centos-64: -----> Running postinstall for serverspec plugin
+I, [2014-06-03T11:33:00.500557 #32354]  INFO -- default-centos-64: Finished setting up <default-centos-64> (1m11.17s).
+I, [2014-06-03T11:34:59.443849 #32407]  INFO -- default-centos-64: -----> Verifying <default-centos-64>...
+I, [2014-06-03T11:34:59.776964 #32407]  INFO -- default-centos-64: Suite path directory /tmp/busser/suites does not exist, skipping.
+I, [2014-06-03T11:34:59.933290 #32407]  INFO -- default-centos-64: Uploading /tmp/busser/suites/serverspec/localhost/network_spec.rb (mode=0644)
+I, [2014-06-03T11:35:00.421713 #32407]  INFO -- default-centos-64: Uploading /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb (mode=0644)
+I, [2014-06-03T11:35:00.884300 #32407]  INFO -- default-centos-64: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)
+I, [2014-06-03T11:35:01.354503 #32407]  INFO -- default-centos-64: -----> Running serverspec test suite
+I, [2014-06-03T11:35:01.484132 #32407]  INFO -- default-centos-64: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -S /opt/chef/embedded/bin/rspec /tmp/busser/suites/serverspec/localhost/network_spec.rb /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb --color --format documentation
+I, [2014-06-03T11:35:01.679913 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:01.679974 #32407]  INFO -- default-centos-64: Host "localhost"
+I, [2014-06-03T11:35:02.732381 #32407]  INFO -- default-centos-64: [32m  should be reachable[0m
+I, [2014-06-03T11:35:02.737289 #32407]  INFO -- default-centos-64: [31m  should be reachable (FAILED - 1)[0m
+I, [2014-06-03T11:35:02.741022 #32407]  INFO -- default-centos-64: [31m  should be reachable (FAILED - 2)[0m
+I, [2014-06-03T11:35:02.741076 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:02.741099 #32407]  INFO -- default-centos-64: Tomcat Daemon
+I, [2014-06-03T11:35:02.760342 #32407]  INFO -- default-centos-64: [32m  is listening on port 8080[0m
+I, [2014-06-03T11:35:02.882122 #32407]  INFO -- default-centos-64: [32m  has a running service of tomcat[0m
+I, [2014-06-03T11:35:02.882180 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:02.882202 #32407]  INFO -- default-centos-64: Group "tomcat"
+I, [2014-06-03T11:35:02.920676 #32407]  INFO -- default-centos-64: [32m  should exist [][0m
+I, [2014-06-03T11:35:02.920737 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:02.920761 #32407]  INFO -- default-centos-64: User "tomcat"
+I, [2014-06-03T11:35:02.929567 #32407]  INFO -- default-centos-64: [32m  should exist [][0m
+I, [2014-06-03T11:35:02.936959 #32407]  INFO -- default-centos-64: [32m  should belong to group "tomcat"[0m
+I, [2014-06-03T11:35:02.937015 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:02.937039 #32407]  INFO -- default-centos-64: Package "openjdk-7-jdk"
+I, [2014-06-03T11:35:03.023351 #32407]  INFO -- default-centos-64: [31m  should be installed (FAILED - 3)[0m
+I, [2014-06-03T11:35:03.023409 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:03.023432 #32407]  INFO -- default-centos-64: File "/opt/tomcat"
+I, [2014-06-03T11:35:03.036629 #32407]  INFO -- default-centos-64: [32m  should be directory[0m
+I, [2014-06-03T11:35:03.036685 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:03.036708 #32407]  INFO -- default-centos-64: File "/opt/tomcat/bin/catalina.sh"
+I, [2014-06-03T11:35:03.055901 #32407]  INFO -- default-centos-64: [32m  should be owned by "tomcat"[0m
+I, [2014-06-03T11:35:03.080018 #32407]  INFO -- default-centos-64: [32m  should be executable[0m
+I, [2014-06-03T11:35:03.093948 #32407]  INFO -- default-centos-64: [32m  should be writable[0m
+I, [2014-06-03T11:35:03.102151 #32407]  INFO -- default-centos-64: [32m  should be readable[0m
+I, [2014-06-03T11:35:03.102210 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:03.102232 #32407]  INFO -- default-centos-64: File "/opt/tomcat/conf/server.xml"
+I, [2014-06-03T11:35:03.108666 #32407]  INFO -- default-centos-64: [32m  should be owned by "tomcat"[0m
+I, [2014-06-03T11:35:03.116570 #32407]  INFO -- default-centos-64: [32m  should be writable[0m
+I, [2014-06-03T11:35:03.127013 #32407]  INFO -- default-centos-64: [32m  should be readable[0m
+I, [2014-06-03T11:35:03.127070 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:03.127092 #32407]  INFO -- default-centos-64: Failures:
+I, [2014-06-03T11:35:03.127112 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:03.127155 #32407]  INFO -- default-centos-64:   1) Host "localhost" should be reachable
+I, [2014-06-03T11:35:03.127176 #32407]  INFO -- default-centos-64:      [31mFailure/Error:[0m [31mit { should be_reachable.with( :port => 22, :proto => 'tcp' ) }[0m
+I, [2014-06-03T11:35:03.127204 #32407]  INFO -- default-centos-64: [31menv PATH=/sbin:/usr/sbin:$PATH nc -vvvvzt localhost 22 -w 5[0m
+I, [2014-06-03T11:35:03.127229 #32407]  INFO -- default-centos-64: [31menv: nc: No such file or directory
+I, [2014-06-03T11:35:03.127249 #32407]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:35:03.127273 #32407]  INFO -- default-centos-64: [31mexpected Host "localhost" to be reachable[0m
+I, [2014-06-03T11:35:03.127293 #32407]  INFO -- default-centos-64: [36m     # /tmp/busser/suites/serverspec/localhost/network_spec.rb:14:in `block (2 levels) in <top (required)>'[0m
+I, [2014-06-03T11:35:03.127313 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:03.127333 #32407]  INFO -- default-centos-64:   2) Host "localhost" should be reachable
+I, [2014-06-03T11:35:03.127352 #32407]  INFO -- default-centos-64:      [31mFailure/Error:[0m [31mit { should be_reachable.with( :port => 8080, :proto => 'tcp' ) }[0m
+I, [2014-06-03T11:35:03.127377 #32407]  INFO -- default-centos-64: [31menv PATH=/sbin:/usr/sbin:$PATH nc -vvvvzt localhost 8080 -w 5[0m
+I, [2014-06-03T11:35:03.127401 #32407]  INFO -- default-centos-64: [31menv: nc: No such file or directory
+I, [2014-06-03T11:35:03.127456 #32407]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:35:03.127500 #32407]  INFO -- default-centos-64: [31mexpected Host "localhost" to be reachable[0m
+I, [2014-06-03T11:35:03.127547 #32407]  INFO -- default-centos-64: [36m     # /tmp/busser/suites/serverspec/localhost/network_spec.rb:15:in `block (2 levels) in <top (required)>'[0m
+I, [2014-06-03T11:35:03.127588 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:03.127611 #32407]  INFO -- default-centos-64:   3) Package "openjdk-7-jdk" should be installed
+I, [2014-06-03T11:35:03.128652 #32407]  INFO -- default-centos-64:      [31mFailure/Error:[0m [31mit { should be_installed }[0m
+I, [2014-06-03T11:35:03.128700 #32407]  INFO -- default-centos-64: [31menv PATH=/sbin:/usr/sbin:$PATH rpm -q openjdk-7-jdk[0m
+I, [2014-06-03T11:35:03.128729 #32407]  INFO -- default-centos-64: [31mpackage openjdk-7-jdk is not installed
+I, [2014-06-03T11:35:03.128771 #32407]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:35:03.128798 #32407]  INFO -- default-centos-64: [31mexpected Package "openjdk-7-jdk" to be installed[0m
+I, [2014-06-03T11:35:03.128820 #32407]  INFO -- default-centos-64: [36m     # /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb:31:in `block (2 levels) in <top (required)>'[0m
+I, [2014-06-03T11:35:03.128860 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:03.128882 #32407]  INFO -- default-centos-64: Finished in 1.45 seconds
+I, [2014-06-03T11:35:03.128903 #32407]  INFO -- default-centos-64: [31m17 examples, 3 failures[0m
+I, [2014-06-03T11:35:03.128924 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:03.128945 #32407]  INFO -- default-centos-64: Failed examples:
+I, [2014-06-03T11:35:03.128965 #32407]  INFO -- default-centos-64: 
+I, [2014-06-03T11:35:03.128986 #32407]  INFO -- default-centos-64: [31mrspec /tmp/busser/suites/serverspec/localhost/network_spec.rb:14[0m [36m# Host "localhost" should be reachable[0m
+I, [2014-06-03T11:35:03.129007 #32407]  INFO -- default-centos-64: [31mrspec /tmp/busser/suites/serverspec/localhost/network_spec.rb:15[0m [36m# Host "localhost" should be reachable[0m
+I, [2014-06-03T11:35:03.129028 #32407]  INFO -- default-centos-64: [31mrspec /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb:31[0m [36m# Package "openjdk-7-jdk" should be installed[0m
+I, [2014-06-03T11:35:03.139644 #32407]  INFO -- default-centos-64: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -S /opt/chef/embedded/bin/rspec /tmp/busser/suites/serverspec/localhost/network_spec.rb /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb --color --format documentation failed
+I, [2014-06-03T11:35:03.142149 #32407]  INFO -- default-centos-64: Ruby Script [/tmp/busser/gems/gems/busser-serverspec-0.2.6/lib/busser/runner_plugin/../serverspec/runner.rb /tmp/busser/suites/serverspec] exit code was 1
+E, [2014-06-03T11:35:03.150637 #32407] ERROR -- default-centos-64: Verify failed on instance <default-centos-64>.
+E, [2014-06-03T11:35:03.150754 #32407] ERROR -- default-centos-64: ------Exception-------
+E, [2014-06-03T11:35:03.150778 #32407] ERROR -- default-centos-64: Class: Kitchen::ActionFailed
+E, [2014-06-03T11:35:03.150798 #32407] ERROR -- default-centos-64: Message: SSH exited (1) for command: [sh -c 'BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" ; export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE; sudo -E /tmp/busser/bin/busser test']
+E, [2014-06-03T11:35:03.150817 #32407] ERROR -- default-centos-64: ---Nested Exception---
+E, [2014-06-03T11:35:03.150835 #32407] ERROR -- default-centos-64: Class: Kitchen::SSHFailed
+E, [2014-06-03T11:35:03.150853 #32407] ERROR -- default-centos-64: Message: SSH exited (1) for command: [sh -c 'BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" ; export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE; sudo -E /tmp/busser/bin/busser test']
+E, [2014-06-03T11:35:03.150872 #32407] ERROR -- default-centos-64: ------Backtrace-------
+E, [2014-06-03T11:35:03.150901 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:118:in `rescue in run_remote'
+E, [2014-06-03T11:35:03.150920 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:114:in `run_remote'
+E, [2014-06-03T11:35:03.150939 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:63:in `block in verify'
+E, [2014-06-03T11:35:03.150957 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-06-03T11:35:03.150975 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:61:in `new'
+E, [2014-06-03T11:35:03.150993 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:61:in `verify'
+E, [2014-06-03T11:35:03.151012 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:85:in `verify'
+E, [2014-06-03T11:35:03.151049 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `public_send'
+E, [2014-06-03T11:35:03.151069 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `block in perform_action'
+E, [2014-06-03T11:35:03.151088 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:315:in `call'
+E, [2014-06-03T11:35:03.151106 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:315:in `synchronize_or_call'
+E, [2014-06-03T11:35:03.151125 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:290:in `block in action'
+E, [2014-06-03T11:35:03.151143 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-06-03T11:35:03.151162 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:289:in `action'
+E, [2014-06-03T11:35:03.151180 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `perform_action'
+E, [2014-06-03T11:35:03.151211 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:271:in `verify_action'
+E, [2014-06-03T11:35:03.151242 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:253:in `block in transition_to'
+E, [2014-06-03T11:35:03.151296 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:252:in `each'
+E, [2014-06-03T11:35:03.151340 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:252:in `transition_to'
+E, [2014-06-03T11:35:03.151360 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-06-03T11:35:03.151380 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-06-03T11:35:03.151399 #32407] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-06-03T11:35:03.151435 #32407] ERROR -- default-centos-64: ----------------------
+I, [2014-06-03T11:43:03.094817 #32513]  INFO -- default-centos-64: -----> Verifying <default-centos-64>...
+I, [2014-06-03T11:43:03.450010 #32513]  INFO -- default-centos-64: Removing /tmp/busser/suites/serverspec
+I, [2014-06-03T11:43:03.611076 #32513]  INFO -- default-centos-64: Uploading /tmp/busser/suites/serverspec/localhost/network_spec.rb (mode=0644)
+I, [2014-06-03T11:43:04.098052 #32513]  INFO -- default-centos-64: Uploading /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb (mode=0644)
+I, [2014-06-03T11:43:04.624294 #32513]  INFO -- default-centos-64: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)
+I, [2014-06-03T11:43:05.117968 #32513]  INFO -- default-centos-64: -----> Running serverspec test suite
+I, [2014-06-03T11:43:05.182026 #32513]  INFO -- default-centos-64: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -S /opt/chef/embedded/bin/rspec /tmp/busser/suites/serverspec/localhost/network_spec.rb /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb --color --format documentation
+I, [2014-06-03T11:43:05.340085 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:05.340146 #32513]  INFO -- default-centos-64: Host "localhost"
+I, [2014-06-03T11:43:06.358940 #32513]  INFO -- default-centos-64: [32m  should be reachable[0m
+I, [2014-06-03T11:43:06.363837 #32513]  INFO -- default-centos-64: [31m  should be reachable (FAILED - 1)[0m
+I, [2014-06-03T11:43:06.368373 #32513]  INFO -- default-centos-64: [31m  should be reachable (FAILED - 2)[0m
+I, [2014-06-03T11:43:06.368420 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.368443 #32513]  INFO -- default-centos-64: Tomcat Daemon
+I, [2014-06-03T11:43:06.374201 #32513]  INFO -- default-centos-64: [32m  is listening on port 8080[0m
+I, [2014-06-03T11:43:06.474476 #32513]  INFO -- default-centos-64: [32m  has a running service of tomcat[0m
+I, [2014-06-03T11:43:06.474536 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.474560 #32513]  INFO -- default-centos-64: Group "tomcat"
+I, [2014-06-03T11:43:06.480574 #32513]  INFO -- default-centos-64: [32m  should exist [][0m
+I, [2014-06-03T11:43:06.480632 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.480656 #32513]  INFO -- default-centos-64: User "tomcat"
+I, [2014-06-03T11:43:06.488354 #32513]  INFO -- default-centos-64: [32m  should exist [][0m
+I, [2014-06-03T11:43:06.495394 #32513]  INFO -- default-centos-64: [32m  should belong to group "tomcat"[0m
+I, [2014-06-03T11:43:06.495451 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.495476 #32513]  INFO -- default-centos-64: File "/opt/tomcat"
+I, [2014-06-03T11:43:06.502402 #32513]  INFO -- default-centos-64: [32m  should be directory[0m
+I, [2014-06-03T11:43:06.502457 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.502481 #32513]  INFO -- default-centos-64: File "/opt/tomcat/bin/catalina.sh"
+I, [2014-06-03T11:43:06.507579 #32513]  INFO -- default-centos-64: [32m  should be owned by "tomcat"[0m
+I, [2014-06-03T11:43:06.516980 #32513]  INFO -- default-centos-64: [32m  should be executable[0m
+I, [2014-06-03T11:43:06.526288 #32513]  INFO -- default-centos-64: [32m  should be writable[0m
+I, [2014-06-03T11:43:06.541477 #32513]  INFO -- default-centos-64: [32m  should be readable[0m
+I, [2014-06-03T11:43:06.541539 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.541593 #32513]  INFO -- default-centos-64: File "/opt/tomcat/conf/server.xml"
+I, [2014-06-03T11:43:06.547498 #32513]  INFO -- default-centos-64: [32m  should be owned by "tomcat"[0m
+I, [2014-06-03T11:43:06.555681 #32513]  INFO -- default-centos-64: [32m  should be writable[0m
+I, [2014-06-03T11:43:06.565386 #32513]  INFO -- default-centos-64: [32m  should be readable[0m
+I, [2014-06-03T11:43:06.565480 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.565505 #32513]  INFO -- default-centos-64: Failures:
+I, [2014-06-03T11:43:06.565527 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.565556 #32513]  INFO -- default-centos-64:   1) Host "localhost" should be reachable
+I, [2014-06-03T11:43:06.566086 #32513]  INFO -- default-centos-64:      [31mFailure/Error:[0m [31mit { should be_reachable.with( :port => 22, :proto => 'tcp' ) }[0m
+I, [2014-06-03T11:43:06.566130 #32513]  INFO -- default-centos-64: [31menv PATH=/sbin:/usr/sbin:$PATH nc -vvvvzt localhost 22 -w 5[0m
+I, [2014-06-03T11:43:06.566159 #32513]  INFO -- default-centos-64: [31menv: nc: No such file or directory
+I, [2014-06-03T11:43:06.566181 #32513]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:43:06.566206 #32513]  INFO -- default-centos-64: [31mexpected Host "localhost" to be reachable[0m
+I, [2014-06-03T11:43:06.566228 #32513]  INFO -- default-centos-64: [36m     # /tmp/busser/suites/serverspec/localhost/network_spec.rb:14:in `block (2 levels) in <top (required)>'[0m
+I, [2014-06-03T11:43:06.566270 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.566291 #32513]  INFO -- default-centos-64:   2) Host "localhost" should be reachable
+I, [2014-06-03T11:43:06.566745 #32513]  INFO -- default-centos-64:      [31mFailure/Error:[0m [31mit { should be_reachable.with( :port => 8080, :proto => 'tcp' ) }[0m
+I, [2014-06-03T11:43:06.566779 #32513]  INFO -- default-centos-64: [31menv PATH=/sbin:/usr/sbin:$PATH nc -vvvvzt localhost 8080 -w 5[0m
+I, [2014-06-03T11:43:06.566827 #32513]  INFO -- default-centos-64: [31menv: nc: No such file or directory
+I, [2014-06-03T11:43:06.566850 #32513]  INFO -- default-centos-64: [0m
+I, [2014-06-03T11:43:06.566875 #32513]  INFO -- default-centos-64: [31mexpected Host "localhost" to be reachable[0m
+I, [2014-06-03T11:43:06.566897 #32513]  INFO -- default-centos-64: [36m     # /tmp/busser/suites/serverspec/localhost/network_spec.rb:15:in `block (2 levels) in <top (required)>'[0m
+I, [2014-06-03T11:43:06.567463 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.567501 #32513]  INFO -- default-centos-64: Finished in 1.23 seconds
+I, [2014-06-03T11:43:06.567525 #32513]  INFO -- default-centos-64: [31m16 examples, 2 failures[0m
+I, [2014-06-03T11:43:06.567547 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.567568 #32513]  INFO -- default-centos-64: Failed examples:
+I, [2014-06-03T11:43:06.567590 #32513]  INFO -- default-centos-64: 
+I, [2014-06-03T11:43:06.567611 #32513]  INFO -- default-centos-64: [31mrspec /tmp/busser/suites/serverspec/localhost/network_spec.rb:14[0m [36m# Host "localhost" should be reachable[0m
+I, [2014-06-03T11:43:06.567633 #32513]  INFO -- default-centos-64: [31mrspec /tmp/busser/suites/serverspec/localhost/network_spec.rb:15[0m [36m# Host "localhost" should be reachable[0m
+I, [2014-06-03T11:43:06.577971 #32513]  INFO -- default-centos-64: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -S /opt/chef/embedded/bin/rspec /tmp/busser/suites/serverspec/localhost/network_spec.rb /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb --color --format documentation failed
+I, [2014-06-03T11:43:06.583303 #32513]  INFO -- default-centos-64: Ruby Script [/tmp/busser/gems/gems/busser-serverspec-0.2.6/lib/busser/runner_plugin/../serverspec/runner.rb /tmp/busser/suites/serverspec] exit code was 1
+E, [2014-06-03T11:43:06.593015 #32513] ERROR -- default-centos-64: Verify failed on instance <default-centos-64>.
+E, [2014-06-03T11:43:06.593125 #32513] ERROR -- default-centos-64: ------Exception-------
+E, [2014-06-03T11:43:06.593147 #32513] ERROR -- default-centos-64: Class: Kitchen::ActionFailed
+E, [2014-06-03T11:43:06.593166 #32513] ERROR -- default-centos-64: Message: SSH exited (1) for command: [sh -c 'BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" ; export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE; sudo -E /tmp/busser/bin/busser test']
+E, [2014-06-03T11:43:06.593184 #32513] ERROR -- default-centos-64: ---Nested Exception---
+E, [2014-06-03T11:43:06.593201 #32513] ERROR -- default-centos-64: Class: Kitchen::SSHFailed
+E, [2014-06-03T11:43:06.593218 #32513] ERROR -- default-centos-64: Message: SSH exited (1) for command: [sh -c 'BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" ; export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE; sudo -E /tmp/busser/bin/busser test']
+E, [2014-06-03T11:43:06.593236 #32513] ERROR -- default-centos-64: ------Backtrace-------
+E, [2014-06-03T11:43:06.593253 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:118:in `rescue in run_remote'
+E, [2014-06-03T11:43:06.593271 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:114:in `run_remote'
+E, [2014-06-03T11:43:06.593288 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:63:in `block in verify'
+E, [2014-06-03T11:43:06.593306 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-06-03T11:43:06.593323 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:61:in `new'
+E, [2014-06-03T11:43:06.593383 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/driver/ssh_base.rb:61:in `verify'
+E, [2014-06-03T11:43:06.593403 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:85:in `verify'
+E, [2014-06-03T11:43:06.593421 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `public_send'
+E, [2014-06-03T11:43:06.593438 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `block in perform_action'
+E, [2014-06-03T11:43:06.593455 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:315:in `call'
+E, [2014-06-03T11:43:06.593472 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:315:in `synchronize_or_call'
+E, [2014-06-03T11:43:06.593490 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:290:in `block in action'
+E, [2014-06-03T11:43:06.593507 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-06-03T11:43:06.593524 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:289:in `action'
+E, [2014-06-03T11:43:06.593542 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:280:in `perform_action'
+E, [2014-06-03T11:43:06.593560 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:271:in `verify_action'
+E, [2014-06-03T11:43:06.593577 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:253:in `block in transition_to'
+E, [2014-06-03T11:43:06.593595 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:252:in `each'
+E, [2014-06-03T11:43:06.593615 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:252:in `transition_to'
+E, [2014-06-03T11:43:06.593634 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-06-03T11:43:06.593652 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-06-03T11:43:06.593687 #32513] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.2.dev/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-06-03T11:43:06.593706 #32513] ERROR -- default-centos-64: ----------------------
+I, [2014-06-03T11:44:35.381445 #32540]  INFO -- default-centos-64: -----> Verifying <default-centos-64>...
+I, [2014-06-03T11:44:35.710230 #32540]  INFO -- default-centos-64: Removing /tmp/busser/suites/serverspec
+I, [2014-06-03T11:44:35.866116 #32540]  INFO -- default-centos-64: Uploading /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb (mode=0644)
+I, [2014-06-03T11:44:36.317771 #32540]  INFO -- default-centos-64: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)
+I, [2014-06-03T11:44:36.789525 #32540]  INFO -- default-centos-64: -----> Running serverspec test suite
+I, [2014-06-03T11:44:36.849231 #32540]  INFO -- default-centos-64: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -S /opt/chef/embedded/bin/rspec /tmp/busser/suites/serverspec/localhost/tomcat_spec.rb --color --format documentation
+I, [2014-06-03T11:44:36.993483 #32540]  INFO -- default-centos-64: 
+I, [2014-06-03T11:44:36.993567 #32540]  INFO -- default-centos-64: Tomcat Daemon
+I, [2014-06-03T11:44:37.012275 #32540]  INFO -- default-centos-64: [32m  is listening on port 8080[0m
+I, [2014-06-03T11:44:37.109117 #32540]  INFO -- default-centos-64: [32m  has a running service of tomcat[0m
+I, [2014-06-03T11:44:37.109176 #32540]  INFO -- default-centos-64: 
+I, [2014-06-03T11:44:37.109198 #32540]  INFO -- default-centos-64: Group "tomcat"
+I, [2014-06-03T11:44:37.114795 #32540]  INFO -- default-centos-64: [32m  should exist [][0m
+I, [2014-06-03T11:44:37.114846 #32540]  INFO -- default-centos-64: 
+I, [2014-06-03T11:44:37.114889 #32540]  INFO -- default-centos-64: User "tomcat"
+I, [2014-06-03T11:44:37.119271 #32540]  INFO -- default-centos-64: [32m  should exist [][0m
+I, [2014-06-03T11:44:37.125443 #32540]  INFO -- default-centos-64: [32m  should belong to group "tomcat"[0m
+I, [2014-06-03T11:44:37.125522 #32540]  INFO -- default-centos-64: 
+I, [2014-06-03T11:44:37.125545 #32540]  INFO -- default-centos-64: File "/opt/tomcat"
+I, [2014-06-03T11:44:37.136068 #32540]  INFO -- default-centos-64: [32m  should be directory[0m
+I, [2014-06-03T11:44:37.136125 #32540]  INFO -- default-centos-64: 
+I, [2014-06-03T11:44:37.136148 #32540]  INFO -- default-centos-64: File "/opt/tomcat/bin/catalina.sh"
+I, [2014-06-03T11:44:37.141314 #32540]  INFO -- default-centos-64: [32m  should be owned by "tomcat"[0m
+I, [2014-06-03T11:44:37.149217 #32540]  INFO -- default-centos-64: [32m  should be executable[0m
+I, [2014-06-03T11:44:37.156980 #32540]  INFO -- default-centos-64: [32m  should be writable[0m
+I, [2014-06-03T11:44:37.164997 #32540]  INFO -- default-centos-64: [32m  should be readable[0m
+I, [2014-06-03T11:44:37.165050 #32540]  INFO -- default-centos-64: 
+I, [2014-06-03T11:44:37.165097 #32540]  INFO -- default-centos-64: File "/opt/tomcat/conf/server.xml"
+I, [2014-06-03T11:44:37.171858 #32540]  INFO -- default-centos-64: [32m  should be owned by "tomcat"[0m
+I, [2014-06-03T11:44:37.178999 #32540]  INFO -- default-centos-64: [32m  should be writable[0m
+I, [2014-06-03T11:44:37.187297 #32540]  INFO -- default-centos-64: [32m  should be readable[0m
+I, [2014-06-03T11:44:37.187360 #32540]  INFO -- default-centos-64: 
+I, [2014-06-03T11:44:37.187385 #32540]  INFO -- default-centos-64: Finished in 0.19409 seconds
+I, [2014-06-03T11:44:37.187408 #32540]  INFO -- default-centos-64: [32m13 examples, 0 failures[0m
+I, [2014-06-03T11:44:37.210055 #32540]  INFO -- default-centos-64: Finished verifying <default-centos-64> (0m1.83s).
