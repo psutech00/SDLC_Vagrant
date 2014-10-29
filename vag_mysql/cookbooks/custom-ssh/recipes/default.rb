@@ -2,7 +2,7 @@
 # Cookbook Name:: custom-ssh
 # Recipe:: default
 #
-# Copyright 2014, Juan Larriba GFT
+# Copyright 2014, Juan Larriba
 #
 # All rights reserved - Do Not Redistribute
 

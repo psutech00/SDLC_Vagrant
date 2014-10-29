@@ -2,9 +2,8 @@
 # Cookbook Name:: flyway
 # Recipe:: default
 #
-# Copyright 2014, GFT, Juan Larriba
+# Copyright 2014 Juan Larriba
 #
-# All rights reserved - Do Not Redistribute
 #
 
 download_url = File.join(node['flyway']['base_url'], node['flyway']['filename'], node['flyway']['version'], node['flyway']['filename'] + '-' + node['flyway']['version'] + '.tar.gz')

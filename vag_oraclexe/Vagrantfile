@@ -20,16 +20,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         chef.add_recipe "oracle-xe"
         chef.json = {
             "oracle-xe" => {
-                "url" => "http://svbcn071.gft.com:50080/oracle-xe-11.2.0-1.0.x86_64.rpm",
+                "url" => "http://localhost/oracle-xe-11.2.0-1.0.x86_64.rpm",
                 "oracle-password" => "oracle"
             }
         }
   end
 
   config.vm.provider "virtualbox" do |v|
-        v.memory = 2048
+        #v.memory = 4096
         v.cpus = 2
   end
+
+   config.vm.provision "shell", path: "scripts/init_database_script.sh"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs

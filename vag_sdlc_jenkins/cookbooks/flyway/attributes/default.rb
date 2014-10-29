@@ -1,5 +1,5 @@
 # Flyway cookbook
-# GFT Juan Larriba
+# Juan Larriba
 
 default['flyway']['filename'] = 'flyway-commandline' 
 default['flyway']['version'] = '3.0'
@@ -8,7 +8,7 @@ default['flyway']['installation_dir'] = '/var/lib'
 default['flyway']['user'] = 'jenkins'
 default['flyway']['group'] = 'jenkins'
 
-default['flyway']['dburl'] = 'svbcn071.gft.com:51521'
+default['flyway']['dburl'] = 'localhost'
 default['flyway']['dbuser'] = 'sdlcevolution'
 default['flyway']['dbpassword'] = 'apassword' 
 

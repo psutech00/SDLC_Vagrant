@@ -34,6 +34,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         v.cpus = 2
   end
 
+  config.vm.provision "shell", inline: "mysql -u root -proot < /vagrant/scripts/init_database.sql"  
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs

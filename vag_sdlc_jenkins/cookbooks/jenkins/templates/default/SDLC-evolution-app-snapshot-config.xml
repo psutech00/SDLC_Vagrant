@@ -28,7 +28,7 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <rootModule>
-    <groupId>com.gft</groupId>
+    <groupId>com.mycompany</groupId>
     <artifactId>sdlc-evolution</artifactId>
   </rootModule>
   <goals>clean test deploy</goals>

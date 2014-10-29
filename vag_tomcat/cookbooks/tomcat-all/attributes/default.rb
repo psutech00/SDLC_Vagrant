@@ -19,5 +19,5 @@ default['tomcat-all']['mysql']['url'] = 'http://dev.mysql.com/get/Downloads/Conn
 default['tomcat-all']['mysql']['checksum'] = '1986baca293f998f9ecfe8a56e6e832825048a9c466cc5b5ed91940407f1210d'
 
 # Oracle OJDBC7
-default['tomcat-all']['oracle']['enabled'] = true
-default['tomcat-all']['oracle']['url'] = 'http://svbcn071.gft.com:50080/ojdbc7.jar'
+default['tomcat-all']['oracle']['enabled'] = false
+default['tomcat-all']['oracle']['url'] = 'http://localhost/ojdbc7.jar'
